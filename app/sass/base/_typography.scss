@@ -1,0 +1,43 @@
+a {
+  @include animate(opacity);
+
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+}
+
+#{$headings},
+.h {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  margin: 0 0 0.5em;
+  color: $headings-color;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}

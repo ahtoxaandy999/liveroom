@@ -1,0 +1,47 @@
+.sidebar {
+    width: 39.5rem;
+    flex: none;
+    background-color: #F6FBFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &__head {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        .link {
+            padding: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__body {
+        padding: 3rem 2rem 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+        .base-text {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .calendar-icon {
+        margin-bottom: 8px;
+    }
+}

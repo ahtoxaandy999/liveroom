@@ -1,0 +1,12 @@
+include bem
+
+doctype html
+html(lang='ru')
+	include head
+	body(class=pageClass)
+		.wrapper-inner
+			block header
+			block content
+			block footer
+		script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+		script(src='js/app.js')
