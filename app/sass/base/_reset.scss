@@ -47,6 +47,7 @@ button {
 	transition: all 0.3s ease-in-out;
 	outline: none;
 	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 select {
