@@ -25,13 +25,12 @@ $media-expressions: (
 // Color system
 $white: #fff;
 $black: #000;
-$blue: #2d55c5;
+$blue: #2288DD;
 $gray: #8598A7;
 $gray-light: rgba(22, 73, 116, 0.08);;
 
 $text-color: #333333;
 $secondary-color: #8598A7;
-$link-color: #2288DD;
 $field-bg: #E3E9EE;
 
 $base-font-sans-serif: 'Open Sans','Arial', 'Helvetica Neue', 'Helvetica', sans-serif !default;
@@ -45,7 +44,7 @@ $rem-base: 16px !default;
 $base-text-color: $black !default;
 $base-background-color: $white !default;
 $font-size-base: 16px !default;
-$line-height-base: 1.333 !default;
+$line-height-base: 1.6 !default;
 $base-font-family: $base-font-sans-serif !default;
 $base-font-weight: 400 !default;
 
@@ -54,9 +53,9 @@ $vertical-rhythm: ($line-height-base * 1em) !default;
 $base-min-width: 320px !default;
 
 // Liks
-$link-color: $blue !default;
+$blue: $blue !default;
 $link-decoration: none !default;
-$link-hover-color: $link-color !default;
+$link-hover-color: $blue !default;
 $link-hover-decoration: underline !default;
 
 // Buttons
@@ -117,16 +116,16 @@ $headings: (
   'h1, .h1', 'h2, .h2', 'h3, .h3',
   'h4, .h4', 'h5, .h5', 'h6, .h6'
 );
-$h1-font-size: 40px !default;
-$h2-font-size: 36px !default;
-$h3-font-size: 26px !default;
-$h4-font-size: 18px !default;
-$h5-font-size: 17px !default;
-$h6-font-size: 15px !default;
+$h1-font-size: 4rem !default;
+$h2-font-size: 3rem !default;
+$h3-font-size: 2rem !default;
+$h4-font-size: 1.7rem !default;
+$h5-font-size: 1.5rem !default;
+$h6-font-size: 1.3rem !default;
 
 $headings-font-family: inherit !default;
 $headings-color: inherit !default;
-$headings-font-weight: 700 !default;
+$headings-font-weight: 500 !default;
 
 $animation-speed: .3s !default;
 

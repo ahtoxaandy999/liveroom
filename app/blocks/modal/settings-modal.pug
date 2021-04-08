@@ -1,0 +1,47 @@
+.mask.js-mask
+
+.modal.js-modal.js-settings-modal
+	.modal__wrap
+		.modal__header 
+			h3 Настройки
+			button.modal__close.js-close-modal.icon-animate
+				img(src="images/close-icon.svg", alt="")
+		strong.text-sm.text-gray Уведомления
+		.modal__row 
+			.form-control.gray
+				button.modal-btn
+					span Частота
+					span.text-gray 
+						span Редко
+						img(src="images/icon-arrow.svg", alt="").arrow
+				button.modal-btn
+					span Сообщать о популярных комнатах
+					.custom-input 
+						input(type="checkbox", name="customInput1" id="customInput1")
+						label(for="customInput1")
+		.modal__row 
+			.form-control.gray
+				button.modal-btn
+					span Режим “Невидимка”
+					span.text-gray 
+						.custom-input 
+							input(type="checkbox", name="customInput2" id="customInput2")
+							label(for="customInput2")
+		strong.text-sm.text-gray Слушатели и спикеры не видят вас в списке аудитории комнаты
+		.modal__row 
+			.form-control.gray
+				button(data-modal-to="language-modal").modal-btn.js-open-modal
+					span Язык
+					span.text-gray 
+						span Русский
+						img(src="images/icon-arrow.svg", alt="").arrow
+		.modal__row 
+			.form-control.gray
+				button.modal-btn
+					span Условия обслуживания
+					span.text-gray
+						img(src="images/icon-arrow.svg", alt="").arrow
+				button.modal-btn
+					span Политика конфиденциальности
+					span.text-gray
+						img(src="images/icon-arrow.svg", alt="").arrow

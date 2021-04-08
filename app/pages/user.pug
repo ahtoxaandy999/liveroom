@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header--simple
+
+block content
+	include ../blocks/user/user
+
+block footer
+	include ../blocks/footer/footer		
+	include ../blocks/modal/auth-modal		

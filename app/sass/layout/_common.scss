@@ -16,6 +16,7 @@ html {
   flex-direction: column;
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+  font-size: 1.5rem;
 }
 
 .wrapper-inner {
@@ -42,5 +43,139 @@ html {
   #footer {
     -ms-grid-row: 3;
     grid-row: 3;
+  }
+}
+
+strong {
+  font-weight: 500;
+}
+
+.label {
+  color: $white;
+  background-color: $blue;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  line-height: 1;
+  width: 3.2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  padding-bottom: 0.4rem;
+  vertical-align: middle;
+}
+
+.icon-animate {
+  img {
+      @include animate(transform);
+      transform-origin: 50% 50%;
+  }
+
+  &:hover {
+      img {
+          transform: rotate(180deg);
+      }
+  }
+}
+
+.language-list {
+  margin: 0 -2rem;
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    @include animate(color);
+
+    &:hover {
+      color: $blue;
+    }
+
+    &.selected {
+      &::after {
+        content: url('../images/icon-check.svg');
+        position: absolute;
+        right: 2.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &::before {
+      content: '';
+      width: calc(100% - 60px);
+      height: 1px;
+      background-color: rgba(22, 73, 116, 0.12);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    img {
+      margin-right: 1.6rem;
+    }
+  }
+}
+
+.app-links {
+  text-align: center;
+  max-width: 32rem;
+  margin: 0 auto;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      margin: 0.5rem;
+    }
+  }
+
+  p {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.status-icon {
+  flex-shrink: 0;
+  position: relative;
+  margin-left: 0.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: rgba(255, 109, 109, 0.12);
+
+  &:before,
+  &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+  }
+  &:after {
+      width: 1.6rem;
+      height: 1.6rem;
+      z-index: 1;
+      background-color: rgba(255, 109, 109, 0.12);
+  }
+  &:before {
+      width: 0.8rem;
+      height: 0.8rem;
+      z-index: 2;
+      background-color: #ff6d6d;
+  }
+}
+
+.space {
+  &-bottom {
+    &-1 {
+      margin-bottom: 1rem;
+    }
   }
 }

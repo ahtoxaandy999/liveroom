@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrapper-inner">
+        <header class="header">
+          <div class="container"> <a class="logo" href="/"><img src="images/liveroom.svg" alt="Logo"></a>
+            <button class="btn secondary js-open-modal" data-modal-to="auth-modal">Войти</button>
+          </div>
+        </header>
+        <section class="content-section">
+          <div class="container">
+            <div class="content-wrap simple">
+              <div class="base-card">
+                <div class="base-card__wrap">
+                  <div class="base-card__content base-card__content--simple">
+                    <div class="user-card">
+                      <div class="user-card__logo-holder"> <img src="images/user_80.png" alt=""></div>
+                      <div class="user-card__content-holder"> 
+                        <h4> <span>yurki kallio</span><span class="label">pro</span></h4>
+                        <p>@yk</p>
+                        <div> 
+                          <div class="user-card__col"><span class="text-lg">14 </span><span>подписчиков</span></div>
+                          <div class="user-card__col"><span class="text-lg">145 </span><span>подписок</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru</p>
+                  </div>
+                </div>
+              </div>
+              <div class="app-links"> 
+                <p>Все еще не в liveroom? Скачайте приложение и получите доступ в сообщество</p>
+                <div class="app-links__row"> <a href=""><img src="images/app-store-icon.svg" alt=""></a><a href=""><img src="images/app-google-icon.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="mask js-mask"></div>
+        <div class="modal auth js-modal js-auth-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3 class="modal__title">Вход в liveroom 👋</h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__auth">
+              <div class="modal__auth-img"> <img src="images/phone-icon.png" alt=""></div>
+              <p class="modal__text">Для авторизации скачайте приложение</p>
+            </div>
+            <div class="modal__auth-way"><a class="modal__auth-link" href="#"><img src="images/app-store-icon.svg" alt=""></a><a class="modal__auth-link" href="#"><img src="images/app-google-icon.svg" alt=""></a></div>
+            <div class="modal__auth">
+              <div class="modal__auth-img"> <img src="images/close-icon.png" alt=""></div>
+              <p class="modal__text">В настройках профиля выберите <span>“Авторизовать веб-версию” </span>и введите полученный код в поле ниже</p>
+            </div>
+            <div class="modal__auth-form">
+              <form class="form" action="#">
+                <div class="form__wrap"> 
+                  <div class="form__field">
+                    <input class="form__input" type="text" placeholder="Код из приложения">
+                  </div>
+                  <button class="btn primary" type="submit">Войти </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/libs/libs.min.js"></script>
+  <script src="js/app.js"></script>
+</html>

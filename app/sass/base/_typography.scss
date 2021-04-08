@@ -1,7 +1,7 @@
 a {
   @include animate(opacity);
 
-  color: $link-color;
+  color: $blue;
   text-decoration: $link-decoration;
 
   &:hover {
@@ -40,4 +40,20 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: $h6-font-size;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+.text-lg {
+  font-size: 1.7rem;
+}
+
+.text-sm {
+  font-size: 1.3rem;
+}
+
+.text-gray {
+  color: $gray;
 }

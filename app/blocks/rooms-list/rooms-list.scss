@@ -8,5 +8,17 @@
     .content-wrap {
         width: 100%;
         padding-top: 3rem;
+
+        &.simple {
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+            max-width: 52rem;
+            margin: 0 auto;
+
+            .base-card,
+            .secondary-card {
+                margin-bottom: 8rem;
+            }
+        }
     }
 }

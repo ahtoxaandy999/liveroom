@@ -18,6 +18,15 @@
         &--row {
             margin-right: 0;
         }
+
+        &--sm {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        img {
+            width: 100%;
+        }
     }
     &__data {
         display: flex;

@@ -1,0 +1,52 @@
+.secondary-card {
+    background: $white;
+    box-shadow: 0px 4px 16px rgba(9, 60, 102, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 25rem;
+    margin: 0 auto;
+    
+    &--lg {
+        max-width: 52rem;
+    }
+
+    &__img-holder {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content-holder {
+        padding: 1.2rem;
+    }
+
+    &__head {
+        display: flex;
+        align-items: flex-start;    
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        padding-right: 1.5rem;
+    }
+
+    &__info-panel {
+        display: flex;
+        align-items: center;
+
+        .text-sm {
+            margin-right: 1rem;
+        }
+
+        .btn {
+            margin-left: auto;
+        }
+    }
+
+    &__btn {
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}

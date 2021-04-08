@@ -1,68 +1,4 @@
-// form,
-// fieldset {
-//   margin: 0;
-//   padding: 0;
-//   border-style: none;
-// }
-
-// #{$form-elements} {
-//   @include animate(border-color);
-
-//   @if ($form-element-border-width != null) {
-//     border: $form-element-border-width solid $form-element-border-color;
-//   } @else {
-//     border: 0;
-//   }
-
-//   @if ($form-element-border-radius != null) {
-//     border-radius: $form-element-border-radius;
-//   }
-
-//   font-size: $form-element-font-size;
-//   line-height: normal;
-//   background-color: $form-background-color;
-//   width: 100%;
-//   min-width: 0;
-//   height: $form-element-height;
-//   padding: $form-element-padding;
-//   -webkit-appearance: none;
-
-//   &:focus {
-//     border-color: $form-element-focus-border-color;
-
-//     @if ($form-element-outline == false) {
-//       outline: none;
-//     }
-//   }
-
-//   &::-ms-clear { display: none; }
-
-//   @include placeholder {
-//     color: $placeholder-color;
-//     font-size: $placeholder-font-size;
-//   }
-// }
-
-// textarea,
-// .textarea {
-//   resize: none;
-//   height: $textarea-height;
-//   padding: $textarea-padding;
-//   font-size: $textarea-font-size;
-// }
-
-// input[type="search"] {
-//   -webkit-appearance: textfield;
-
-//   &::-webkit-search-decoration {
-//     -webkit-appearance: none;
-//   }
-
-//   &::-webkit-search-cancel-button {
-//     display: none;
-//   }
-// }
-
+// form
 .form {
   &__field {
     margin-bottom: 1.2rem;
@@ -84,5 +20,62 @@
   .btn {
     width: 100%;
     padding: 1rem 1.5rem 1.1rem;
+  }
+}
+
+.form-control {
+  padding-left: 1.2rem;
+
+  &.gray {
+    background: rgba(22, 73, 116, 0.08);
+    border-radius: 10px;  
+  }
+
+  .modal-btn {
+    padding-left: 0;
+    
+    &:first-of-type {
+      border-top: 0;
+    }
+  }
+}
+
+.custom-input {
+  input {
+    position: absolute;
+    visibility: hidden;
+
+    &:checked + label {
+      background-color: $blue;
+
+      &::before {
+        transform: translateX(20px);
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    width: 5.1rem;
+    height: 3.1rem;
+    background: rgba(22, 73, 116, 0.24);
+    border-radius: 2rem;
+    position: relative;
+    @include animate(background-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 2.7rem;
+      height: 2.7rem;
+      background-color: $white;
+      border-radius: 50%;
+      transform: translateX(0);
+      border: 0.5px solid rgba(0, 0, 0, 0.04);
+box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+      @include animate(transform);
+    }
   }
 }

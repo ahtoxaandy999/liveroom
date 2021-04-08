@@ -1,24 +1,24 @@
 section.content-section
 	.container
 		.content-wrap
-			.user-card
-				.user-card__wrap
-					.user-card__content
-						.user-card__body
+			.base-card
+				.base-card__wrap
+					.base-card__content
+						.base-card__body
 							.user
 								.user__wrap
 									.user__photo
 										img(src="images/user-one.png", alt="")
 									.user__data
 										span.user__name Yurki Kallio
-						.user-card__nav
-							span.user-card__time 0:14
-							span.user-card__status
+						.base-card__nav
+							span.base-card__time 0:14
+							span.status-icon
 
-			.user-card
-				.user-card__wrap
-					.user-card__content
-						.user-card__body
+			.base-card
+				.base-card__wrap
+					.base-card__content
+						.base-card__body
 							.user
 								.user__wrap
 									.user__photo
@@ -32,10 +32,10 @@ section.content-section
 									.user__data
 										span.user__name Константин Василевский
 
-			.user-card
-				.user-card__wrap
-					.user-card__content
-						.user-card__body
+			.base-card
+				.base-card__wrap
+					.base-card__content
+						.base-card__body
 							.user
 								.user__wrap
 									.user__photo
@@ -54,26 +54,26 @@ section.content-section
 										img(src="images/user-one.png", alt="")
 									.user__data
 										span.user__name Герман Боярский
-						.user-card__nav
-							span.user-card__time 1:45:13
-							span.user-card__status
-							button(type="button").user-card__lock-btn
+						.base-card__nav
+							span.base-card__time 1:45:13
+							span.status-icon
+							button.base-card__lock-btn
 								img(src="images/lock.svg", alt="")
 
 
-			.user-card
-				.user-card__wrap
-					.user-card__head
-						span.user-card__head-title Вы можете их знать
-						.user-card__head-nav
-							button.link.primary(type="button") Смотреть всех
-							button.link.secondary(type="button") Скрыть
+			.base-card
+				.base-card__wrap
+					.base-card__head
+						h4.base-card__head-title Вы можете их знать
+						.base-card__head-nav
+							button.link.primary Смотреть всех
+							button.link.secondary Скрыть
 					include ../know-them/know-them
-			.user-card
-				.user-card__wrap
-					.user-card__content
-						p.user-card__title Воспитание заказчиков 😈 или как я еще не слетел с катух
-						.user-card__body.user-card__body--row
+			.base-card
+				.base-card__wrap
+					.base-card__content
+						h3 Воспитание заказчиков 😈 или как я еще не слетел с катух
+						.base-card__body.base-card__body--row
 							.user
 								.user__wrap
 									.user__photo.user__photo--row
@@ -86,14 +86,14 @@ section.content-section
 								.user__wrap
 									.user__photo.user__photo--row
 										img(src="images/user-one.png", alt="")
-							.user-card__info 
+							.base-card__info 
 								span 34
 								span 12
 								img(src="images/mic-icon.svg", alt="")
-						.user-card__nav
-							span.user-card__time 1:45:13
-							span.user-card__status
-							button(type="button").user-card__lock-btn
+						.base-card__nav
+							span.base-card__time 1:45:13
+							span.status-icon
+							button.base-card__lock-btn
 								img(src="images/lock.svg", alt="")
 
 		.sidebar
@@ -107,6 +107,6 @@ section.content-section
 						img(src="images/calendar-icon.png", alt="")
 					p.base-text У вас нет запланированных событий
 					p.base-text Послушайте
-						button(type="button") события других пользователей
+						button события других пользователей
 						| или создайте свое
-					button.btn.secondary(type="button") Создать событие
+					button.btn.secondary Создать событие

@@ -1,3 +1,6 @@
+button {
+  font-size: 1.5rem;
+}
 .btn {
   border-radius: 12px;
   font-size: 1.5rem;
@@ -6,24 +9,24 @@
   transition: all 0.3s ease;
   font-family: "TT Norms Pro";
   &.primary {
-    border: 1px solid $link-color;
-    background-color: $link-color;
+    border: 1px solid $blue;
+    background-color: $blue;
     color: $white;
   }
 
   &.secondary {
     border: 1px solid rgba(22, 73, 116, 0.24);
-    color: $link-color;
+    color: $blue;
     &:hover {
-      border: 1px solid $link-color;
-      background-color: $link-color;
+      border: 1px solid $blue;
+      background-color: $blue;
       color: $white;
     }
   }
 
   &.subscription {
-    border: 1px solid $link-color;
-    background-color: $link-color;
+    border: 1px solid $blue;
+    background-color: $blue;
     color: $white;
     padding-left: 35px;
     background-repeat: no-repeat;
@@ -43,5 +46,44 @@
   }
   &.secondary {
     color: #8598a7;
+  }
+}
+
+.modal-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-top: 1px solid rgba(22, 73, 116, 0.12);
+  @include animate(color);
+
+  &:hover {
+    color: $blue;
+  }
+  .text-gray {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 1.6rem;
+    }
+  }
+  .arrow {
+    transform: rotate(180deg);
+    padding-top: 2px;
+  }
+}
+
+.modal-back-btn {
+  padding-right: 2rem;
+  @include animate(opacity);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  img {
+    margin-bottom: -4px;
   }
 }

@@ -1,9 +1,10 @@
-.user-card {
+.base-card {
     margin-bottom: 1.6rem;
 
     &__wrap {
         position: relative;
         width: 100%;
+        margin: 0 auto;
         max-width: 51.9rem;
         background: $white;
         border-radius: 12px;
@@ -12,6 +13,10 @@
 
     &__content {
         padding: 1.2rem 7rem 1.2rem 1.6rem;
+
+        &--simple {
+            padding: 2rem;
+        }
     }
 
     &__body {
@@ -35,7 +40,7 @@
 
             .user {
                 &:not(:first-child) {
-                    margin-left: -10px;
+                    margin-left: -8px;
                     margin-top: 0;
                 }
             }
@@ -63,54 +68,15 @@
         color: $secondary-color;
     }
 
-    &__status {
-        position: relative;
-        margin-left: 0.5rem;
-        width: 2.4rem;
-        height: 2.4rem;
-        border-radius: 50%;
-        background-color: rgba(255, 109, 109, 0.12);
-
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-        }
-        &:after {
-            width: 1.6rem;
-            height: 1.6rem;
-            z-index: 1;
-            background-color: rgba(255, 109, 109, 0.12);
-        }
-        &:before {
-            width: 0.8rem;
-            height: 0.8rem;
-            z-index: 2;
-            background-color: #ff6d6d;
-        }
-    }
-
     &__head-title {
-        font-weight: 500;
-        font-size: 1.7rem;
         line-height: 1.4;
-        color: $text-color;
+        margin-bottom: 0;
     }
     &__head-nav {
         display: flex;
         .link {
             margin-left: 2rem;
         }
-    }
-
-    &__title {
-        font-size: 2rem;
-        font-weight: 500;
-        margin-bottom: 10px;
     }
 
     &__info {

@@ -1,0 +1,25 @@
+.mask.js-mask
+
+.modal.js-modal.js-language-modal
+	.modal__wrap
+		.modal__header 
+			h3 
+				button(data-modal-to="settings-modal").modal-back-btn.js-open-modal
+					img(src="images/icon-arrow-blue.svg", alt="")
+				span Язык
+			button.modal__close.js-close-modal.icon-animate
+				img(src="images/close-icon.svg", alt="")
+		.modal__row 
+			ul.language-list 
+				li.language-list__item 	
+					button.language-list__btn.selected
+						img(src="images/ru-icon.png", alt="")
+						span Русский
+				li.language-list__item 	
+					button.language-list__btn
+						img(src="images/en-icon.png", alt="")
+						span Английский
+				li.language-list__item 	
+					button.language-list__btn
+						img(src="images/de-icon.png", alt="")
+						span Немецкий
