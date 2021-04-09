@@ -121,6 +121,11 @@
         margin-right: 2.8rem;
         display: inline-block;
 
+        &:only-child {
+            display: flex;
+            justify-content: center;
+        }
+
         &.js-open-modal {
             &:hover {
                 color: $blue;

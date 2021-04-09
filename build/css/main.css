@@ -211,8 +211,6 @@ p{
 .form-control.gray{
     background:rgba(22, 73, 116, 0.08);
     border-radius:10px; }
-.form-control.text-area .modal-btn{
-    min-height:8.8rem; }
 .form-control.bordered{
     border-top:1px solid rgba(22, 73, 116, 0.12);
     margin:0 -2rem;
@@ -367,6 +365,11 @@ button{
   transition:color 0.3s ease-in-out; }
 .modal-btn:hover{
     color:#2288DD; }
+.modal-btn--area{
+    min-height:8.8rem;
+    -webkit-box-align:start;
+    -webkit-align-items:flex-start;
+    align-items:flex-start; }
 .modal-btn .text-gray{
     display:-webkit-box;
     display:-webkit-flex;
@@ -739,6 +742,13 @@ strong{
 .modal__col{
     margin-right:2.8rem;
     display:inline-block; }
+.modal__col:only-child{
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:flex;
+      -webkit-box-pack:center;
+      -webkit-justify-content:center;
+      justify-content:center; }
 .modal__col.js-open-modal:hover{
       color:#2288DD; }
 .modal__user-nav{

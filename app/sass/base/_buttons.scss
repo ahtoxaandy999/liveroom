@@ -61,6 +61,12 @@ button {
   &:hover {
     color: $blue;
   }
+
+  &--area {
+    min-height: 8.8rem;
+    align-items: flex-start;
+  }
+
   .text-gray {
     display: flex;
     align-items: center;

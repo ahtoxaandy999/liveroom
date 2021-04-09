@@ -754,41 +754,25 @@
         <div class="modal js-modal js-create-event-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 
-              <h3>Настройки event</h3>
+              <h3>Событие</h3>
               <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
-            </div><strong class="text-sm text-gray">Уведомления</strong>
+            </div>
+            <div class="modal__row"> 
+              <div class="modal__col">
+                <button class="icon-btn"><img src="images/cover-icon.svg" alt=""><span>Добавить обложку</span></button>
+              </div>
+            </div>
             <div class="modal__row"> 
               <div class="form-control gray">
-                <button class="modal-btn"><span>Частота</span><span class="text-gray"> <span>Редко</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
-                <div class="custom-input"> 
-                  <input type="checkbox" name="customInput1" id="customInput1">
-                  <label for="customInput1"><span>Сообщать о популярных комнатах</span>
-                    <div class="custom-input__fake-toggle"></div>
-                  </label>
+                <button class="modal-btn modal-btn--area"><span class="text-gray">Название события</span></button>
+                <div class="participants">
+                  <div class="participants__head"> <span>Участник</span>
+                    <div class="participants__logo-holder"><img src="" alt=""></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="modal__row"> 
-              <div class="form-control gray">
-                <div class="custom-input"> 
-                  <input type="checkbox" name="customInput2" id="customInput2">
-                  <label for="customInput2"><span>Режим “Невидимка”</span>
-                    <div class="custom-input__fake-toggle"></div>
-                  </label>
-                </div>
-              </div>
-            </div><strong class="text-sm text-gray">Слушатели и спикеры не видят вас в списке аудитории комнаты</strong>
-            <div class="modal__row"> 
-              <div class="form-control gray">
-                <button class="modal-btn js-open-modal" data-modal-to="language-modal"><span>Язык</span><span class="text-gray"> <span>Русский</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
-              </div>
-            </div>
-            <div class="modal__row"> 
-              <div class="form-control gray">
-                <button class="modal-btn"><span>Условия обслуживания</span><span class="text-gray"><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Политика конфиденциальности</span><span class="text-gray"><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
-              </div>
-            </div>
+            <button class="btn primary full-width">Создать событие</button>
           </div>
         </div>
         <div class="modal js-modal js-create-room-modal">
@@ -872,8 +856,8 @@
               </div>
             </div>
             <div class="modal__row">
-              <div class="form-control gray text-area">
-                <button class="modal-btn"><span class="text-gray">Описание</span></button>
+              <div class="form-control gray"> 
+                <button class="modal-btn modal-btn--area"><span class="text-gray">Описание</span></button>
               </div>
             </div>
             <button class="btn primary full-width">Добавить</button>
@@ -951,7 +935,26 @@
                     </div>
                   </label>
                 </li>
+                <li class="main-list__item custom-checkbox custom-checkbox--circle">
+                  <input type="checkbox" name="sub7" id="sub7">
+                  <label class="sub-card" for="sub7">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="main-list__item custom-checkbox custom-checkbox--circle">
+                  <input type="checkbox" name="sub8" id="sub8">
+                  <label class="sub-card" for="sub8">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                  </label>
+                </li>
               </ul>
+              <button class="btn primary full-width">Начать общение</button>
             </div>
           </div>
         </div>
