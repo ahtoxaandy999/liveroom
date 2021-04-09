@@ -958,8 +958,10 @@ strong{
     -webkit-box-align:center;
     -webkit-align-items:center;
     align-items:center; }
+.participants__head .title{
+      margin-right:0.8rem; }
 .participants__logo-holder{
-    margin:0 0.8rem;
+    margin-right:0.8rem;
     width:2.8rem;
     height:2.8rem;
     overflow:hidden;
@@ -967,7 +969,7 @@ strong{
 .participants__logo-holder img{
       width:100%; }
 .participants__content{
-    padding-left:7.6rem;
+    padding-left:7.2rem;
     border-bottom:1px solid rgba(22, 73, 116, 0.12); }
 .participants__item{
     display:-webkit-box;

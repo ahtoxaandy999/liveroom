@@ -6,10 +6,14 @@
         border-bottom: 1px solid rgba(22, 73, 116, 0.12);
         display: flex;
         align-items: center;
+
+        .title {
+            margin-right: 0.8rem;
+        }
     }
 
     &__logo-holder {
-        margin: 0 0.8rem;
+        margin-right: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
         overflow: hidden;
@@ -21,7 +25,7 @@
     }
 
     &__content {
-        padding-left: 7.6rem;
+        padding-left: 7.2rem;
         border-bottom: 1px solid rgba(22, 73, 116, 0.12);
     }
 
