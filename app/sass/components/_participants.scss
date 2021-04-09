@@ -1,0 +1,58 @@
+.participants {
+    border-top: 1px solid rgba(22, 73, 116, 0.12);
+
+    &__head {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-holder {
+        margin: 0 0.8rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        overflow: hidden;
+        border-radius: 50%;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding-left: 7.6rem;
+        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+    }
+
+    &__item {
+        display: flex;
+        padding: 0.8rem 0;
+        padding-right: 1.2rem;
+        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__close-btn {
+        margin-left: auto;
+        width: 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__add-btn {
+        color: $blue;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 0;
+
+        img {
+            margin-right: 1rem;
+        }
+    }
+}

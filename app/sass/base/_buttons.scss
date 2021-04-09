@@ -65,6 +65,10 @@ button {
   &--area {
     min-height: 8.8rem;
     align-items: flex-start;
+
+    &-lg {
+      min-height: 17.6rem;
+    }
   }
 
   .text-gray {
@@ -78,6 +82,10 @@ button {
   .arrow {
     transform: rotate(180deg);
     padding-top: 2px;
+
+    &.down {
+      transform: rotate(-90deg);
+    }
   }
 }
 

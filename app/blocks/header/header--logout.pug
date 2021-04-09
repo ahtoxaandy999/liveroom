@@ -27,19 +27,5 @@ header.header
           img(src="images/calendar.svg", alt="")
         button.user-btn
           img(src="images/comu.svg", alt="")
-        button.user-btn
-          img(src="images/bell.svg", alt="")
 
-      .user-lk.base-drop.js-open-close
-        button.user-icon.js-opener
-          img(src="images/user_40.png", alt="")
-        .base-drop__drop.base-drop__drop--right
-          ul.drop-list
-            li.drop-list__item
-              button(data-modal-to="user-modal").js-open-modal Yurki Kallio
-            li.drop-list__item
-              button(data-modal-to="settings-modal").js-open-modal Настройки
-            li.drop-list__item
-              button(data-modal-to="edit-user-modal").js-open-modal Редактировать
-            li.drop-list__item
-              button.js-open-logout-modal.text-red Выйти
+    button(data-modal-to="auth-modal").btn.secondary.js-open-modal Войти

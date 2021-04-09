@@ -370,6 +370,8 @@ button{
     -webkit-box-align:start;
     -webkit-align-items:flex-start;
     align-items:flex-start; }
+.modal-btn--area-lg{
+      min-height:17.6rem; }
 .modal-btn .text-gray{
     display:-webkit-box;
     display:-webkit-flex;
@@ -383,6 +385,9 @@ button{
     -webkit-transform:rotate(180deg);
     transform:rotate(180deg);
     padding-top:2px; }
+.modal-btn .arrow.down{
+      -webkit-transform:rotate(-90deg);
+      transform:rotate(-90deg); }
 .modal-back-btn{
   padding-right:2rem;
   -webkit-transition:opacity 0.3s ease-in-out;
@@ -531,7 +536,14 @@ strong{
     opacity:0.6; }
 .header{
   padding:1rem 0;
-  border-bottom:1px solid rgba(22, 73, 116, 0.24); }
+  border-bottom:1px solid rgba(22, 73, 116, 0.24);
+  min-height:6.1rem;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items:center; }
 .header .container{
     max-width:1090px;
     display:-webkit-box;
@@ -539,11 +551,14 @@ strong{
     display:flex;
     -webkit-box-align:center;
     -webkit-align-items:center;
-    align-items:center; }
+    align-items:center;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between; }
 .header .logo{
-    margin-right:auto; }
+    margin-right:12.6rem; }
 .search-form{
-  margin:0 4rem 0 auto; }
+  margin-right:4rem; }
 .search-form--simple{
     margin:0; }
 .search-form--simple .search-form__wrap{
@@ -588,14 +603,18 @@ strong{
   align-items:center;
   margin-left:4rem;
   margin-right:4rem; }
+.user-wrap .user-nav{
+    -webkit-flex-shrink:0;
+    flex-shrink:0; }
 .user-wrap .user-nav .user-btn{
-    margin-right:2.8rem; }
+      margin-right:2.8rem; }
 .user-wrap .user-nav .user-btn:last-child{
-      margin-right:0; }
+        margin-right:0; }
 .user-lk{
   height:4rem;
   margin-left:4rem;
-  position:relative; }
+  position:relative;
+  text-align:center; }
 .user-lk .user-icon{
     width:4rem;
     height:4rem;
@@ -833,6 +852,8 @@ strong{
 .base-drop.js-active .base-drop__drop::before{
       opacity:1; }
 .base-drop__drop{
+    -webkit-transition:opacity 0.3s ease-in-out;
+    transition:opacity 0.3s ease-in-out;
     position:absolute;
     z-index:2;
     top:-webkit-calc(100% + 1.5rem);
@@ -840,8 +861,7 @@ strong{
     left:-webkit-calc(50% - 12rem);
     left:calc(50% - 12rem);
     opacity:0;
-    -webkit-transition:opacity 0.3s ease-in-out;
-    transition:opacity 0.3s ease-in-out;
+    visibility:hidden;
     -webkit-filter:drop-shadow(0px 10px 100px rgba(22, 73, 116, 0.3));
     filter:drop-shadow(0px 10px 100px rgba(22, 73, 116, 0.3));
     border-radius:1.3rem;
@@ -927,6 +947,53 @@ strong{
     position:absolute;
     top:1.2rem;
     right:1.2rem; }
+.participants{
+  border-top:1px solid rgba(22, 73, 116, 0.12); }
+.participants__head{
+    padding:0.8rem 0;
+    border-bottom:1px solid rgba(22, 73, 116, 0.12);
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center; }
+.participants__logo-holder{
+    margin:0 0.8rem;
+    width:2.8rem;
+    height:2.8rem;
+    overflow:hidden;
+    border-radius:50%; }
+.participants__logo-holder img{
+      width:100%; }
+.participants__content{
+    padding-left:7.6rem;
+    border-bottom:1px solid rgba(22, 73, 116, 0.12); }
+.participants__item{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    padding:0.8rem 0;
+    padding-right:1.2rem;
+    border-bottom:1px solid rgba(22, 73, 116, 0.12); }
+.participants__item:last-child{
+      border-bottom:0; }
+.participants__close-btn{
+    margin-left:auto;
+    width:2rem; }
+.participants__close-btn img{
+      width:100%; }
+.participants__add-btn{
+    color:#2288DD;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+    padding:1.5rem 0; }
+.participants__add-btn img{
+      margin-right:1rem; }
 .room-types{
   display:-webkit-box;
   display:-webkit-flex;
