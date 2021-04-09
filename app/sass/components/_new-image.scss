@@ -1,0 +1,18 @@
+.new-image {
+    position: relative;
+
+    &__image-holder {
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+    }
+}

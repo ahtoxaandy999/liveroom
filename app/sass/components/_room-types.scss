@@ -1,0 +1,45 @@
+.room-types {
+    display: flex;
+    margin: 0 -1rem;
+
+    &__col {
+        width: 50%;
+        padding: 0 1rem;
+    }
+
+    input {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked + label {
+            background: #EDF3F8;
+        }
+    }
+
+    label {
+        border-radius: 12px;
+        background-color: $white;
+        text-align: center;
+        padding: 1.2rem;
+        display: block;
+        @include animate(background);
+        cursor: pointer;
+    }
+
+    &__icon-holder {
+        width: 8rem;
+        height: 8rem;
+        padding: 2.4rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        background: rgba(22, 73, 116, 0.12);
+
+        img {
+            width: 2.6rem;
+        }
+    }
+}

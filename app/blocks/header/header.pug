@@ -8,7 +8,16 @@ header.header
         button.search-form__btn(type="submit")
         input.search-form__input(type="search", placeholder="Поиск")
 
-    button.btn.secondary Создать...
+    .base-drop.js-open-close
+      button.btn.secondary.js-opener Создать...
+      .base-drop__drop
+          ul.drop-list
+            li.drop-list__item
+              button(data-modal-to="create-room-modal").js-open-modal Комнату
+            li.drop-list__item
+              button(data-modal-to="create-event-modal").js-open-modal Событие
+            li.drop-list__item
+              button(data-modal-to="create-community-modal").js-open-modal Сообщество
 
     .user-wrap
       .user-nav
@@ -21,10 +30,10 @@ header.header
         button.user-btn
           img(src="images/bell.svg", alt="")
 
-      .user-lk.js-open-close
+      .user-lk.base-drop.js-open-close
         button.user-icon.js-opener
           img(src="images/user_40.png", alt="")
-        .user-lk__drop
+        .base-drop__drop.base-drop__drop--right
           ul.drop-list
             li.drop-list__item
               button(data-modal-to="user-modal").js-open-modal Yurki Kallio
@@ -33,6 +42,6 @@ header.header
             li.drop-list__item
               button(data-modal-to="edit-user-modal").js-open-modal Редактировать
             li.drop-list__item
-              button.js-open-logout-modal Выйти
+              button.js-open-logout-modal.text-red Выйти
 
     button(data-modal-to="auth-modal").btn.secondary.js-open-modal Войти

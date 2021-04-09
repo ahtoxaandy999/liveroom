@@ -1,0 +1,53 @@
+.base-drop {
+    position: relative;
+
+    &.js-active {
+        .base-drop__drop {
+            opacity: 1;
+            visibility: visible;
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__drop {
+        position: absolute;
+        z-index: 2;
+        top: calc(100% + 1.5rem);
+        left: calc(50% - 12rem);
+        opacity: 0;
+        @include animate(opacity);
+        filter: drop-shadow(0px 10px 100px rgba(22, 73, 116, 0.3));
+        border-radius: 1.3rem;
+        background: rgba(249, 249, 249, 0.78);
+        backdrop-filter: blur(54.3656px);
+        min-width: 24rem;
+
+        &::before {
+            content: url('../images/drop-icon.svg');
+            width: 4.7rem;
+            height: 1.3rem;
+            position: absolute;
+            left: calc(50% - 2.35rem);
+            bottom: 100%;
+            z-index: 2;
+        }
+
+        &--right {
+            left: auto;
+            right: -1.6rem;
+
+            &::before {
+                left: auto;
+                right: 1.2rem;
+            }
+
+            .base-drop__drop {
+                min-width: 19.4rem;
+                left: calc(50% - 9.7rem);
+            }
+        }
+    }
+}

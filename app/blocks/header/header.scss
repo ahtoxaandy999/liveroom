@@ -79,13 +79,6 @@
     margin-left: 4rem;
     position: relative;
 
-    &.js-active {
-        .user-lk__drop {
-            opacity: 1;
-            visibility: visible;
-        }
-    }
-
     .user-icon {
         width: 4rem;
         height: 4rem;
@@ -95,22 +88,5 @@
         img {
             width: 100%;
         }
-    }
-
-    &__drop {
-        position: absolute;
-        z-index: 2;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, 2.5rem);
-        overflow: hidden;
-        opacity: 0;
-        visibility: hidden;
-        @include animate(opacity);
-        filter: drop-shadow(0px 10px 100px rgba(22, 73, 116, 0.3));
-        border-radius: 1.3rem;
-        background: rgba(249, 249, 249, 0.78);
-        backdrop-filter: blur(54.3656px);
-        min-width: 19.4rem;
     }
 }

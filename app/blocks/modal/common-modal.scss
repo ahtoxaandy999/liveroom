@@ -42,6 +42,10 @@
             background: rgba(22, 73, 116, 0.24);
             border-radius: 5px;
         }
+
+        &--sm {
+            min-height: 2.6rem;
+        }
     }
     &__header {
         display: flex;
@@ -110,12 +114,6 @@
     &__row {
         &:not(:last-child) {
             margin-bottom: 2rem;
-        }
-
-        h3,
-        h4,
-        p {
-            margin-bottom: 0;
         }
     }
 

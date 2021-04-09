@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
@@ -21,7 +20,22 @@
                 <input class="search-form__input" type="search" placeholder="Поиск">
               </div>
             </form>
-            <button class="btn secondary">Создать...</button>
+            <div class="base-drop js-open-close">
+              <button class="btn secondary js-opener">Создать...</button>
+              <div class="base-drop__drop">
+                <ul class="drop-list">
+                  <li class="drop-list__item">
+                    <button class="js-open-modal" data-modal-to="create-room-modal">Комнату</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button class="js-open-modal" data-modal-to="create-event-modal">Событие</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button class="js-open-modal" data-modal-to="create-community-modal">Сообщество</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="user-wrap">
               <div class="user-nav">
                 <button class="user-btn"><img src="images/door-icon.svg" alt=""></button>
@@ -29,9 +43,9 @@
                 <button class="user-btn"><img src="images/comu.svg" alt=""></button>
                 <button class="user-btn"><img src="images/bell.svg" alt=""></button>
               </div>
-              <div class="user-lk js-open-close">
+              <div class="user-lk base-drop js-open-close">
                 <button class="user-icon js-opener"><img src="images/user_40.png" alt=""></button>
-                <div class="user-lk__drop">
+                <div class="base-drop__drop base-drop__drop--right">
                   <ul class="drop-list">
                     <li class="drop-list__item">
                       <button class="js-open-modal" data-modal-to="user-modal">Yurki Kallio</button>
@@ -43,7 +57,7 @@
                       <button class="js-open-modal" data-modal-to="edit-user-modal">Редактировать</button>
                     </li>
                     <li class="drop-list__item">
-                      <button class="js-open-logout-modal">Выйти</button>
+                      <button class="js-open-logout-modal text-red">Выйти</button>
                     </li>
                   </ul>
                 </div>
@@ -325,8 +339,8 @@
               </div>
             </div>
             <div class="modal__row">
-              <h4>yurki kallio<strong class="label">pro</strong></h4>
-              <p>@yk</p>
+              <h4 class="m-b-0">yurki kallio<strong class="label">pro</strong></h4>
+              <p class="m-b-0">@yk</p>
             </div>
             <div class="modal__row">
               <button class="js-open-modal modal__col" data-modal-to="subscribers-modal"><span class="text-lg">14 </span><span>подписчиков</span></button>
@@ -371,7 +385,7 @@
               </div>
             </div>
             <div class="modal__row">
-              <p>Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru	</p>
+              <p class="m-b-0">Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru	</p>
             </div>
             <div class="modal__row"> 
               <div class="modal__user-nav"> 
@@ -506,7 +520,7 @@
               <ul class="main-list main-list--simple main-list--scroll">
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -515,7 +529,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -524,7 +538,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -533,7 +547,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -542,7 +556,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -551,7 +565,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -560,7 +574,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -569,7 +583,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -600,7 +614,7 @@
               <ul class="main-list main-list--simple main-list--scroll">
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -609,7 +623,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -618,7 +632,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -627,7 +641,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -636,7 +650,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -645,7 +659,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -654,7 +668,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -663,7 +677,7 @@
                 </li>
                 <li class="main-list__item">
                   <div class="sub-card">
-                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
@@ -694,6 +708,214 @@
               <div class="modal__empty">
                 <p>Вы еще не создали ни одного сообщества</p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-create-community-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>Настройки community</h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div><strong class="text-sm text-gray">Уведомления</strong>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Частота</span><span class="text-gray"> <span>Редко</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput1" id="customInput1">
+                  <label for="customInput1"><span>Сообщать о популярных комнатах</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput2" id="customInput2">
+                  <label for="customInput2"><span>Режим “Невидимка”</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div><strong class="text-sm text-gray">Слушатели и спикеры не видят вас в списке аудитории комнаты</strong>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <button class="modal-btn js-open-modal" data-modal-to="language-modal"><span>Язык</span><span class="text-gray"> <span>Русский</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Условия обслуживания</span><span class="text-gray"><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+                <button class="modal-btn"><span>Политика конфиденциальности</span><span class="text-gray"><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-create-event-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>Настройки event</h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div><strong class="text-sm text-gray">Уведомления</strong>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Частота</span><span class="text-gray"> <span>Редко</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput1" id="customInput1">
+                  <label for="customInput1"><span>Сообщать о популярных комнатах</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput2" id="customInput2">
+                  <label for="customInput2"><span>Режим “Невидимка”</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div><strong class="text-sm text-gray">Слушатели и спикеры не видят вас в списке аудитории комнаты</strong>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <button class="modal-btn js-open-modal" data-modal-to="language-modal"><span>Язык</span><span class="text-gray"> <span>Русский</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Условия обслуживания</span><span class="text-gray"><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+                <button class="modal-btn"><span>Политика конфиденциальности</span><span class="text-gray"><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-create-room-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>Новая комната</h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row"> 
+              <div class="new-image">
+                <div class="new-image__image-holder"> <img src="images/base-img3.jpg" alt=""></div>
+                <button class="new-image__close-btn icon-animate"><img src="images/circle-close-icon.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <div class="modal__col">
+                <button class="icon-btn"><img src="images/cover-icon.svg" alt=""><span>Обложка</span></button>
+              </div>
+              <div class="modal__col">
+                <button class="js-open-modal icon-btn" data-modal-to="edit-room-name-modal"><img src="images/text-icon.svg" alt=""><span>Добавить название</span></button>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <h4 class="m-b-05">Воспитание заказчиков ✊</h4>
+              <p>Мы расскажем вам, как правильно общаться с заказчиком. Как не сойти с ума и не свести с ума других. Присоединяйтесь будет очень полезно и качово!</p>
+            </div>
+            <div class="modal__row"> 
+              <div class="room-types">
+                <div class="room-types__col"> 
+                  <input type="radio" name="roomType" id="roomType1" value="roomType1" checked>
+                  <label for="roomType1"> 
+                    <div class="room-types__icon-holder m-b-1"><img src="images/door-icon.svg" alt=""></div>
+                    <p class="m-b-0">Публичная</p><span class="text-gray">Доступна всем</span>
+                  </label>
+                </div>
+                <div class="room-types__col"> 
+                  <input type="radio" name="roomType" id="roomType2" value="roomType2">
+                  <label for="roomType2"> 
+                    <div class="room-types__icon-holder"><img src="images/lock.svg" alt=""></div>
+                    <p class="m-b-0">Закрытая</p><span class="text-gray">По приглашениям</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control bordered">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput3" id="customInput3">
+                  <label for="customInput3"><span>Вести запись комнаты</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                  <div class="custom-input"> 
+                    <input type="checkbox" name="customInput4" id="customInput4" checked>
+                    <label for="customInput4"><span>Все гости — спикеры</span>
+                      <div class="custom-input__fake-toggle"></div>
+                    </label>
+                  </div>
+                  <div class="custom-input"> 
+                    <input type="checkbox" name="customInput5" id="customInput5">
+                    <label for="customInput5"><span>Доступен чат</span>
+                      <div class="custom-input__fake-toggle"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="js-open-modal btn primary full-width" data-modal-to="add-users-modal">Начать общение</button>
+          </div>
+        </div>
+        <div class="modal js-modal js-edit-room-name-modal">
+          <div class="modal__wrap modal__wrap--sm">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="create-room-modal"><img src="images/icon-arrow-blue.svg" alt=""></button><span>Название комнаты</span>
+              </h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row">
+              <div class="form-control gray">
+                <button class="modal-btn"><span class="text-gray">Название</span></button>
+              </div>
+            </div>
+            <div class="modal__row">
+              <div class="form-control gray text-area">
+                <button class="modal-btn"><span class="text-gray">Описание</span></button>
+              </div>
+            </div>
+            <button class="btn primary full-width">Добавить</button>
+          </div>
+        </div>
+        <div class="modal js-modal js-add-users-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="create-room-modal"><img src="images/icon-arrow-blue.svg" alt=""></button><span>Выбор собеседников</span>
+              </h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row"> 
+              <form class="search-form search-form--simple" action="#">
+                <div class="search-form__wrap"> 
+                  <button class="search-form__btn" type="submit"></button>
+                  <input class="search-form__input" type="search" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
+            <div class="modal__row"> 
+              <ul class="main-list main-list--simple main-list--scroll">
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

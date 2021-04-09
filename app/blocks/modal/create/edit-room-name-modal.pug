@@ -1,0 +1,23 @@
+
+
+.modal.js-modal.js-edit-room-name-modal
+	.modal__wrap.modal__wrap--sm
+		.modal__header 
+			h3 
+				button(data-modal-to="create-room-modal").modal-back-btn.js-open-modal
+					img(src="images/icon-arrow-blue.svg", alt="")
+				span Название комнаты
+			button.modal__close.js-close-modal.icon-animate
+				img(src="images/close-icon.svg", alt="")
+		.modal__row
+			.form-control.gray
+				button.modal-btn
+					span.text-gray Название
+		.modal__row
+			.form-control.gray.text-area
+				button.modal-btn
+					span.text-gray Описание
+		
+		button.btn.primary.full-width Добавить
+	
+
