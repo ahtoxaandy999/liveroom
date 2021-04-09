@@ -1,0 +1,22 @@
+.sub-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    &__logo-holder {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1.6rem;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        padding-right: 1.5rem;
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+}

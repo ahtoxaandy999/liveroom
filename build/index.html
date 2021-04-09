@@ -40,7 +40,7 @@
                       <button class="js-open-modal" data-modal-to="settings-modal">Настройки</button>
                     </li>
                     <li class="drop-list__item">
-                      <button class="js-open-user-edit-modal">Редактировать</button>
+                      <button class="js-open-modal" data-modal-to="edit-user-modal">Редактировать</button>
                     </li>
                     <li class="drop-list__item">
                       <button class="js-open-logout-modal">Выйти</button>
@@ -286,7 +286,6 @@
             </div>
           </div>
         </section>
-        <div class="mask js-mask"></div>
         <div class="modal auth js-modal js-auth-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 
@@ -314,7 +313,6 @@
             </div>
           </div>
         </div>
-        <div class="mask js-mask"></div>
         <div class="modal js-modal js-user-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 
@@ -331,8 +329,8 @@
               <p>@yk</p>
             </div>
             <div class="modal__row">
-              <div class="modal__col"><span class="text-lg">14 </span><span>подписчиков</span></div>
-              <div class="modal__col"><span class="text-lg">145 </span><span>подписок</span></div>
+              <button class="js-open-modal modal__col" data-modal-to="subscribers-modal"><span class="text-lg">14 </span><span>подписчиков</span></button>
+              <button class="js-open-modal modal__col" data-modal-to="subscriptions-modal"><span class="text-lg">145 </span><span>подписок</span></button>
             </div>
             <div class="modal__row"><span class="base-text">
                 <button>Добавить инфо</button></span></div>
@@ -378,14 +376,13 @@
             <div class="modal__row"> 
               <div class="modal__user-nav"> 
                 <button class="modal-btn"><span>Участник сообществ</span><span class="text-gray"> <span>14 </span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Мои сообщества</span><span class="text-gray"> <span>Нет сообществ</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+                <button class="js-open-modal modal-btn" data-modal-to="community-modal"><span>Мои сообщества</span><span class="text-gray"> <span>Нет сообществ</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
                 <button class="modal-btn"><span>Запись трансляций</span><span class="text-gray"> <span>4</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
                 <button class="modal-btn"><span>Мои события</span><span class="text-gray"> <span>Нет событий</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
               </div>
             </div>
           </div>
         </div>
-        <div class="mask js-mask"></div>
         <div class="modal js-modal js-settings-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 
@@ -395,21 +392,22 @@
             <div class="modal__row"> 
               <div class="form-control gray">
                 <button class="modal-btn"><span>Частота</span><span class="text-gray"> <span>Редко</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Сообщать о популярных комнатах</span>
-                  <div class="custom-input"> 
-                    <input type="checkbox" name="customInput1" id="customInput1">
-                    <label for="customInput1"></label>
-                  </div>
-                </button>
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput1" id="customInput1">
+                  <label for="customInput1"><span>Сообщать о популярных комнатах</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
               </div>
             </div>
             <div class="modal__row"> 
               <div class="form-control gray">
-                <button class="modal-btn"><span>Режим “Невидимка”</span><span class="text-gray"> 
-                    <div class="custom-input"> 
-                      <input type="checkbox" name="customInput2" id="customInput2">
-                      <label for="customInput2"></label>
-                    </div></span></button>
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput2" id="customInput2">
+                  <label for="customInput2"><span>Режим “Невидимка”</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
               </div>
             </div><strong class="text-sm text-gray">Слушатели и спикеры не видят вас в списке аудитории комнаты</strong>
             <div class="modal__row"> 
@@ -425,7 +423,6 @@
             </div>
           </div>
         </div>
-        <div class="mask js-mask"></div>
         <div class="modal js-modal js-language-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 
@@ -435,20 +432,272 @@
               <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
             </div>
             <div class="modal__row"> 
-              <ul class="language-list"> 
-                <li class="language-list__item">	
-                  <button class="language-list__btn selected"><img src="images/ru-icon.png" alt=""><span>Русский</span></button>
+              <ul class="main-list"> 
+                <li class="main-list__item">	
+                  <div class="custom-checkbox">
+                    <input type="radio" name="lang" id="lang1" value="lang1" checked>
+                    <label class="simple-card" for="lang1"><img src="images/ru-icon.png" alt=""><span>Русский</span></label>
+                  </div>
                 </li>
-                <li class="language-list__item">	
-                  <button class="language-list__btn"><img src="images/en-icon.png" alt=""><span>Английский</span></button>
+                <li class="main-list__item">	
+                  <div class="custom-checkbox">
+                    <input type="radio" name="lang" id="lang2" value="lang2">
+                    <label class="simple-card" for="lang2"><img src="images/en-icon.png" alt=""><span>Английский</span></label>
+                  </div>
                 </li>
-                <li class="language-list__item">	
-                  <button class="language-list__btn"><img src="images/de-icon.png" alt=""><span>Немецкий</span></button>
+                <li class="main-list__item">	
+                  <div class="custom-checkbox">
+                    <input type="radio" name="lang" id="lang3" value="lang3">
+                    <label class="simple-card" for="lang3"><img src="images/de-icon.png" alt=""><span>Немецкий</span></label>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <div class="modal js-modal js-edit-user-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>Редактировать профиль</h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row">
+              <div class="modal__logo modal__logo--lg centered"><img src="images/user_112.jpg" alt=""></div>
+            </div>
+            <div class="modal__row text-center"><span class="base-text">
+                <button>Изменить</button></span></div>
+            <div class="modal__row">
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Yurki</span></button>
+                <button class="modal-btn"><span>Kallio</span></button>
+              </div>
+            </div>
+            <div class="modal__row">
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Пол</span><span class="text-gray"> <span>Мужской</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+              </div>
+            </div>
+            <div class="modal__row">
+              <div class="form-control gray">
+                <button class="modal-btn"><span>Дата рождения</span><span class="text-gray"> <span>25.03.1988</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+                <button class="modal-btn"><span>Гражданство</span><span class="text-gray"> <span>Фин</span><img class="arrow" src="images/icon-arrow.svg" alt=""></span></button>
+              </div>
+            </div>
+            <button class="btn primary full-width">Сохранить</button>
+          </div>
+        </div>
+        <div class="modal js-modal js-subscribers-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icon-arrow-blue.svg" alt=""></button><span>Подписчики</span>
+              </h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row"> 
+              <form class="search-form search-form--simple" action="#">
+                <div class="search-form__wrap"> 
+                  <button class="search-form__btn" type="submit"></button>
+                  <input class="search-form__input" type="search" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
+            <div class="modal__row"> 
+              <ul class="main-list main-list--simple main-list--scroll">
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-subscriptions-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icon-arrow-blue.svg" alt=""></button><span>Подписки</span>
+              </h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row"> 
+              <form class="search-form search-form--simple" action="#">
+                <div class="search-form__wrap"> 
+                  <button class="search-form__btn" type="submit"></button>
+                  <input class="search-form__input" type="search" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
+            <div class="modal__row"> 
+              <ul class="main-list main-list--simple main-list--scroll">
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder"><img src="images/user_1_40.png" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-community-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icon-arrow-blue.svg" alt=""></button><span>Мои сообщества</span>
+              </h3>
+              <button class="modal__close js-close-modal icon-animate"><img src="images/close-icon.svg" alt=""></button>
+            </div>
+            <div class="modal__row"> 
+              <form class="search-form search-form--simple" action="#">
+                <div class="search-form__wrap"> 
+                  <button class="search-form__btn" type="submit"></button>
+                  <input class="search-form__input" type="search" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
+            <div class="modal__row"> 
+              <div class="modal__empty">
+                <p>Вы еще не создали ни одного сообщества</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mask js-mask"></div>
       </div>
     </div>
   </body>

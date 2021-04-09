@@ -1,4 +1,4 @@
-.mask.js-mask
+
 
 .modal.js-modal.js-settings-modal
 	.modal__wrap
@@ -14,19 +14,19 @@
 					span.text-gray 
 						span Редко
 						img(src="images/icon-arrow.svg", alt="").arrow
-				button.modal-btn
-					span Сообщать о популярных комнатах
-					.custom-input 
-						input(type="checkbox", name="customInput1" id="customInput1")
-						label(for="customInput1")
+				.custom-input 
+					input(type="checkbox", name="customInput1" id="customInput1")
+					label(for="customInput1")
+						span Сообщать о популярных комнатах
+						.custom-input__fake-toggle
+						
 		.modal__row 
 			.form-control.gray
-				button.modal-btn
-					span Режим “Невидимка”
-					span.text-gray 
-						.custom-input 
-							input(type="checkbox", name="customInput2" id="customInput2")
-							label(for="customInput2")
+				.custom-input 
+					input(type="checkbox", name="customInput2" id="customInput2")
+					label(for="customInput2")
+						span Режим “Невидимка”
+						.custom-input__fake-toggle
 		strong.text-sm.text-gray Слушатели и спикеры не видят вас в списке аудитории комнаты
 		.modal__row 
 			.form-control.gray

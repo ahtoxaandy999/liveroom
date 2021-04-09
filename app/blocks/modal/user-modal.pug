@@ -1,4 +1,4 @@
-.mask.js-mask
+
 
 .modal.js-modal.js-user-modal
 	.modal__wrap
@@ -16,10 +16,10 @@
 				strong.label pro
 			p @yk
 		.modal__row
-			.modal__col
+			button(data-modal-to="subscribers-modal").js-open-modal.modal__col
 				span.text-lg 14 
 				span подписчиков
-			.modal__col
+			button(data-modal-to="subscriptions-modal").js-open-modal.modal__col
 				span.text-lg 145 
 				span подписок
 		.modal__row
@@ -64,7 +64,7 @@
 					span.text-gray 
 						span 14 
 						img(src="images/icon-arrow.svg", alt="").arrow
-				button.modal-btn
+				button(data-modal-to="community-modal").js-open-modal.modal-btn
 					span Мои сообщества
 					span.text-gray 
 						span Нет сообществ

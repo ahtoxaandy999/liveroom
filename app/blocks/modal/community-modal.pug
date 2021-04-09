@@ -1,0 +1,17 @@
+.modal.js-modal.js-community-modal
+	.modal__wrap
+		.modal__header 
+			h3 
+				button(data-modal-to="user-modal").modal-back-btn.js-open-modal
+					img(src="images/icon-arrow-blue.svg", alt="")
+				span Мои сообщества
+			button.modal__close.js-close-modal.icon-animate
+				img(src="images/close-icon.svg", alt="")
+		.modal__row 
+			form.search-form.search-form--simple(action="#")
+				.search-form__wrap 
+					button.search-form__btn(type="submit")
+					input.search-form__input(type="search", placeholder="Поиск")
+		.modal__row 
+			.modal__empty
+				p Вы еще не создали ни одного сообщества

@@ -16,6 +16,14 @@
 .search-form {
     margin: 0 4rem 0 auto;
 
+    &--simple {
+        margin: 0;
+
+        .search-form__wrap  {
+            width: 100%;
+        }
+    }
+
     &__wrap {
         width: 36rem;
         position: relative;

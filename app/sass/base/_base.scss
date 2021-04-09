@@ -7,6 +7,21 @@ html {
 
 body {
   font-family: "TT Norms Pro";
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(22, 73, 116, 0.24);
+    border-radius: 5px;
+  }
+
+  &.js-scroll-lock {
+    overflow: hidden;
+    padding-right: 3px;
+  }
 }
 
 *,

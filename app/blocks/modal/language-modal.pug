@@ -1,5 +1,3 @@
-.mask.js-mask
-
 .modal.js-modal.js-language-modal
 	.modal__wrap
 		.modal__header 
@@ -10,16 +8,22 @@
 			button.modal__close.js-close-modal.icon-animate
 				img(src="images/close-icon.svg", alt="")
 		.modal__row 
-			ul.language-list 
-				li.language-list__item 	
-					button.language-list__btn.selected
-						img(src="images/ru-icon.png", alt="")
-						span Русский
-				li.language-list__item 	
-					button.language-list__btn
-						img(src="images/en-icon.png", alt="")
-						span Английский
-				li.language-list__item 	
-					button.language-list__btn
-						img(src="images/de-icon.png", alt="")
-						span Немецкий
+			ul.main-list 
+				li.main-list__item 	
+					.custom-checkbox
+						input(type="radio", name="lang" id="lang1" value="lang1" checked)
+						label(for="lang1").simple-card
+							img(src="images/ru-icon.png", alt="")
+							span Русский
+				li.main-list__item 	
+					.custom-checkbox
+						input(type="radio", name="lang" id="lang2" value="lang2")
+						label(for="lang2").simple-card
+							img(src="images/en-icon.png", alt="")
+							span Английский
+				li.main-list__item 	
+					.custom-checkbox
+						input(type="radio", name="lang" id="lang3" value="lang3")
+						label(for="lang3").simple-card
+							img(src="images/de-icon.png", alt="")
+							span Немецкий

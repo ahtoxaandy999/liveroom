@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 function mousewheelInit() {
     $('.scroll-holder').mousewheel(function(e, delta) {
-        this.scrollLeft -= (delta * 40);
+        this.scrollLeft -= (delta * 30);
         e.preventDefault();
     });
 }
@@ -30,16 +30,17 @@ function modalsInit() {
     $('.js-open-modal').each((i, item) => {
         $(item).click(() => {
             const modalTo = item.dataset.modalTo;
-            console.log(modalTo);
             $('.js-modal').fadeOut();
             $('.js-mask').fadeIn();
             $(`.js-${ modalTo }`).fadeIn();
+            $('body').addClass('js-scroll-lock');
         });
     });
     // close modal
     $('.js-close-modal, .js-mask').click(function () {
         $('.js-mask').fadeOut();
         $('.js-modal').fadeOut();
+        $('body').removeClass('js-scroll-lock');
     });
 }
 
