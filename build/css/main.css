@@ -289,7 +289,27 @@ p{
     -webkit-transform:translateY(-50%);
     transform:translateY(-50%);
     -webkit-transition:opacity 0.3s ease-in-out;
-    transition:opacity 0.3s ease-in-out; }
+    transition:opacity 0.3s ease-in-out;
+    z-index:2; }
+.custom-checkbox--circle input:checked + label::after{
+  background-color:#2288DD;
+  border-color:rgba(22, 73, 116, 0.24); }
+.custom-checkbox--circle label::after{
+  -webkit-transition:border 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition:border 0.3s ease-in-out, background 0.3s ease-in-out;
+  content:'';
+  position:absolute;
+  right:2rem;
+  top:-webkit-calc(50% - 1.2rem);
+  top:calc(50% - 1.2rem);
+  width:2.4rem;
+  height:2.4rem;
+  border-radius:50%;
+  border:1px solid rgba(22, 73, 116, 0.24); }
+.custom-checkbox--circle label::before{
+  right:2.7rem;
+  top:48%;
+  content:url("../images/icon-check-white.svg"); }
 button{
   font-size:1.5rem; }
 .btn{
