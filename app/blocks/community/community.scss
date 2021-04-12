@@ -16,10 +16,6 @@
         }
     }
 
-    &__content-holder {
-        padding: 1.2rem;
-    }
-
     &__head {
         display: flex;
         align-items: flex-start;    
@@ -27,21 +23,9 @@
         margin-bottom: 1rem;
     }
 
-    &__title {
-        padding-right: 1.5rem;
-    }
-
     &__info-panel {
         display: flex;
         align-items: center;
-
-        .text-sm {
-            margin-right: 1rem;
-        }
-
-        .btn {
-            margin-left: auto;
-        }
     }
 
     &__btn {

@@ -3,10 +3,12 @@ header.header
     a.logo(href="/")
       img(src="images/liveroom.svg", alt="Logo")
 
-    form.search-form(action="#")
+    form.search-form(action="#").base-drop.js-open-close
       .search-form__wrap 
         button.search-form__btn(type="submit")
-        input.search-form__input(type="search", placeholder="Поиск")
+        input.search-form__input(type="search", placeholder="Поиск").js-opener
+      .base-drop__drop.base-drop__drop--wide
+        include ../tabs/tabs
 
     .base-drop.js-open-close
       button.btn.secondary.js-opener Создать...
@@ -31,7 +33,7 @@ header.header
           img(src="images/bell.svg", alt="")
 
       .user-lk.base-drop.js-open-close
-        button.user-icon.js-opener
+        button.logo-holder.js-opener
           img(src="images/user_40.png", alt="")
         .base-drop__drop.base-drop__drop--right
           ul.drop-list

@@ -1,6 +1,7 @@
 $(document).ready(function () {
     mousewheelInit();
     modalsInit();
+    tabsInit();
     new Swiper('.swiper-container', {
         loop: true,
         navigation: {
@@ -22,6 +23,28 @@ function mousewheelInit() {
     $('.scroll-holder').mousewheel(function(e, delta) {
         this.scrollLeft -= (delta * 30);
         e.preventDefault();
+    });
+}
+
+function tabsInit() {
+    $('.js-tabs').each((i, item) => {
+        const holder = $(item);
+        const navLinks = holder.find('.tabs__nav-item');
+        const tabs = holder.find('.tabs__tab');
+        const activeClass = 'js-active'
+        
+        navLinks.each((i, link) => {
+            $(link).click((e) => {
+                e.preventDefault();
+                if (e.currentTarget.classList.contains(activeClass)) return;
+                const tabId = e.currentTarget.getAttribute('href');
+
+                $(tabs).removeClass(activeClass);
+                $(navLinks).removeClass(activeClass);
+                $(e.currentTarget).addClass(activeClass);
+                $(tabId).addClass(activeClass);
+            });
+        });
     });
 }
 
@@ -104,7 +127,7 @@ class OpenClose {
             if (this.hideOnClickOutside) {
                 //hide drop on click outside
                 document.addEventListener('click', (el) => {
-                    if (!currentEl.contains(el.target)) {
+                    if ( el.target.classList.contains('js-open-modal') || !currentEl.contains(el.target)) {
                         this.removeClass(currentEl);
                     }
                 });

@@ -3,10 +3,9 @@
 
   &--simple {
     .main-list__item {
-
       &:before,
       &:after {
-        width: calc(100% - 76px);
+        width: calc(100% - 7.6rem);
       }
 
       &:first-child {
@@ -20,22 +19,6 @@
           display: none;
         }
       }
-    }
-  }
-
-  &--scroll {
-    overflow: hidden;
-    overflow-y: auto;
-    max-height: 34.5rem;
-
-    &::-webkit-scrollbar {
-      width: 4px;
-      height: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: rgba(22, 73, 116, 0.24);
-      border-radius: 5px;
     }
   }
 

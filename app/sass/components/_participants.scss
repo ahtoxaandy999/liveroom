@@ -1,5 +1,7 @@
 .participants {
-    border-top: 1px solid rgba(22, 73, 116, 0.12);
+    &:not(:only-child) {
+        border-top: 1px solid rgba(22, 73, 116, 0.12);
+    }
 
     &__head {
         padding: 0.8rem 0;
@@ -14,14 +16,6 @@
 
     &__logo-holder {
         margin-right: 0.8rem;
-        width: 2.8rem;
-        height: 2.8rem;
-        overflow: hidden;
-        border-radius: 50%;
-        
-        img {
-            width: 100%;
-        }
     }
 
     &__content {

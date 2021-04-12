@@ -4,15 +4,28 @@
     &__image-holder {
         overflow: hidden;
         border-radius: 10px;
+        outline: 1px solid transparent;
 
         img {
             width: 100%;
+            outline: 1px solid transparent;
         }
+    }
+
+    &__add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 19rem;
+        border: 1px solid rgba(22, 73, 116, 0.24);
+        border-radius: 10px
     }
 
     &__close-btn {
         position: absolute;
         top: 1.2rem;
         right: 1.2rem;
+        width: 2.4rem;
+        height: 2.4rem;
     }
 }

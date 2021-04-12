@@ -1,83 +1,23 @@
-.accessibility {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.accessibility:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
-%hidden {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.hidden {
-  @extend %hidden;
-}
-
-%listreset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-%clearfix {
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-
-.clearfix {
-  @extend %clearfix;
-}
-
-%transition {
-  transition: all 0.3s ease-in-out;
-}
-
-%resetButton {
-  appearance: none;
-  border: 0;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.resetButton {
-  @extend %resetButton;
-}
-
-.ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 .text-center {
   text-align: center;
 }
 
-.text-left {
-  text-align: left;
+.full-width {
+  width: 100%;
 }
 
-.text-right {
-  text-align: right;
-}
+.scroll-wrap {
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 34.5rem;
 
-.text-uppercase {
-  text-transform: uppercase;
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(22, 73, 116, 0.24);
+    border-radius: 5px;
+  }
 }

@@ -9,6 +9,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 $(document).ready(function () {
   mousewheelInit();
   modalsInit();
+  tabsInit();
   new Swiper('.swiper-container', {
     loop: true,
     navigation: {
@@ -30,6 +31,26 @@ function mousewheelInit() {
   $('.scroll-holder').mousewheel(function (e, delta) {
     this.scrollLeft -= delta * 30;
     e.preventDefault();
+  });
+}
+
+function tabsInit() {
+  $('.js-tabs').each(function (i, item) {
+    var holder = $(item);
+    var navLinks = holder.find('.tabs__nav-item');
+    var tabs = holder.find('.tabs__tab');
+    var activeClass = 'js-active';
+    navLinks.each(function (i, link) {
+      $(link).click(function (e) {
+        e.preventDefault();
+        if (e.currentTarget.classList.contains(activeClass)) return;
+        var tabId = e.currentTarget.getAttribute('href');
+        $(tabs).removeClass(activeClass);
+        $(navLinks).removeClass(activeClass);
+        $(e.currentTarget).addClass(activeClass);
+        $(tabId).addClass(activeClass);
+      });
+    });
   });
 }
 
@@ -121,7 +142,7 @@ var OpenClose = /*#__PURE__*/function () {
         if (_this.hideOnClickOutside) {
           //hide drop on click outside
           document.addEventListener('click', function (el) {
-            if (!currentEl.contains(el.target)) {
+            if (el.target.classList.contains('js-open-modal') || !currentEl.contains(el.target)) {
               _this.removeClass(currentEl);
             }
           });

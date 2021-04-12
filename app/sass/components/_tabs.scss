@@ -1,0 +1,89 @@
+.tabs {
+    line-height: 2rem;
+
+    &__nav {
+        display: flex;
+        background: rgba(22, 73, 116, 0.12);
+        border-radius: 1rem;
+        padding: 2px;
+
+        &-item {
+            flex-basis: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 2.8rem;
+            position: relative;
+            color: $black;
+            border-radius: 7px;
+    
+            &::before {
+                content: '';
+                width: 1px;
+                height: 1.6rem;
+                background-color: #8E8E93;
+                position: absolute;
+                top: calc(50% - 0.8rem);
+                right: -2px;
+                opacity: 0.3;
+                border-radius: 0.5px;
+            }
+    
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+    
+            &.js-active {
+                background: #FFFFFF;
+                border: 0.5px solid rgba(0, 0, 0, 0.04);
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__tab {
+        display: none;
+
+        &.js-active {
+            display: block;
+        }
+    }
+
+    &__empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-wrap {
+        min-height: 34.5rem;
+    }
+
+    .sub-card {
+        line-height: 1.4;
+    }
+
+    .main-list--simple {
+        .main-list__item {
+            &:before,
+            &:after {
+                width: calc(100% - 5.6rem);
+            }
+        }
+    }
+
+    .base-card {
+        cursor: pointer;
+    }
+}

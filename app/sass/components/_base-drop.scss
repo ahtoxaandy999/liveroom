@@ -15,7 +15,7 @@
     &__drop {
         @include animate(opacity);
         position: absolute;
-        z-index: 2;
+        z-index: 20;
         top: calc(100% + 1.5rem);
         left: calc(50% - 12rem);
         opacity: 0;
@@ -49,6 +49,11 @@
                 min-width: 19.4rem;
                 left: calc(50% - 9.7rem);
             }
+        }
+
+        &--wide {
+            min-width: 36rem;
+            left: calc(50% - 18rem);
         }
     }
 }

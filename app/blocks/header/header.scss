@@ -1,12 +1,11 @@
 .header {
-    padding: 1rem 0;
     border-bottom: 1px solid rgba(22, 73, 116, 0.24);
     min-height: 6.1rem;
     display: flex;
     align-items: center;
 
     .container {
-        max-width: 1090px;
+        max-width: 109rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -84,15 +83,4 @@
     margin-left: 4rem;
     position: relative;
     text-align: center;
-
-    .user-icon {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-        }
-    }
 }

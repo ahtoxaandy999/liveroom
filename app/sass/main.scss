@@ -9,7 +9,6 @@
 @import 'base/base';
 @import 'base/helpers';
 @import 'base/fonts';
-@import 'base/typography';
 @import 'base/forms';
 @import 'base/buttons';
 
@@ -20,3 +19,6 @@
 @import '../components/**/*';
 @import 'components/**/*';
 
+
+@import 'base/spacing';
+@import 'base/typography';

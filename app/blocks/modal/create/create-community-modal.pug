@@ -1,10 +1,43 @@
-
-
 .modal.js-modal.js-create-community-modal
 	.modal__wrap
 		.modal__header 
-			h3 community
+			h3 Новое сообщество
 			button.modal__close.js-close-modal.icon-animate
 				img(src="images/close-icon.svg", alt="")
-		strong.text-sm.text-gray Уведомления
+		.modal__row 
+			.new-image
+				.new-image__add
+					button.icon-btn
+						img(src="images/cover-icon.svg", alt="")
+						span Загрузить обложку
+		.modal__row 
+			.form-control.gray
+				button.modal-btn
+					span.text-gray Название
+				button.modal-btn.modal-btn--area
+					span.text-gray Описание
 		
+		.modal__row 
+			.form-control.gray
+				.participants
+					.participants__head 
+						span.title Модератор
+						.participants__logo-holder.logo-holder.logo-holder--xs
+							img(src="images/user_40.png", alt="")
+						span Yurki Kallio
+					.participants__content
+						.participants__item
+							.participants__logo-holder.logo-holder.logo-holder--xs
+								img(src="images/user_1_40.jpg", alt="")
+							span Анна Борисова
+							button.participants__close-btn.icon-animate
+								img(src="images/close-icon.svg", alt="")
+						.participants__item
+							.participants__logo-holder.logo-holder.logo-holder--xs
+								img(src="images/user_1_40.jpg", alt="")
+							span Анна Борисова
+							button.participants__close-btn.icon-animate
+								img(src="images/close-icon.svg", alt="")
+					button.participants__add-btn.icon-animate
+						img(src="images/add.svg", alt="")
+						span Добавить гостей

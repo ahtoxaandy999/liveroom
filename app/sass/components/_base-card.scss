@@ -14,6 +14,10 @@
     &__content {
         padding: 1.2rem 7rem 1.2rem 1.6rem;
 
+        &--has-nav {
+            padding-right: 9rem;
+        }
+
         &--simple {
             padding: 2rem;
         }
@@ -39,7 +43,7 @@
             display: flex;
 
             .user {
-                &:not(:first-child) {
+                &:not(:first-of-type) {
                     margin-left: -8px;
                     margin-top: 0;
                 }
@@ -85,6 +89,10 @@
         align-items: center;
         color: $gray;
         font-size: 1.5rem;
+
+        .base-card__body--row & + .user {
+            margin-left: 0;
+        }
 
         span {
             margin-right: 2rem;

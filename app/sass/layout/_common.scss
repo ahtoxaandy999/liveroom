@@ -17,6 +17,8 @@ html {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   font-size: 1.5rem;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
 .wrapper-inner {
@@ -47,6 +49,7 @@ html {
 }
 
 strong {
+  display: block;
   font-weight: 500;
 }
 
@@ -68,39 +71,68 @@ strong {
 
 .icon-animate {
   img {
-      @include animate(transform);
-      transform-origin: 50% 50%;
+    @include animate(transform);
   }
 
   &:hover {
-      img {
-          transform: rotate(180deg);
-      }
-  }
-}
-
-.m {
-  &-b {
-    &-0 {
-      margin-bottom: 0;
-    }
-    &-05 {
-      margin-bottom: 0.5rem;
-    }
-    &-1 {
-      margin-bottom: 1rem;
+    img {
+      transform: rotate(180deg);
     }
   }
 }
 
-.centered {
-  margin: 0 auto;
+.logo-holder {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &--xs {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  &--sm {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  &--md {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+
+  &--lg {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  &--xl {
+    width: 11.2rem;
+    height: 11.2rem;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
-.text-center {
-  text-align: center;
-}
+.search-separator {
+  position: relative;
 
-.full-width {
-  width: 100%;
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    border-top: 1px solid rgba(22, 73, 116, 0.12);
+    position: absolute;
+    bottom: 0;
+    left: -1.6rem;
+    width: calc(100% + 3.2rem);
+  }
 }
