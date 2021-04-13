@@ -6,9 +6,11 @@ button {
   border-radius: 12px;
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 0.8rem 1rem 0.9rem;
+  padding: 0.6rem 1rem;
   transition: all 0.3s ease;
   font-family: "TT Norms Pro";
+  border: 1px solid $white;
+  color: $white;
 
   &.primary {
     border: 1px solid $blue;
@@ -24,6 +26,11 @@ button {
   &.secondary {
     border: 1px solid rgba(22, 73, 116, 0.24);
     color: $blue;
+  }
+
+  &.white {
+    color: $black;
+    background-color: $white;
   }
 
   &.subscription {
@@ -42,7 +49,7 @@ button {
   }
 
   &:hover {
-    border: 1px solid $blue;
+    border-color: $blue;
     background-color: $blue;
     color: $white;
   }

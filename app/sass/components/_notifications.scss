@@ -1,0 +1,23 @@
+.notifications {
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+
+    &__item {
+        color: $white;
+        background-color: $green;
+        padding: 0.4rem 1.6rem;
+        padding-right: 0.6rem;
+        border-radius: 16px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 4.4rem;
+
+        &.warn {
+            background-color: $orange;
+        }
+    }
+}

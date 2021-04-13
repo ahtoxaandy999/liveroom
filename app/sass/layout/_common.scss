@@ -195,3 +195,10 @@ strong {
     width: calc(100% + 3.2rem);
   }
 }
+
+.img-banner {
+  img {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
