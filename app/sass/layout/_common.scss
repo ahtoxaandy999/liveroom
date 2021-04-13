@@ -202,3 +202,25 @@ strong {
     overflow: hidden;
   }
 }
+
+.notice {
+  position: absolute;
+  top: -0.2rem;
+  left: 1.6rem;
+  color: $white;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: -0.2px;
+
+  strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: $red;
+    border: 2px solid $white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}

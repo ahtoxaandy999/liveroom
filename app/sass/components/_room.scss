@@ -8,6 +8,16 @@
             margin: 0 -1.2rem;
         }
     }
+
+    &__title {
+        position: relative;
+
+        .lock-icon {
+            position: absolute;
+            right: 0;
+            top: 0.4rem;
+        }
+    }
 }
 
 .room-card {

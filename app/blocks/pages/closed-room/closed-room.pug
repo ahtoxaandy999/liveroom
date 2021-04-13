@@ -1,16 +1,18 @@
 section.content-section
 	.container
 		.content-wrap.scroll-wrap.p-r-25.p-l-1
-			.flex.flex--jcb.m-b-2
+			.flex.flex--aic.m-b-2
 				button.link.primary.flex.flex--aic
 					img(src="images/icons/icon-arrow-blue.svg", alt="").m-r-1
 					span К списку комнат
+				.flex.flex--aic.m-l-a.m-r-2
+					span.m-r-15 Это закрытая комната
+					button.btn.primary Открыть для...
 				button.link.flex.flex--aic
 					img(src="images/icons/icon-more-vetrtical.svg" alt="image description")
-			.img-banner.m-b-2
-				img(src="images/base-img2.jpg" alt="image description")
-			h2 Воспитание заказчиков 😈 или как я еще не слетел с катух
-			p Как сделать так, чтобы уже окончательно закрыть все ментальные и сенсорные гештальты в квазиклассическом приближении теоремы Ферма. На всю эту ерунду и будем отвечать
+			.room__title 
+				h2 Воспитание заказчиков 😈 или как я еще не слетел с катух
+					img(src="images/icons/icon-lock-black.svg" alt="image description").lock-icon
 			strong.text-gray.m-b-2 Спикеры
 			.room__row
 				.room-card.active
@@ -374,7 +376,7 @@ section.content-section
 									img(src="images/like-icon.png" alt="image description")
 					.room-card__name.flex.flex--aic.flex--jcc
 						span Yurki
-		include ../../sidebar/sidebar
-	include ../../control-panel/control-panel		
+		include ../../sidebar/sidebar-comments
+	include ../../control-panel/control-panel
 
 

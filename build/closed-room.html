@@ -327,236 +327,486 @@
         </header>
         <section class="content-section">
           <div class="container">
-            <div class="content-wrap">
-              <div class="base-card">
-                <div class="base-card__wrap">
-                  <div class="base-card__content">
-                    <div class="base-card__body">
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="base-card__nav"><span class="base-card__time">0:14</span><span class="status-icon"></span></div>
-                  </div>
+            <div class="content-wrap scroll-wrap p-r-25 p-l-1">
+              <div class="flex flex--aic m-b-2">
+                <button class="link primary flex flex--aic"><img class="m-r-1" src="images/icons/icon-arrow-blue.svg" alt=""><span>К списку комнат</span></button>
+                <div class="flex flex--aic m-l-a m-r-2"><span class="m-r-15">Это закрытая комната</span>
+                  <button class="btn primary">Открыть для...</button>
                 </div>
+                <button class="link flex flex--aic"><img src="images/icons/icon-more-vetrtical.svg" alt="image description"></button>
               </div>
-              <div class="base-card">
-                <div class="base-card__wrap">
-                  <div class="base-card__content">
-                    <div class="base-card__body">
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Анна Кондратова</span></div>
-                        </div>
+              <div class="room__title"> 
+                <h2>Воспитание заказчиков 😈 или как я еще не слетел с катух<img class="lock-icon" src="images/icons/icon-lock-black.svg" alt="image description"></h2>
+              </div><strong class="text-gray m-b-2">Спикеры</strong>
+              <div class="room__row">
+                <div class="room-card active">
+                  <div class="logo-holder logo-holder--lg m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label m-0">pro</div>
                       </div>
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Константин Василевский</span></div>
-                        </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br active">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon"><img src="images/like-icon.png" alt="image description"></div>
                       </div>
                     </div>
                   </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><img class="m-r-05" src="images/icons/circle-star-icon.svg" alt="image description"><span>Yurki</span></div>
                 </div>
-              </div>
-              <div class="base-card">
-                <div class="base-card__wrap">
-                  <div class="base-card__content">
-                    <div class="base-card__body">
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Анна Кондратова</span></div>
-                        </div>
+                <div class="room-card">
+                  <div class="logo-holder logo-holder--lg m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label m-0">pro</div>
                       </div>
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Константин Василевский</span></div>
-                        </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
                       </div>
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Герман Боярский</span></div>
-                        </div>
+                      <div class="logo-holder__label br active">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
                       </div>
-                    </div>
-                    <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
-                      <button class="base-card__lock-btn"><img src="images/icons/icon-lock.svg" alt=""></button>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
                     </div>
                   </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><img class="m-r-05" src="images/icons/circle-star-icon.svg" alt="image description"><span>Yurki</span></div>
                 </div>
-              </div>
-              <div class="base-card">
-                <div class="base-card__wrap">
-                  <div class="base-card__head">
-                    <h4 class="base-card__head-title">Вы можете их знать</h4>
-                    <div class="base-card__head-nav">
-                      <button class="link primary">Смотреть всех</button>
-                      <button class="link secondary">Скрыть</button>
-                    </div>
-                  </div>
-                  <div class="base-card__slider">
-                    <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                                  <button class="btn secondary">Подписаться</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">UX/UI designer BRB</p>
-                                  <button class="btn subscription">Подписка</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">Большой и добрый человек, приду на выруч...</p>
-                                  <button class="btn secondary">Подписаться</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">Дизайнер всея Руси</p>
-                                  <button class="btn secondary">Подписаться</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                                  <button class="btn subscription">Подписка</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                                  <button class="btn secondary">Подписаться</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                                  <button class="btn secondary">Подписаться</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide"> 
-                          <div class="slide-item">
-                            <div class="user">
-                              <div class="user__content"> 
-                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                                <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                                  <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                                  <button class="btn secondary">Подписаться</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                <div class="room-card">
+                  <div class="logo-holder logo-holder--lg m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label m-0">pro</div>
                       </div>
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br active">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
                     </div>
                   </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
                 </div>
-              </div>
-              <div class="base-card">
-                <div class="base-card__wrap">
-                  <div class="base-card__content">
-                    <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3>
-                    <div class="base-card__body base-card__body--row">
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
-                        </div>
+                <div class="room-card">
+                  <div class="logo-holder logo-holder--lg m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label m-0">pro</div>
                       </div>
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
-                        </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
                       </div>
-                      <div class="user">
-                        <div class="user__wrap">
-                          <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
-                        </div>
+                      <div class="logo-holder__label br active">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
                       </div>
-                      <div class="base-card__info"> <span>34</span><span>12</span><img src="images/icons/mic-icon.svg" alt=""></div>
-                    </div>
-                    <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
-                      <button class="base-card__lock-btn"><img src="images/icons/icon-lock.svg" alt=""></button>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
                     </div>
                   </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card">
+                  <div class="logo-holder logo-holder--lg m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+              </div><strong class="text-gray m-b-2">Слушатели</strong>
+              <div class="room__row room__row--sm">
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label label--pro m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm active"><img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label label--pro m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm active"><img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label label--pro m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm active"><img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label label--pro m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm active"><img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label label--pro m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm active"><img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr">
+                        <div class="label--icon"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl">
+                        <div class="label label--icon m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm"> <img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
+                </div>
+                <div class="room-card room-card--sm">
+                  <div class="logo-holder logo-holder--ds m-x-a m-b-1"><img src="images/user_80.png" alt="image description">
+                    <div class="logo-holder__labels"> 
+                      <div class="logo-holder__label tl active">
+                        <div class="label label--pro m-0">pro</div>
+                      </div>
+                      <div class="logo-holder__label tr active">
+                        <div class="label--icon label--sm active"><img src="images/icons/icon-check-green.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label br">
+                        <div class="label--icon label--sm"><img src="images/icons/icon-mute.svg" alt="image description"></div>
+                      </div>
+                      <div class="logo-holder__label bl active">
+                        <div class="label--icon label--sm"><img src="images/like-icon.png" alt="image description"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-card__name flex flex--aic flex--jcc"><span>Yurki</span></div>
                 </div>
               </div>
             </div>
             <div class="sidebar">
               <div class="sidebar__head"><a class="link secondary" href="#"><img src="images/icons/icon-arrow.svg" alt=""><span>Скрыть комментарии</span></a></div>
-              <div class="sidebar__body">
-                <div class="sidebar__content">
-                  <div class="calendar-icon"><img src="images/calendar-icon.png" alt=""></div>
-                  <p class="base-text">У вас нет запланированных событий</p>
-                  <p class="base-text">Послушайте
-                    <button>события других пользователей</button>или создайте свое
-                  </p>
-                  <button class="js-open-modal btn secondary" data-modal-to="create-event-modal">Создать событие</button>
+              <div class="sidebar__body sidebar__body--comments">
+                <div class="comments scroll-wrap p-r-1">
+                  <div class="comments__item">
+                    <div class="comments__item-logo"> 
+                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                    </div>
+                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span><span class="comments__time">13:45</span></div>
+                  </div>
+                  <div class="comments__item">
+                    <div class="comments__item-logo"> 
+                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                    </div>
+                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии </span><span class="comments__time">13:45</span></div>
+                  </div>
+                  <div class="comments__item">
+                    <div class="comments__item-logo"> 
+                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                    </div>
+                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские</span><span class="comments__time">13:45</span></div>
+                  </div>
+                  <div class="comments__item">
+                    <div class="comments__item-logo"> 
+                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                    </div>
+                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
+                      <div class="comments__time"> <span class="comments__time">13:45</span></div>
+                    </div>
+                  </div>
+                  <div class="comments__item self">
+                    <div class="comments__content"><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
+                      <div class="comments__time"> <span class="comments__time">13:45</span></div>
+                    </div>
+                  </div>
+                  <div class="comments__item self">
+                    <div class="comments__content"><span class="p-r-1">Тут вражеские язычки</span>
+                      <div class="comments__time"> <span class="comments__time">13:45</span></div>
+                    </div>
+                  </div>
+                  <div class="comments__item self">
+                    <div class="comments__content"><span class="p-r-1">тно только угловые скругления у аватара сделать меньше</span>
+                      <div class="comments__time"> <span class="comments__time">13:45</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar__form m-t-a p-t-2">
+                  <form class="search-form" action="#">
+                    <div class="search-form__wrap">
+                      <input class="search-form__input p-l-15" type="text" placeholder="Ваше сообщение">
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="control-panel flex flex--jcb">
+            <div class="control-panel__wrapper flex flex-aic p-15 m-r-15">
+              <button class="control-panel__btn text-red icon-animate flex flex--aic p-05 m-r-2"><img class="m-r-15" src="images/icons/close-icon-orange.svg" alt=""><span>Покинуть комнату</span></button>
+              <button class="control-panel__btn icon-animate flex flex--aic p-05 m-r-2"><img class="m-r-15" src="images/icons/add-icon.svg" alt=""><span>Пригласить</span></button>
+              <button class="control-panel__btn icon-animate flex flex--aic p-05 m-r-2"><img class="m-r-15" src="images/icons/icon-reaction-secondary.svg" alt=""><span>Реакции</span>
+                <div class="notice"><strong>12</strong></div>
+              </button>
+            </div>
+            <button class="hand-btn icon-animate"><img src="images/icons/icon-hand.svg" alt=""></button>
           </div>
         </section>
         <div class="modal js-modal js-add-users-modal">

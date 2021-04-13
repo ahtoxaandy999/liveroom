@@ -1,0 +1,14 @@
+.sidebar
+    .sidebar__head
+        a(href="#").link.secondary
+            img(src="images/icons/icon-arrow.svg", alt="")
+            span Скрыть комментарии
+    .sidebar__body
+        .sidebar__content
+            .calendar-icon
+                img(src="images/calendar-icon.png", alt="")
+            p.base-text У вас нет запланированных событий
+            p.base-text Послушайте
+                button события других пользователей
+                | или создайте свое
+            button(data-modal-to="create-event-modal").js-open-modal.btn.secondary Создать событие

@@ -32,6 +32,7 @@
         height: calc(100vh - 6.1rem);
 
         &--comments {
+            padding-top: 5rem;
             display: flex;
             flex-direction: column;
             max-height: none;

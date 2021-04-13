@@ -58,9 +58,7 @@ section.content-section
 							span.base-card__time 1:45:13
 							span.status-icon
 							button.base-card__lock-btn
-								img(src="images/icons/lock.svg", alt="")
-
-
+								img(src="images/icons/icon-lock.svg", alt="")
 			.base-card
 				.base-card__wrap
 					.base-card__head
@@ -94,19 +92,5 @@ section.content-section
 							span.base-card__time 1:45:13
 							span.status-icon
 							button.base-card__lock-btn
-								img(src="images/icons/lock.svg", alt="")
-
-		.sidebar
-			.sidebar__head
-				a(href="#").link.secondary
-					img(src="images/icons/icon-arrow.svg", alt="")
-					span Скрыть комментарии
-			.sidebar__body
-				.sidebar__content
-					.calendar-icon
-						img(src="images/calendar-icon.png", alt="")
-					p.base-text У вас нет запланированных событий
-					p.base-text Послушайте
-						button события других пользователей
-						| или создайте свое
-					button(data-modal-to="create-event-modal").js-open-modal.btn.secondary Создать событие
+								img(src="images/icons/icon-lock.svg", alt="")
+		include ../../sidebar/sidebar-event

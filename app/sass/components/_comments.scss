@@ -1,0 +1,42 @@
+.comments {
+    height: 100%;
+
+    &.scroll-wrap {
+        max-height: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1.2rem;
+
+        &.self {
+            max-width: 27rem;
+            margin-left: auto;
+
+            .comments__content {
+                color: $white;
+                background-color: $blue;
+                margin-left: auto;
+            }
+
+            .comments__time {
+                color: $white;
+            }
+        }
+    }
+
+    &__content {
+        background: rgba(22, 73, 116, 0.12);
+        border-radius: 17px;
+        padding: 0.7rem 1.4rem;
+
+        span {
+            line-height: 2rem;
+        }
+    }
+
+    &__time {
+        opacity: 0.5;
+    }
+}
