@@ -61,6 +61,10 @@ button {
   &.secondary {
     color: #8598a7;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .modal-btn {
@@ -131,4 +135,15 @@ button {
   img {
     margin-right: 0.8rem;
   }
+}
+
+.hand-btn {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
 }

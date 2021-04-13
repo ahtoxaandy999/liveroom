@@ -7,7 +7,7 @@ const gulp = require('gulp'),
 
 module.exports = function() {
   $.gulp.task('pug', () => {
-    return $.gulp.src('app/pages/*.pug')
+    return $.gulp.src('app/pages/**/*.pug')
       .pipe(filter(file => /app[\\\/]pages/.test(file.path)))
       .pipe(pug({
         pretty: true,

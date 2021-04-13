@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.flex {
+  display: flex;
+
+  &--aic {
+    align-items: center;
+  }
+
+  &--jcc {
+    justify-content: center;
+  }
+
+  &--jcb {
+    justify-content: space-between;
+  }
+}
+
 .full-width {
   width: 100%;
 }

@@ -4,9 +4,9 @@ html {
 
 .container {
   max-width: 99rem;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 #wrapper {
@@ -17,8 +17,6 @@ html {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   font-size: 1.5rem;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
 .wrapper-inner {
@@ -67,6 +65,22 @@ strong {
   margin: 0 1rem;
   padding-bottom: 0.4rem;
   vertical-align: middle;
+
+  &--pro {
+    width: 2.4rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--icon {
+    width: 2.4rem;
+  }
+
+  &--sm {
+    width: 1.6rem;
+  }
 }
 
 .icon-animate {
@@ -84,8 +98,6 @@ strong {
 .logo-holder {
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
-  overflow: hidden;
   flex-shrink: 0;
 
   &--xs {
@@ -103,6 +115,11 @@ strong {
     height: 4.4rem;
   }
 
+  &--ds {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
   &--lg {
     width: 8rem;
     height: 8rem;
@@ -113,8 +130,50 @@ strong {
     height: 11.2rem;
   }
 
+  &__labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__label {
+    @include animate(opacity);
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    display: flex;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &.tr {
+      top: 0;
+      right: 0;
+    }
+
+    &.tl {
+      top: 0;
+      left: 0;
+    }
+
+    &.br {
+      bottom: 0;
+      right: 0;
+    }
+
+    &.bl {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
   img {
     width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
 

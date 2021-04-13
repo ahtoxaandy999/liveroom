@@ -8,6 +8,7 @@
         padding: 2px;
 
         &-item {
+            font-weight: 500;
             flex-basis: 100%;
             display: flex;
             align-items: center;
@@ -46,6 +47,7 @@
             }
         }
     }
+    
 
     &__content {
         position: relative;

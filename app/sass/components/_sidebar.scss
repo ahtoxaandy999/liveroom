@@ -27,7 +27,15 @@
     }
 
     &__body {
-        padding: 3rem 2rem 2rem;
+        padding: 35vh 2rem 3rem;
+        margin-bottom: auto;
+        height: calc(100vh - 6.1rem);
+
+        &--comments {
+            display: flex;
+            flex-direction: column;
+            max-height: none;
+        }
     }
 
     &__content {
@@ -39,6 +47,11 @@
             text-align: center;
             margin-bottom: 2rem;
         }
+    }
+
+    &__form {
+        // position: fixed;
+        // bottom: 10%;
     }
 
     .calendar-icon {
