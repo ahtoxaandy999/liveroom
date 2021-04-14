@@ -124,7 +124,7 @@ box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
     }
     &::before {
       opacity: 0;
-      content: url('../images/icons/icon-check.svg');
+      content: url('../images/icons/font/icon-check.svg');
       position: absolute;
       right: 2.4rem;
       top: 50%;
@@ -159,7 +159,7 @@ box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
       &::before {
         right: 2.7rem;
         top: 48%;
-        content: url('../images/icons/icon-check-white.svg');
+        content: url('../images/icons/font/icon-check-white.svg');
       }
     }
   }

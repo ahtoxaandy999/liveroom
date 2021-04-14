@@ -37,6 +37,8 @@
     }
 
     &__time {
+        display: inline-block;
+        vertical-align: top;
         opacity: 0.5;
     }
 }

@@ -3,21 +3,21 @@
 		.modal__header 
 			h3 Новая комната
 			button.modal__close.js-close-modal.icon-animate
-				img(src="images/close-icon.svg", alt="")
+				img(src="images/icon-close.svg", alt="")
 		.modal__row 
 			.new-image
 				.new-image__image-holder 
 					img(src="images/base-img3.jpg", alt="")
 				button.new-image__close-btn.icon-animate
-					img(src="images/icons/circle-close-icon.svg", alt="")
+					img(src="images/icons/font/icon-circle-close.svg", alt="")
 		.modal__row 
 			.modal__col
 				button.icon-btn
-					img(src="images/icons/cover-icon.svg", alt="")
+					img(src="images/icons/font/icon-cover.svg", alt="")
 					span Обложка
 			.modal__col
 				button(data-modal-to="edit-room-name-modal").js-open-modal.icon-btn
-					img(src="images/icons/text-icon.svg", alt="")
+					img(src="images/icons/font/icon-text.svg", alt="")
 					span Добавить название
 		.modal__row 
 			h4.m-b-05 Воспитание заказчиков ✊
@@ -28,14 +28,14 @@
 					input(type="radio" name="roomType" id="roomType1" value="roomType1" checked)
 					label(for="roomType1") 
 						.room-types__icon-holder.logo-holder.logo-holder--lg.m-b-1
-							img(src="images/icons/door-icon.svg", alt="")
+							img(src="images/icons/font/icon-door.svg", alt="")
 						p.m-b-0 Публичная
 						span.text-gray Доступна всем
 				.room-types__col 
 					input(type="radio" name="roomType" id="roomType2" value="roomType2")
 					label(for="roomType2") 
 						.room-types__icon-holder.logo-holder.logo-holder--lg
-							img(src="images/icons/icon-lock.svg", alt="")
+							img(src="images/icons/font/icon-lock.svg", alt="")
 						p.m-b-0 Закрытая
 						span.text-gray По приглашениям
 		.modal__row 

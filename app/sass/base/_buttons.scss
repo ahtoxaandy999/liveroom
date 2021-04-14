@@ -1,3 +1,14 @@
+a {
+  &.base-card__wrap {
+    @include animate(box-shadow);
+
+    &:hover {
+      opacity: 1;
+      box-shadow: $secondary-box-shadow;
+    }
+  }
+}
+
 button {
   font-size: 1.5rem;
 }
@@ -11,21 +22,24 @@ button {
   font-family: "TT Norms Pro";
   border: 1px solid $white;
   color: $white;
+  @include animate(background-color color opacity);
 
   &.primary {
-    border: 1px solid $blue;
     background-color: $blue;
     color: $white;
 
     &:hover {
-      background-color: $white;
-      color: $blue;
+      background-color: $blue-dark;
     }
   }
 
   &.secondary {
     border: 1px solid rgba(22, 73, 116, 0.24);
     color: $blue;
+
+    &:hover {
+      background-color: $blue-light;
+    }
   }
 
   &.white {
@@ -44,14 +58,8 @@ button {
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8.35294L7.2 11L12 6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E%0A");
 
     &:hover {
-      opacity: 0.6;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #2288DD;
     }
-  }
-
-  &:hover {
-    border-color: $blue;
-    background-color: $blue;
-    color: $white;
   }
 }
 
@@ -144,7 +152,8 @@ button {
   }
 }
 
-.hand-btn {
+.circle-btn {
+  @include animate(background-color);
   width: 7.2rem;
   height: 7.2rem;
   border-radius: 50%;
@@ -153,4 +162,22 @@ button {
   align-items: center;
   justify-content: center;
   background-color: $blue;
+  border: 0.5px solid rgba(22, 73, 116, 0.24);
+  box-shadow: $base-box-shadow;
+
+  &:hover {
+    background-color: $blue-dark;
+  }
+}
+
+.more-btn {
+  @include animate(background-color);
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+
+  &:hover {
+    background-color: #EDF3F8;
+  }
 }
