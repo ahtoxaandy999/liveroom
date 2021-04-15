@@ -9,7 +9,7 @@
     justify-content: center;
     padding: 11px 15px;
     background-color: #EDF3F8;
-    @include animate(opacity);
+    @include animate(background-color);
     top: 45%;
 
     &::after {
@@ -18,7 +18,7 @@
     }
 
     &:hover {
-        opacity: 0.6;
+        background-color: #E2EBF2;
     }
 }
 

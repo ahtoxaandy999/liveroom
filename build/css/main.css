@@ -154,19 +154,55 @@ body.js-scroll-lock{
 .form .btn{
   width:100%;
   padding:1rem 1.5rem 1.1rem; }
-.form-control{
-  padding-left:1.2rem; }
+.search-form{
+  margin-right:4rem; }
+.search-form--simple{
+    margin:0; }
+.search-form--simple .search-form__wrap{
+      width:100%; }
+.search-form__wrap{
+    width:36rem;
+    position:relative; }
+.search-form__btn{
+    position:absolute;
+    top:50%;
+    left:8px;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+    width:1.6rem;
+    height:1.6rem;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.3833 12.7666C7.76123 12.7666 9.04785 12.3184 10.0938 11.5713L14.0283 15.5059C14.2109 15.6885 14.4517 15.7798 14.7007 15.7798C15.2402 15.7798 15.6304 15.3647 15.6304 14.8335C15.6304 14.5845 15.5474 14.3521 15.3647 14.1694L11.4551 10.2515C12.2769 9.17236 12.7666 7.83594 12.7666 6.3833C12.7666 2.87207 9.89453 0 6.3833 0C2.86377 0 0 2.87207 0 6.3833C0 9.89453 2.86377 12.7666 6.3833 12.7666ZM6.3833 11.3887C3.63574 11.3887 1.37793 9.12256 1.37793 6.3833C1.37793 3.64404 3.63574 1.37793 6.3833 1.37793C9.12256 1.37793 11.3887 3.64404 11.3887 6.3833C11.3887 9.12256 9.12256 11.3887 6.3833 11.3887Z' fill='%238598A7'/%3E%3C/svg%3E%0A"); }
+.search-form__input{
+    -webkit-transition:background-color 0.2s ease-in-out;
+    transition:background-color 0.2s ease-in-out;
+    color:#333333;
+    background-color:rgba(22, 73, 116, 0.08);
+    border-radius:10px;
+    height:3.6rem;
+    width:100%;
+    font-size:1.7rem;
+    padding:0.8rem 2rem 0.8rem 3rem; }
+.search-form__input::-webkit-input-placeholder{
+      font-size:1.7rem;
+      color:#8598A7; }
+.search-form__input::-ms-input-placeholder{
+      font-size:1.7rem;
+      color:#8598A7; }
+.search-form__input::placeholder{
+      font-size:1.7rem;
+      color:#8598A7; }
+.search-form__input:hover{
+      background-color:rgba(22, 73, 116, 0.12); }
 .form-control.gray{
-    background:rgba(22, 73, 116, 0.08);
-    border-radius:10px; }
+  background:rgba(22, 73, 116, 0.08);
+  border-radius:10px;
+  overflow:hidden; }
 .form-control.bordered{
-    border-top:1px solid rgba(22, 73, 116, 0.12);
-    margin:0 -2rem;
-    padding-left:2rem; }
-.form-control .modal-btn{
-    padding-left:0; }
-.form-control .modal-btn:first-of-type{
-      border-top:0; }
+  border-top:1px solid rgba(22, 73, 116, 0.12);
+  margin:0 -2rem;
+  padding-left:2rem; }
 .custom-input input{
   position:absolute;
   visibility:hidden; }
@@ -186,7 +222,6 @@ body.js-scroll-lock{
   -webkit-justify-content:space-between;
   justify-content:space-between;
   padding:1.2rem 2rem;
-  padding-left:0;
   cursor:pointer; }
 .custom-input label:hover{
     color:#2288DD; }
@@ -299,8 +334,7 @@ button{
     background-position:10px center;
     background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8.35294L7.2 11L12 6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E%0A"); }
 .btn.subscription:hover{
-      background:-webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.12)), to(rgba(0, 0, 0, 0.12))), #2288DD;
-      background:linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #2288DD; }
+      background-color:#1E78C2; }
 .link{
   font-size:15px;
   line-height:1.3;
@@ -314,6 +348,8 @@ button{
 .link:hover{
     opacity:0.6; }
 .modal-btn{
+  -webkit-transition:background-color 0.2s ease-in-out;
+  transition:background-color 0.2s ease-in-out;
   width:100%;
   display:-webkit-box;
   display:-webkit-flex;
@@ -325,11 +361,9 @@ button{
   -webkit-align-items:center;
   align-items:center;
   padding:1.2rem 2rem;
-  border-top:1px solid rgba(22, 73, 116, 0.12);
-  -webkit-transition:color 0.2s ease-in-out;
-  transition:color 0.2s ease-in-out; }
+  position:relative; }
 .modal-btn:hover{
-    color:#2288DD; }
+    background-color:rgba(22, 73, 116, 0.12); }
 .modal-btn--area{
     min-height:8.8rem;
     -webkit-box-align:start;
@@ -635,43 +669,6 @@ strong{
     justify-content:space-between; }
 .header .logo{
     margin-right:12.6rem; }
-.search-form{
-  margin-right:4rem; }
-.search-form--simple{
-    margin:0; }
-.search-form--simple .search-form__wrap{
-      width:100%; }
-.search-form__wrap{
-    width:36rem;
-    position:relative; }
-.search-form__btn{
-    position:absolute;
-    top:50%;
-    left:8px;
-    -webkit-transform:translateY(-50%);
-    transform:translateY(-50%);
-    width:1.6rem;
-    height:1.6rem;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-image:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.3833 12.7666C7.76123 12.7666 9.04785 12.3184 10.0938 11.5713L14.0283 15.5059C14.2109 15.6885 14.4517 15.7798 14.7007 15.7798C15.2402 15.7798 15.6304 15.3647 15.6304 14.8335C15.6304 14.5845 15.5474 14.3521 15.3647 14.1694L11.4551 10.2515C12.2769 9.17236 12.7666 7.83594 12.7666 6.3833C12.7666 2.87207 9.89453 0 6.3833 0C2.86377 0 0 2.87207 0 6.3833C0 9.89453 2.86377 12.7666 6.3833 12.7666ZM6.3833 11.3887C3.63574 11.3887 1.37793 9.12256 1.37793 6.3833C1.37793 3.64404 3.63574 1.37793 6.3833 1.37793C9.12256 1.37793 11.3887 3.64404 11.3887 6.3833C11.3887 9.12256 9.12256 11.3887 6.3833 11.3887Z' fill='%238598A7'/%3E%3C/svg%3E%0A"); }
-.search-form__input{
-    color:#333333;
-    background:rgba(22, 73, 116, 0.08);
-    border-radius:10px;
-    height:3.6rem;
-    width:100%;
-    font-size:1.7rem;
-    padding:0.8rem 2rem 0.8rem 3rem; }
-.search-form__input::-webkit-input-placeholder{
-      font-size:1.7rem;
-      color:#8598A7; }
-.search-form__input::-ms-input-placeholder{
-      font-size:1.7rem;
-      color:#8598A7; }
-.search-form__input::placeholder{
-      font-size:1.7rem;
-      color:#8598A7; }
 .user-wrap{
   display:-webkit-box;
   display:-webkit-flex;
@@ -708,8 +705,8 @@ strong{
   justify-content:center;
   padding:11px 15px;
   background-color:#EDF3F8;
-  -webkit-transition:opacity 0.2s ease-in-out;
-  transition:opacity 0.2s ease-in-out;
+  -webkit-transition:background-color 0.2s ease-in-out;
+  transition:background-color 0.2s ease-in-out;
   top:45%; }
 .swiper-button-prev::after,
   .swiper-button-next::after{
@@ -717,7 +714,7 @@ strong{
     font-weight:700; }
 .swiper-button-prev:hover,
   .swiper-button-next:hover{
-    opacity:0.6; }
+    background-color:#E2EBF2; }
 .swiper-button-prev{
   left:0;
   border-top-right-radius:10px;
