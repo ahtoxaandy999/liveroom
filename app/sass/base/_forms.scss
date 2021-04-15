@@ -159,20 +159,21 @@
 
   label {
     cursor: pointer;
-
-    &:hover {
-      color: $blue;
-    }
+    @include animate(background-color);
 
     &::before {
+      @include animate(opacity);
       opacity: 0;
       content: url('../images/icons/font/icon-check.svg');
       position: absolute;
       right: 2.4rem;
       top: 50%;
       transform: translateY(-50%);
-      @include animate(opacity);
       z-index: 2;
+    }
+
+    &:hover {
+      background-color: rgba(22, 73, 116, 0.04);
     }
   }
 

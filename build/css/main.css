@@ -111,7 +111,6 @@ body.js-scroll-lock{
 .full-width{
   width:100%; }
 .scroll-wrap{
-  overflow:hidden;
   overflow-y:auto;
   max-height:34.5rem; }
 .scroll-wrap::-webkit-scrollbar{
@@ -258,10 +257,12 @@ body.js-scroll-lock{
 .custom-checkbox input:checked + label::before{
     opacity:1; }
 .custom-checkbox label{
-  cursor:pointer; }
-.custom-checkbox label:hover{
-    color:#2288DD; }
+  cursor:pointer;
+  -webkit-transition:background-color 0.2s ease-in-out;
+  transition:background-color 0.2s ease-in-out; }
 .custom-checkbox label::before{
+    -webkit-transition:opacity 0.2s ease-in-out;
+    transition:opacity 0.2s ease-in-out;
     opacity:0;
     content:url("../images/icons/font/icon-check.svg");
     position:absolute;
@@ -269,9 +270,9 @@ body.js-scroll-lock{
     top:50%;
     -webkit-transform:translateY(-50%);
     transform:translateY(-50%);
-    -webkit-transition:opacity 0.2s ease-in-out;
-    transition:opacity 0.2s ease-in-out;
     z-index:2; }
+.custom-checkbox label:hover{
+    background-color:rgba(22, 73, 116, 0.04); }
 .custom-checkbox--circle input:checked + label::after{
   background-color:#2288DD;
   border-color:rgba(22, 73, 116, 0.24); }
@@ -338,15 +339,14 @@ button{
 .link{
   font-size:15px;
   line-height:1.3;
-  white-space:nowrap;
-  -webkit-transition:all 0.3s ease;
-  transition:all 0.3s ease; }
+  white-space:nowrap; }
 .link.primary{
     color:#2288dd; }
 .link.secondary{
     color:#8598a7; }
 .link:hover{
-    opacity:0.6; }
+    text-decoration:underline;
+    opacity:1; }
 .modal-btn{
   -webkit-transition:background-color 0.2s ease-in-out;
   transition:background-color 0.2s ease-in-out;
@@ -438,11 +438,9 @@ button{
   flex-shrink:0; }
 .more-btn:hover{
     background-color:#EDF3F8; }
-.icon--hover:hover .fill{
+.icon--hover:hover path{
   fill:#2288DD; }
-.icon--hover:hover .stroke{
-  fill:#2288DD; }
-.icon .fs{
+.icon path{
   -webkit-transition:fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
   transition:fill 0.2s ease-in-out, stroke 0.2s ease-in-out; }
 html{
@@ -1025,6 +1023,7 @@ strong{
     -webkit-filter:drop-shadow(0px 10px 100px rgba(22, 73, 116, 0.3));
     filter:drop-shadow(0px 10px 100px rgba(22, 73, 116, 0.3));
     border-radius:1.3rem;
+    overflow:hidden;
     background:rgba(249, 249, 249, 0.78);
     -webkit-backdrop-filter:blur(54.3656px);
     backdrop-filter:blur(54.3656px);
@@ -1100,10 +1099,12 @@ strong{
 .drop-list__item:not(:last-child){
     border-bottom:1px solid rgba(22, 73, 116, 0.12); }
 .drop-list button{
+    -webkit-transition:background-color 0.2s ease-in-out;
+    transition:background-color 0.2s ease-in-out;
     width:100%;
     padding:1.2rem 2rem; }
 .drop-list button:hover{
-      color:#2288DD; }
+      background-color:rgba(22, 73, 116, 0.04); }
 .main-list{
   margin:0 -2rem; }
 .main-list--simple .main-list__item:before, .main-list--simple .main-list__item:after{
@@ -1453,13 +1454,18 @@ strong{
     z-index:2;
     background-color:#FF6D6D; }
 .sub-card{
+  cursor:pointer;
   display:-webkit-box;
   display:-webkit-flex;
   display:flex;
   -webkit-box-align:center;
   -webkit-align-items:center;
   align-items:center;
-  padding:1rem 2rem; }
+  padding:1rem 2rem;
+  -webkit-transition:background-color 0.2s ease-in-out;
+  transition:background-color 0.2s ease-in-out; }
+.sub-card:hover{
+    background-color:rgba(22, 73, 116, 0.04); }
 .sub-card__logo-holder{
     margin-right:1.6rem; }
 .sub-card__content{

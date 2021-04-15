@@ -1,7 +1,13 @@
 .sub-card {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
+    @include animate(background-color);
+
+    &:hover {
+        background-color: rgba(22, 73, 116, 0.04);
+    }
 
     &__logo-holder {
         margin-right: 1.6rem;
