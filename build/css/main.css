@@ -438,6 +438,13 @@ button{
   flex-shrink:0; }
 .more-btn:hover{
     background-color:#EDF3F8; }
+.icon--hover:hover .fill{
+  fill:#2288DD; }
+.icon--hover:hover .stroke{
+  fill:#2288DD; }
+.icon .fs{
+  -webkit-transition:fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
+  transition:fill 0.2s ease-in-out, stroke 0.2s ease-in-out; }
 html{
   font-size:10px; }
 .container{
@@ -669,6 +676,10 @@ strong{
     justify-content:space-between; }
 .header .logo{
     margin-right:12.6rem; }
+.user-btn{
+  margin-right:2.8rem; }
+.user-btn:last-child{
+    margin-right:0; }
 .user-wrap{
   display:-webkit-box;
   display:-webkit-flex;
@@ -681,10 +692,6 @@ strong{
 .user-wrap .user-nav{
     -webkit-flex-shrink:0;
     flex-shrink:0; }
-.user-wrap .user-nav .user-btn{
-      margin-right:2.8rem; }
-.user-wrap .user-nav .user-btn:last-child{
-        margin-right:0; }
 .user-lk{
   height:4rem;
   margin-left:4rem;

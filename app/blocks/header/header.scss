@@ -16,6 +16,14 @@
     }
 }
 
+.user-btn {
+    margin-right: 2.8rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
 .user-wrap {
     display: flex;
     align-items: center;
@@ -24,13 +32,6 @@
 
     .user-nav {
         flex-shrink: 0;
-        .user-btn {
-            margin-right: 2.8rem;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 }
 
