@@ -13,8 +13,11 @@ $(document).ready(function () {
     });
     new OpenClose({
         holders: '.js-open-close',
-        close: '.js-close',
         hideOnClickOutside: true
+    });
+    new OpenClose({
+        holders: '.js-sidebar',
+        hideOnClickOutside: false
     });
 });
 
@@ -71,7 +74,7 @@ class OpenClose {
 
         this.holders = document.querySelectorAll(params.holders);
         this.opener = params.opener || '.js-opener';
-        this.closeBtn = params.close;
+        this.closeBtn = params.close || '.js-close';
         this.hideOnClickOutside = params.hideOnClickOutside;
         this.classToBody = params.classToBody;
         this.activeClass = params.activeClass || 'js-active';

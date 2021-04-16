@@ -256,16 +256,20 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar">
-              <div class="sidebar__head"><a class="link secondary" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть комментарии</span></a></div>
-              <div class="sidebar__body">
-                <div class="sidebar__content">
-                  <div class="calendar-icon"><img src="images/calendar-icon.png" alt=""></div>
-                  <p class="base-text">У вас нет запланированных событий</p>
-                  <p class="base-text">Послушайте
-                    <button>события других пользователей</button>или создайте свое
-                  </p>
-                  <button class="js-open-modal btn secondary" data-modal-to="create-event-modal">Создать событие</button>
+            <div class="sidebar js-sidebar js-active"><a class="sidebar__opener js-opener" href="#">
+                <div class="sidebar__opener-icon"><img src="images/icons/font/icon-arrow.svg" alt=""></div>
+                <div class="sidebar__opener-text m-y-15"><span>Показать события</span></div></a>
+              <div class="sidebar__wrap">
+                <div class="sidebar__head"><a class="link secondary js-close" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть события</span></a></div>
+                <div class="sidebar__body">
+                  <div class="sidebar__content">
+                    <div class="calendar-icon"><img src="images/calendar-icon.png" alt=""></div>
+                    <p class="base-text">У вас нет запланированных событий</p>
+                    <p class="base-text">Послушайте
+                      <button>события других пользователей</button>или создайте свое
+                    </p>
+                    <button class="js-open-modal btn secondary" data-modal-to="create-event-modal">Создать событие</button>
+                  </div>
                 </div>
               </div>
             </div>

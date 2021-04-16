@@ -4,6 +4,8 @@
     left: 50%;
     top: 2rem;
     transform: translateX(-50%);
+    z-index: 10;
+    max-width: 55rem;
 
     &__item {
         color: $white;

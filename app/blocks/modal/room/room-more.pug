@@ -1,2 +1,13 @@
-.modal.js-modal.js-room--modal
-	.modal__wrap
+.modal.more.js-modal.js-room-more-modal.p-0
+  .modal__wrap.p-0
+    ul.drop-list
+      li.drop-list__item
+        button(data-modal-to="find-in-room-modal").js-open-modal Найти в комнате
+      li.drop-list__item
+        button(data-modal-to="room-settings-modal").js-open-modal Настройки комнаты
+      li.drop-list__item
+        button(data-modal-to="create-poll-modal").js-open-modal Создать опрос
+      li.drop-list__item
+        button.text-red Закрыть комнату
+      li.drop-list__item
+        button.text-gray.js-close-modal Отмена

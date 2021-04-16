@@ -45,6 +45,10 @@ button {
   &.white {
     color: $black;
     background-color: $white;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
   }
 
   &.subscription {
@@ -60,6 +64,10 @@ button {
     &:hover {
       background-color: $blue-dark;
     }
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 

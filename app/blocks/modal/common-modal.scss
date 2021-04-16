@@ -27,6 +27,15 @@
         }
     }
 
+    &.more {
+        width: 32rem;
+        left: calc(50% - 16rem);
+        top: 30vh;
+        .modal__wrap {
+            min-height: 0;
+        }
+    }
+
     &__wrap {
         padding: 0 2rem;
         overflow: hidden;

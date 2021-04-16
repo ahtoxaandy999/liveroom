@@ -21,8 +21,11 @@ $(document).ready(function () {
   });
   new OpenClose({
     holders: '.js-open-close',
-    close: '.js-close',
     hideOnClickOutside: true
+  });
+  new OpenClose({
+    holders: '.js-sidebar',
+    hideOnClickOutside: false
   });
 });
 
@@ -78,7 +81,7 @@ var OpenClose = /*#__PURE__*/function () {
     if (!document.querySelector(params.holders)) return;
     this.holders = document.querySelectorAll(params.holders);
     this.opener = params.opener || '.js-opener';
-    this.closeBtn = params.close;
+    this.closeBtn = params.close || '.js-close';
     this.hideOnClickOutside = params.hideOnClickOutside;
     this.classToBody = params.classToBody;
     this.activeClass = params.activeClass || 'js-active';

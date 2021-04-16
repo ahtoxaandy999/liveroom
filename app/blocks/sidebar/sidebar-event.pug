@@ -1,14 +1,20 @@
-.sidebar
-    .sidebar__head
-        a(href="#").link.secondary
+.sidebar.js-sidebar.js-active
+    a(href="#").sidebar__opener.js-opener
+        .sidebar__opener-icon
             img(src="images/icons/font/icon-arrow.svg", alt="")
-            span Скрыть комментарии
-    .sidebar__body
-        .sidebar__content
-            .calendar-icon
-                img(src="images/calendar-icon.png", alt="")
-            p.base-text У вас нет запланированных событий
-            p.base-text Послушайте
-                button события других пользователей
-                | или создайте свое
-            button(data-modal-to="create-event-modal").js-open-modal.btn.secondary Создать событие
+        .sidebar__opener-text.m-y-15
+            span Показать события
+    .sidebar__wrap
+        .sidebar__head
+            a(href="#").link.secondary.js-close
+                img(src="images/icons/font/icon-arrow.svg", alt="")
+                span Скрыть события
+        .sidebar__body
+            .sidebar__content
+                .calendar-icon
+                    img(src="images/calendar-icon.png", alt="")
+                p.base-text У вас нет запланированных событий
+                p.base-text Послушайте
+                    button события других пользователей
+                    | или создайте свое
+                button(data-modal-to="create-event-modal").js-open-modal.btn.secondary Создать событие

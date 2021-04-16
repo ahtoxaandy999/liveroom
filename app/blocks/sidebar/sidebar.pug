@@ -1,15 +1,21 @@
-.sidebar
-    .sidebar__head
-        a(href="#").link.secondary
+.sidebar.js-sidebar.js-active
+    a(href="#").sidebar__opener.js-opener
+        .sidebar__opener-icon
             img(src="images/icons/font/icon-arrow.svg", alt="")
-            span Скрыть комментарии
-    .sidebar__body.sidebar__body--comments.scroll-wrap
-        .sidebar__content
-            .sidebar__empty
-                .calendar-icon
-                    img(src="images/note-icon.png", alt="")
-                p.base-text Пока нет сообщений
-        .sidebar__form.m-t-a.p-t-2
-            form.search-form(action="#")
-                .search-form__wrap
-                    input.search-form__input.p-l-15(type="text", placeholder="Ваше сообщение")
+        .sidebar__opener-text.m-y-15
+            span Показать комментарии
+    .sidebar__wrap
+        .sidebar__head
+            a(href="#").link.secondary.js-close
+                img(src="images/icons/font/icon-arrow.svg", alt="")
+                span Скрыть комментарии
+        .sidebar__body.sidebar__body--comments.scroll-wrap
+            .sidebar__content
+                .sidebar__empty
+                    .calendar-icon
+                        img(src="images/note-icon.png", alt="")
+                    p.base-text Пока нет сообщений
+            .sidebar__form.m-t-a.p-t-2
+                form.search-form(action="#")
+                    .search-form__wrap
+                        input.search-form__input.p-l-15(type="text", placeholder="Ваше сообщение")

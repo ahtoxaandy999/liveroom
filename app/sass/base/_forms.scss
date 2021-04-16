@@ -208,3 +208,23 @@
     }
   }
 }
+
+.comment-input {
+  position: relative;
+  width: 100%;
+
+  &__smile {
+    position: absolute;
+    top: calc(50% - 1.2rem);
+    right: 0.8rem;
+  }
+}
+
+.comment-submit {
+  padding: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}

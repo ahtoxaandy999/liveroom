@@ -769,21 +769,25 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar">
-              <div class="sidebar__head"><a class="link secondary" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть комментарии</span></a></div>
-              <div class="sidebar__body sidebar__body--comments scroll-wrap">
-                <div class="sidebar__content">
-                  <div class="sidebar__empty">
-                    <div class="calendar-icon"><img src="images/note-icon.png" alt=""></div>
-                    <p class="base-text">Пока нет сообщений</p>
-                  </div>
-                </div>
-                <div class="sidebar__form m-t-a p-t-2">
-                  <form class="search-form" action="#">
-                    <div class="search-form__wrap">
-                      <input class="search-form__input p-l-15" type="text" placeholder="Ваше сообщение">
+            <div class="sidebar js-sidebar js-active"><a class="sidebar__opener js-opener" href="#">
+                <div class="sidebar__opener-icon"><img src="images/icons/font/icon-arrow.svg" alt=""></div>
+                <div class="sidebar__opener-text m-y-15"><span>Показать комментарии</span></div></a>
+              <div class="sidebar__wrap">
+                <div class="sidebar__head"><a class="link secondary js-close" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть комментарии</span></a></div>
+                <div class="sidebar__body sidebar__body--comments scroll-wrap">
+                  <div class="sidebar__content">
+                    <div class="sidebar__empty">
+                      <div class="calendar-icon"><img src="images/note-icon.png" alt=""></div>
+                      <p class="base-text">Пока нет сообщений</p>
                     </div>
-                  </form>
+                  </div>
+                  <div class="sidebar__form m-t-a p-t-2">
+                    <form class="search-form" action="#">
+                      <div class="search-form__wrap">
+                        <input class="search-form__input p-l-15" type="text" placeholder="Ваше сообщение">
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -803,15 +807,13 @@
               <button class="control-panel__btn flex flex--aic p-05 m-r-2 icon--blue icon-animate">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5277 0.0833893C8.45664 0.0833893 6.77771 1.76232 6.77771 3.83339V8.0427C3.18285 8.86145 0.5 12.0777 0.5 15.9205C0.5 20.3826 4.11728 23.9999 8.57941 23.9999C11.3048 23.9999 13.7149 22.6505 15.1783 20.5834H20.5277C22.5988 20.5834 24.2777 18.9045 24.2777 16.8334V3.83339C24.2777 1.76232 22.5988 0.0833893 20.5277 0.0833893H10.5277ZM16.0163 19.0834H20.5277C21.7704 19.0834 22.7777 18.076 22.7777 16.8334V3.83339C22.7777 2.59075 21.7704 1.58339 20.5277 1.58339H10.5277C9.28507 1.58339 8.27771 2.59075 8.27771 3.83339V7.8466C8.37782 7.84293 8.4784 7.84107 8.57941 7.84107C10.1626 7.84107 11.6395 8.29646 12.8862 9.08339H18.5277C18.9419 9.08339 19.2777 9.41918 19.2777 9.83339C19.2777 10.2476 18.9419 10.5834 18.5277 10.5834H14.6452C15.2869 11.3121 15.7993 12.1574 16.1467 13.0834H18.5277C18.9419 13.0834 19.2777 13.4192 19.2777 13.8334C19.2777 14.2476 18.9419 14.5834 18.5277 14.5834H16.5487C16.6211 15.0183 16.6588 15.465 16.6588 15.9205C16.6588 17.043 16.4299 18.112 16.0163 19.0834ZM12.5277 5.08339C12.1135 5.08339 11.7777 5.41918 11.7777 5.83339C11.7777 6.2476 12.1135 6.58339 12.5277 6.58339H18.5277C18.9419 6.58339 19.2777 6.2476 19.2777 5.83339C19.2777 5.41918 18.9419 5.08339 18.5277 5.08339H12.5277ZM12.2518 14.0843C12.2518 14.6928 11.7586 15.1861 11.1501 15.1861C10.5416 15.1861 10.0484 14.6928 10.0484 14.0843C10.0484 13.4759 10.5416 12.9826 11.1501 12.9826C11.7586 12.9826 12.2518 13.4759 12.2518 14.0843ZM7.11039 14.0846C7.11039 14.6931 6.61712 15.1864 6.00865 15.1864C5.40018 15.1864 4.90691 14.6931 4.90691 14.0846C4.90691 13.4762 5.40018 12.9829 6.00865 12.9829C6.61712 12.9829 7.11039 13.4762 7.11039 14.0846ZM4.89281 18.2732C4.83869 18.1879 4.80735 18.0868 4.80735 17.9783C4.80735 17.6741 5.05398 17.4275 5.35822 17.4275C5.55325 17.4275 5.72461 17.5288 5.8225 17.6817L5.83628 17.7001C5.85881 17.7296 5.89588 17.7758 5.9479 17.8333C6.0522 17.9484 6.21482 18.1068 6.43892 18.2663C6.88328 18.5828 7.57511 18.9089 8.55766 18.9089C9.5408 18.9089 10.2451 18.5823 10.7025 18.2633C10.9328 18.1026 11.1013 17.9431 11.21 17.8269C11.2642 17.7689 11.303 17.7222 11.3268 17.6922C11.3386 17.6772 11.3467 17.6665 11.351 17.6607L11.3542 17.6563L11.353 17.658L11.358 17.6616C11.4578 17.5216 11.6216 17.4303 11.8067 17.4303C12.1109 17.4303 12.3575 17.677 12.3575 17.9812C12.3575 18.1365 12.2933 18.2768 12.1899 18.3769C12.1491 18.4283 12.0909 18.4978 12.0148 18.5793C11.8623 18.7423 11.6363 18.9552 11.3328 19.1669C10.7226 19.5926 9.80239 20.0107 8.55766 20.0107C7.31233 20.0107 6.40134 19.5921 5.79985 19.1638C5.50103 18.951 5.27997 18.737 5.13132 18.5729C5.05686 18.4907 5.00014 18.4205 4.9605 18.3686C4.94066 18.3426 4.92505 18.3211 4.91359 18.3049L4.89949 18.2845L4.89474 18.2775L4.89293 18.2748L4.89281 18.2732Z" fill="#8598A7"></path>
-                  </g>
-                  <defs>
+                    <path d="M21.5 0.999908C21.5 0.447624 21.0523 -9.15527e-05 20.5 -9.15527e-05C19.9477 -9.15527e-05 19.5 0.447624 19.5 0.999908V2.99991H17.5C17.2037 2.99991 16.9374 3.1288 16.7543 3.33358C16.7455 3.34348 16.7368 3.35356 16.7284 3.36382C16.5857 3.53667 16.5 3.75828 16.5 3.99991C16.5 4.55219 16.9477 4.99991 17.5 4.99991H19.5V6.99991C19.5 7.55219 19.9477 7.99991 20.5 7.99991C20.756 7.99991 20.9894 7.90375 21.1663 7.74559C21.1663 7.74558 21.1663 7.74559 21.1663 7.74559C21.3711 7.56247 21.5 7.29624 21.5 6.99991V4.99991H23.5C24.0523 4.99991 24.5 4.55219 24.5 3.99991C24.5 3.44762 24.0523 2.99991 23.5 2.99991H21.5V0.999908Z" fill="#8598A7"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 1.99991C12.8602 1.99991 14.1627 2.24679 15.3652 2.69818C15.1335 3.07734 15 3.52303 15 3.99991C15 5.38062 16.1193 6.49991 17.5 6.49991H18V6.99991C18 8.38062 19.1193 9.49991 20.5 9.49991C20.9769 9.49991 21.4226 9.36639 21.8017 9.13469C22.2531 10.3372 22.5 11.6397 22.5 12.9999C22.5 19.075 17.5751 23.9999 11.5 23.9999C5.42487 23.9999 0.5 19.075 0.5 12.9999C0.5 6.92478 5.42487 1.99991 11.5 1.99991ZM9.5 10.4999C9.5 11.3283 8.82843 11.9999 8 11.9999C7.17157 11.9999 6.5 11.3283 6.5 10.4999C6.5 9.67148 7.17157 8.99991 8 8.99991C8.82843 8.99991 9.5 9.67148 9.5 10.4999ZM16.5 10.4999C16.5 11.3283 15.8284 11.9999 15 11.9999C14.1716 11.9999 13.5 11.3283 13.5 10.4999C13.5 9.67148 14.1716 8.99991 15 8.99991C15.8284 8.99991 16.5 9.67148 16.5 10.4999ZM16.2501 15.1465C16.6036 15.3624 16.7152 15.8239 16.4993 16.1775C15.9416 17.0908 14.2171 18.8069 11.5395 18.8069C8.87421 18.8069 7.02527 17.1047 6.40419 16.2163C6.16685 15.8768 6.24965 15.4092 6.58913 15.1719C6.92861 14.9346 7.39621 15.0174 7.63354 15.3569C8.07062 15.982 9.51137 17.3069 11.5395 17.3069C13.5553 17.3069 14.8526 15.996 15.2191 15.3957C15.435 15.0422 15.8965 14.9306 16.2501 15.1465Z" fill="#8598A7"></path>
                     <clipPath id="clip0">
                       <rect width="24" height="24" fill="white" transform="translate(0.5)"></rect>
                     </clipPath>
-                  </defs>
+                  </g>
                 </svg><span class="m-l-15">Реакции</span>
-                <div class="notice"><strong>12</strong></div>
               </button>
             </div>
             <button class="circle-btn icon--white">
@@ -1568,6 +1570,112 @@
               </div>
             </div>
             <button class="btn primary full-width">Добавить</button>
+          </div>
+        </div>
+        <div class="modal more js-modal js-room-more-modal p-0">
+          <div class="modal__wrap p-0">
+            <ul class="drop-list">
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="find-in-room-modal">Найти в комнате</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="room-settings-modal">Настройки комнаты</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="create-poll-modal">Создать опрос</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-red">Закрыть комнату</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal more js-modal js-open-for-modal p-0">
+          <div class="modal__wrap p-0">
+            <ul class="drop-list">
+              <li class="drop-list__item"><strong class="text-sm text-gray text-center p-15">Кому открыть комнату</strong></li>
+              <li class="drop-list__item">
+                <button>Всем</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Всем, на кого подписаны модераторы</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal auth js-modal js-room-settings-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>Настройки комнаты</h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput02" id="customInput02">
+                  <label for="customInput02"><span>Вести запись комнаты</span>
+                    <div class="custom-input__fake-toggle"> </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput03" id="customInput03" checked>
+                  <label for="customInput03"><span>Все гости — спикеры</span>
+                    <div class="custom-input__fake-toggle"> </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput04" id="customInput04">
+                  <label for="customInput04"><span>Доступен чат</span>
+                    <div class="custom-input__fake-toggle"> </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput05" id="customInput05" checked>
+                  <label for="customInput05"><span>Возможность поднять руку</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-find-in-room-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>Поиск участников</span>
+              </h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row"> 
+              <form class="search-form search-form--simple" action="#">
+                <div class="search-form__wrap"> 
+                  <button class="search-form__btn" type="submit"></button>
+                  <input class="search-form__input" type="search" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
+            <div class="modal__row"> </div>
           </div>
         </div>
         <div class="notifications">

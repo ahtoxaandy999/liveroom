@@ -1,11 +1,13 @@
 .sidebar {
-    width: 39.5rem;
+    width: 37rem;
     flex: none;
-    background-color: #F6FBFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: relative;
+
+    &.js-active {
+        .sidebar__wrap {
+            width: 37rem;
+        }
+    }
 
     &__head {
         position: absolute;
@@ -53,6 +55,74 @@
     &__empty {
         padding-top: 15vh;
         text-align: center;
+    }
+
+    &__wrap {
+        @include animate(width);
+        width: 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        background-color: #F6FBFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__opener {
+        color: $gray;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+        background-color: $blue-light;
+        height: 100%;
+        z-index: 1;
+
+        &:hover {
+            opacity: 1;
+            .sidebar__opener-text {
+                text-decoration: underline;
+            }
+        }
+
+        &-icon {
+            position: relative;
+            
+            img {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-text {
+            height: 16rem;
+            width: 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            span {
+                white-space: nowrap;
+                transform: rotate(90deg);
+            }
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .search-form {
+        margin: 0;
+
+        &__wrap {
+            width: 100%;
+        }
     }
 
     .calendar-icon {

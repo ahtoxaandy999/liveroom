@@ -1,59 +1,71 @@
-.sidebar
-    .sidebar__head
-        a(href="#").link.secondary
+.sidebar.js-sidebar.js-active
+    a(href="#").sidebar__opener.js-opener
+        .sidebar__opener-icon
             img(src="images/icons/font/icon-arrow.svg", alt="")
-            span Скрыть комментарии
-    .sidebar__body.sidebar__body--comments
-        .comments.scroll-wrap.p-r-1
-            .comments__item
-                .comments__item-logo 
-                    .logo-holder.m-r-1
-                        img(src="images/user_1_40.jpg" alt="image description")
-                .comments__content 
-                    strong Светлана Брагина
-                    span.p-r-1 Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки
-                    .comments__time 13:45
-            .comments__item
-                .comments__item-logo 
-                    .logo-holder.m-r-1
-                        img(src="images/user_1_40.jpg" alt="image description")
-                .comments__content 
-                    strong Светлана Брагина
-                    span.p-r-1 Тут вражеские комментарии 
-                    .comments__time 13:45
-            .comments__item
-                .comments__item-logo 
-                    .logo-holder.m-r-1
-                        img(src="images/user_1_40.jpg" alt="image description")
-                .comments__content 
-                    strong Светлана Брагина
-                    span.p-r-1 Тут вражеские
-                    .comments__time 13:45
-            .comments__item
-                .comments__item-logo 
-                    .logo-holder.m-r-1
-                        img(src="images/user_1_40.jpg" alt="image description")
-                .comments__content 
-                    strong Светлана Брагина
-                    span.p-r-1 Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки
-                    .comments__time 
+        .sidebar__opener-text.m-y-15
+            span Показать комментарии
+        span.notice 99+
+    .sidebar__wrap
+        .sidebar__head
+            a(href="#").link.secondary.js-close
+                img(src="images/icons/font/icon-arrow.svg", alt="")
+                span Скрыть комментарии
+        .sidebar__body.sidebar__body--comments
+            .comments.scroll-wrap.p-r-1
+                .comments__item
+                    .comments__item-logo 
+                        .logo-holder.m-r-1
+                            img(src="images/user_1_40.jpg" alt="image description")
+                    .comments__content 
+                        strong Светлана Брагина
+                        span.p-r-1 Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки
                         .comments__time 13:45
-            .comments__item.self
-                .comments__content
-                    span.p-r-1 Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки
-                    .comments__time 
+                .comments__item
+                    .comments__item-logo 
+                        .logo-holder.m-r-1
+                            img(src="images/user_1_40.jpg" alt="image description")
+                    .comments__content 
+                        strong Светлана Брагина
+                        span.p-r-1 Тут вражеские комментарии 
                         .comments__time 13:45
-            .comments__item.self
-                .comments__content
-                    span.p-r-1 Тут вражеские язычки
-                    .comments__time 
+                .comments__item
+                    .comments__item-logo 
+                        .logo-holder.m-r-1
+                            img(src="images/user_1_40.jpg" alt="image description")
+                    .comments__content 
+                        strong Светлана Брагина
+                        span.p-r-1 Тут вражеские
                         .comments__time 13:45
-            .comments__item.self
-                .comments__content
-                    span.p-r-1 тно только угловые скругления у аватара сделать меньше
-                    .comments__time 
-                        .comments__time 13:45
-        .sidebar__form.m-t-a.p-t-2
-            form.search-form(action="#")
-                .search-form__wrap
-                    input.search-form__input.p-l-15(type="text", placeholder="Ваше сообщение")
+                .comments__item
+                    .comments__item-logo 
+                        .logo-holder.m-r-1
+                            img(src="images/user_1_40.jpg" alt="image description")
+                    .comments__content 
+                        strong Светлана Брагина
+                        span.p-r-1 Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки
+                        .comments__time 
+                            .comments__time 13:45
+                .comments__item.self
+                    .comments__content
+                        span.p-r-1 Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки
+                        .comments__time 
+                            .comments__time 13:45
+                .comments__item.self
+                    .comments__content
+                        span.p-r-1 Тут вражеские язычки
+                        .comments__time 
+                            .comments__time 13:45
+                .comments__item.self
+                    .comments__content
+                        span.p-r-1 тно только угловые скругления у аватара сделать меньше
+                        .comments__time 
+                            .comments__time 13:45
+            .sidebar__form.m-t-a.p-t-2
+                form.search-form(action="#")
+                    .search-form__wrap.flex.flex--aic
+                        .comment-input.m-r-1
+                            input.search-form__input.p-l-15(type="text", placeholder="Ваше сообщение" value="Я, если честно")
+                            button.comment-input__smile.icon-animate
+                                img(src="images/icons/font/icon-smile.svg" alt="image description")
+                        button.btn.primary.comment-submit
+                            include ../icons/arrow-lg

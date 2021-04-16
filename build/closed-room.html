@@ -361,9 +361,9 @@
               <div class="flex flex--aic m-b-2">
                 <button class="link primary flex flex--aic"><img class="m-r-1" src="images/icons/icon-arrow-blue.svg" alt=""><span>К списку комнат</span></button>
                 <div class="flex flex--aic m-l-a m-r-2"><span class="m-r-15">Это закрытая комната</span>
-                  <button class="btn primary">Открыть для...</button>
+                  <button class="btn primary js-open-modal" data-modal-to="open-for-modal">Открыть для...</button>
                 </div>
-                <button class="more-btn flex flex--aic flex--jcc js-open-modal" data-modal-to="edit-room-more"><img src="images/icons/font/icon-more-vetrtical.svg" alt="image description"></button>
+                <button class="more-btn flex flex--aic flex--jcc js-open-modal" data-modal-to="room-more-modal"><img src="images/icons/font/icon-more-vetrtical.svg" alt="image description"></button>
               </div>
               <div class="room__title"> 
                 <h2>Воспитание заказчиков 😈 или как я еще не слетел с катух<img class="lock-icon" src="images/icons/icon-lock-black.svg" alt="image description"></h2>
@@ -772,72 +772,84 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar">
-              <div class="sidebar__head"><a class="link secondary" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть комментарии</span></a></div>
-              <div class="sidebar__body sidebar__body--comments">
-                <div class="comments scroll-wrap p-r-1">
-                  <div class="comments__item">
-                    <div class="comments__item-logo"> 
-                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
-                    </div>
-                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
-                      <div class="comments__time">13:45</div>
-                    </div>
-                  </div>
-                  <div class="comments__item">
-                    <div class="comments__item-logo"> 
-                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
-                    </div>
-                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии </span>
-                      <div class="comments__time">13:45</div>
-                    </div>
-                  </div>
-                  <div class="comments__item">
-                    <div class="comments__item-logo"> 
-                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
-                    </div>
-                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские</span>
-                      <div class="comments__time">13:45</div>
-                    </div>
-                  </div>
-                  <div class="comments__item">
-                    <div class="comments__item-logo"> 
-                      <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
-                    </div>
-                    <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
-                      <div class="comments__time"> 
+            <div class="sidebar js-sidebar js-active"><a class="sidebar__opener js-opener" href="#">
+                <div class="sidebar__opener-icon"><img src="images/icons/font/icon-arrow.svg" alt=""></div>
+                <div class="sidebar__opener-text m-y-15"><span>Показать комментарии</span></div><span class="notice">99+</span></a>
+              <div class="sidebar__wrap">
+                <div class="sidebar__head"><a class="link secondary js-close" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть комментарии</span></a></div>
+                <div class="sidebar__body sidebar__body--comments">
+                  <div class="comments scroll-wrap p-r-1">
+                    <div class="comments__item">
+                      <div class="comments__item-logo"> 
+                        <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                      </div>
+                      <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
                         <div class="comments__time">13:45</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="comments__item self">
-                    <div class="comments__content"><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
-                      <div class="comments__time"> 
+                    <div class="comments__item">
+                      <div class="comments__item-logo"> 
+                        <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                      </div>
+                      <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии </span>
                         <div class="comments__time">13:45</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="comments__item self">
-                    <div class="comments__content"><span class="p-r-1">Тут вражеские язычки</span>
-                      <div class="comments__time"> 
+                    <div class="comments__item">
+                      <div class="comments__item-logo"> 
+                        <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                      </div>
+                      <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские</span>
                         <div class="comments__time">13:45</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="comments__item self">
-                    <div class="comments__content"><span class="p-r-1">тно только угловые скругления у аватара сделать меньше</span>
-                      <div class="comments__time"> 
-                        <div class="comments__time">13:45</div>
+                    <div class="comments__item">
+                      <div class="comments__item-logo"> 
+                        <div class="logo-holder m-r-1"><img src="images/user_1_40.jpg" alt="image description"></div>
+                      </div>
+                      <div class="comments__content"> <strong>Светлана Брагина</strong><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
+                        <div class="comments__time"> 
+                          <div class="comments__time">13:45</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item self">
+                      <div class="comments__content"><span class="p-r-1">Тут вражеские комментарии тоже по высоте не важны. Вероятно только угловые скругления у аватара сделать меньше для имитации бабла, чтобы не мастерить эти язычки</span>
+                        <div class="comments__time"> 
+                          <div class="comments__time">13:45</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item self">
+                      <div class="comments__content"><span class="p-r-1">Тут вражеские язычки</span>
+                        <div class="comments__time"> 
+                          <div class="comments__time">13:45</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comments__item self">
+                      <div class="comments__content"><span class="p-r-1">тно только угловые скругления у аватара сделать меньше</span>
+                        <div class="comments__time"> 
+                          <div class="comments__time">13:45</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="sidebar__form m-t-a p-t-2">
-                  <form class="search-form" action="#">
-                    <div class="search-form__wrap">
-                      <input class="search-form__input p-l-15" type="text" placeholder="Ваше сообщение">
-                    </div>
-                  </form>
+                  <div class="sidebar__form m-t-a p-t-2">
+                    <form class="search-form" action="#">
+                      <div class="search-form__wrap flex flex--aic">
+                        <div class="comment-input m-r-1">
+                          <input class="search-form__input p-l-15" type="text" placeholder="Ваше сообщение" value="Я, если честно">
+                          <button class="comment-input__smile icon-animate"><img src="images/icons/font/icon-smile.svg" alt="image description"></button>
+                        </div>
+                        <button class="btn primary comment-submit">
+                          <svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 19.5V1M7 1L1 7M7 1L13 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -865,7 +877,7 @@
                     </clipPath>
                   </defs>
                 </svg><span class="m-l-15">Реакции</span>
-                <div class="notice"><strong>12</strong></div>
+                <div class="notice notice--sm">12</div>
               </button>
             </div>
             <button class="circle-btn icon--white">
@@ -1627,6 +1639,112 @@
               </div>
             </div>
             <button class="btn primary full-width">Добавить</button>
+          </div>
+        </div>
+        <div class="modal more js-modal js-room-more-modal p-0">
+          <div class="modal__wrap p-0">
+            <ul class="drop-list">
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="find-in-room-modal">Найти в комнате</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="room-settings-modal">Настройки комнаты</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="create-poll-modal">Создать опрос</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-red">Закрыть комнату</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal more js-modal js-open-for-modal p-0">
+          <div class="modal__wrap p-0">
+            <ul class="drop-list">
+              <li class="drop-list__item"><strong class="text-sm text-gray text-center p-15">Кому открыть комнату</strong></li>
+              <li class="drop-list__item">
+                <button>Всем</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Всем, на кого подписаны модераторы</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal auth js-modal js-room-settings-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>Настройки комнаты</h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput02" id="customInput02">
+                  <label for="customInput02"><span>Вести запись комнаты</span>
+                    <div class="custom-input__fake-toggle"> </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput03" id="customInput03" checked>
+                  <label for="customInput03"><span>Все гости — спикеры</span>
+                    <div class="custom-input__fake-toggle"> </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput04" id="customInput04">
+                  <label for="customInput04"><span>Доступен чат</span>
+                    <div class="custom-input__fake-toggle"> </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="custom-input"> 
+                  <input type="checkbox" name="customInput05" id="customInput05" checked>
+                  <label for="customInput05"><span>Возможность поднять руку</span>
+                    <div class="custom-input__fake-toggle"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-find-in-room-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>Поиск участников</span>
+              </h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row"> 
+              <form class="search-form search-form--simple" action="#">
+                <div class="search-form__wrap"> 
+                  <button class="search-form__btn" type="submit"></button>
+                  <input class="search-form__input" type="search" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
+            <div class="modal__row"> </div>
           </div>
         </div>
         <div class="mask js-mask"></div>

@@ -1,7 +1,7 @@
 .control-panel {
     position: fixed;
     bottom: 3rem;
-    left: calc(50% - 47.5rem);
+    left: calc(50% - 46.5rem);
 
     &__wrapper {
         background: $white;
@@ -12,5 +12,11 @@
 
     &__btn {
         position: relative;
+        
+        .notice {
+            position: absolute;
+            top: -0.2rem;
+            left: 1.6rem;
+        }
     }
 }
