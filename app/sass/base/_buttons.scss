@@ -14,6 +14,9 @@ button {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -23,6 +26,7 @@ button {
   border: 1px solid $white;
   color: $white;
   @include animate(background-color color opacity);
+  min-height: 36px;
 
   &.primary {
     background-color: $blue;
@@ -155,7 +159,8 @@ button {
     }
   }
 
-  img {
+  img,
+  svg {
     margin-right: 0.8rem;
   }
 }

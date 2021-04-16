@@ -12,6 +12,12 @@
 
     &__btn {
         position: relative;
+
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
         
         .notice {
             position: absolute;

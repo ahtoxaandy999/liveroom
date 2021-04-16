@@ -62,14 +62,13 @@ html{
 body{
   font-family:"TT Norms Pro"; }
 body::-webkit-scrollbar{
-    width:3px;
-    height:3px; }
+    width:0;
+    height:0; }
 body::-webkit-scrollbar-thumb{
     background:rgba(22, 73, 116, 0.24);
     border-radius:5px; }
 body.js-scroll-lock{
-    overflow:hidden;
-    padding-right:3px; }
+    overflow:hidden; }
 *,
 *:before,
 *:after{
@@ -110,6 +109,7 @@ body.js-scroll-lock{
 .full-width{
   width:100%; }
 .scroll-wrap{
+  overflow-x:hidden;
   overflow-y:auto;
   max-height:34.5rem; }
 .scroll-wrap::-webkit-scrollbar{
@@ -290,7 +290,7 @@ body.js-scroll-lock{
 .custom-checkbox--circle label::before{
   right:2.7rem;
   top:48%;
-  content:url("../images/icons/font/icon-check-white.svg"); }
+  content:url("../images/icons/icon-check-white.svg"); }
 .comment-input{
   position:relative;
   width:100%; }
@@ -321,6 +321,15 @@ a.base-card__wrap:hover{
 button{
   font-size:1.5rem; }
 .btn{
+  display:-webkit-inline-box;
+  display:-webkit-inline-flex;
+  display:inline-flex;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items:center;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
   border-radius:12px;
   font-size:1.5rem;
   font-weight:500;
@@ -331,7 +340,8 @@ button{
   border:1px solid #fff;
   color:#fff;
   -webkit-transition:background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  transition:background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out; }
+  transition:background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  min-height:36px; }
 .btn.primary{
     background-color:#2288DD;
     color:#fff; }
@@ -429,7 +439,8 @@ button{
   color:#2288DD; }
 .icon-btn:hover span{
     text-decoration:underline; }
-.icon-btn img{
+.icon-btn img,
+  .icon-btn svg{
     margin-right:0.8rem; }
 .circle-btn{
   -webkit-transition:background-color 0.2s ease-in-out;
@@ -564,8 +575,8 @@ strong{
   flex-shrink:0;
   border-radius:50%; }
 .logo-holder--xs{
-    width:2.8rem;
-    height:2.8rem; }
+    width:3.2rem;
+    height:3.2rem; }
 .logo-holder--sm{
     width:3.6rem;
     height:3.6rem; }
@@ -703,7 +714,13 @@ strong{
     -webkit-justify-content:space-between;
     justify-content:space-between; }
 .header .logo{
-    margin-right:12.6rem; }
+    margin-right:12.6rem;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center; }
 .user-btn{
   margin-right:2.8rem; }
 .user-btn:last-child{
@@ -719,7 +736,13 @@ strong{
   margin-right:4rem; }
 .user-wrap .user-nav{
     -webkit-flex-shrink:0;
-    flex-shrink:0; }
+    flex-shrink:0;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center; }
 .user-lk{
   height:4rem;
   margin-left:4rem;
@@ -793,7 +816,7 @@ strong{
     overflow:hidden;
     overflow-y:auto;
     min-height:46rem;
-    max-height:80vh; }
+    max-height:70vh; }
 .modal__wrap::-webkit-scrollbar{
       width:4px;
       height:4px; }
@@ -1112,6 +1135,8 @@ strong{
   height:100%; }
 .comments.scroll-wrap{
     max-height:none; }
+.comments__block{
+    margin-bottom:1.2rem; }
 .comments__item{
     display:-webkit-box;
     display:-webkit-flex;
@@ -1119,19 +1144,34 @@ strong{
     -webkit-box-align:end;
     -webkit-align-items:flex-end;
     align-items:flex-end;
-    margin-bottom:1.2rem; }
+    margin-bottom:0.4rem;
+    max-width:26.2rem; }
+.comments__item:first-child .comments__content{
+      border-radius:17px 17px 17px 6px; }
+.comments__item:last-child{
+      margin-bottom:0; }
+.comments__item:last-child .comments__content{
+        border-radius:6px 17px 17px 17px; }
+.comments__item:only-child .comments__content{
+      border-radius:17px; }
 .comments__item.self{
-      max-width:27rem;
       margin-left:auto; }
+.comments__item.self:first-child .comments__content{
+        border-radius:17px 17px 6px 17px; }
+.comments__item.self:last-child{
+        margin-bottom:0; }
+.comments__item.self:last-child .comments__content{
+          border-radius:17px 6px 17px 17px; }
 .comments__item.self .comments__content{
         color:#fff;
         background-color:#2288DD;
-        margin-left:auto; }
+        margin-left:auto;
+        border-radius:17px 6px 6px 17px; }
 .comments__item.self .comments__time{
         color:#fff; }
 .comments__content{
     background:rgba(22, 73, 116, 0.12);
-    border-radius:17px;
+    border-radius:6px 17px 17px 6px;
     padding:0.7rem 1.4rem; }
 .comments__content span{
       line-height:2rem; }
@@ -1151,6 +1191,8 @@ strong{
     border-radius:16px; }
 .control-panel__btn{
     position:relative; }
+.control-panel__btn:hover span{
+      text-decoration:underline; }
 .control-panel__btn .notice{
       position:absolute;
       top:-0.2rem;
@@ -1329,7 +1371,8 @@ strong{
     margin:0 auto 1rem;
     background:rgba(22, 73, 116, 0.12); }
 .room-types__icon-holder img{
-      width:2.6rem; }
+      width:2.6rem;
+      border-radius:0; }
 .room__row{
   display:-webkit-box;
   display:-webkit-flex;
@@ -1344,8 +1387,10 @@ strong{
 .room__title .lock-icon{
     position:absolute;
     right:0;
-    top:0.4rem; }
+    top:0.4rem;
+    padding:0.6rem; }
 .room-card{
+  cursor:pointer;
   text-align:center;
   position:relative;
   line-height:1.3;
@@ -1411,7 +1456,8 @@ strong{
   flex:none;
   position:relative; }
 .sidebar.js-active .sidebar__wrap{
-    width:37rem; }
+    width:37rem;
+    opacity:1; }
 .sidebar__head{
     position:absolute;
     width:100%;
@@ -1438,7 +1484,7 @@ strong{
     height:-webkit-calc(100vh - 6.1rem);
     height:calc(100vh - 6.1rem); }
 .sidebar__body--comments{
-      padding-top:5rem;
+      padding-top:4.3rem;
       display:-webkit-box;
       display:-webkit-flex;
       display:flex;
@@ -1466,9 +1512,10 @@ strong{
     padding-top:15vh;
     text-align:center; }
 .sidebar__wrap{
-    -webkit-transition:width 0.2s ease-in-out;
-    transition:width 0.2s ease-in-out;
+    -webkit-transition:width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition:width 0.2s ease-in-out, opacity 0.2s ease-in-out;
     width:0;
+    opacity:0;
     overflow:hidden;
     z-index:2;
     background-color:#F6FBFF;

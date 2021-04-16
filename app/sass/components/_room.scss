@@ -16,11 +16,13 @@
             position: absolute;
             right: 0;
             top: 0.4rem;
+            padding: 0.6rem;
         }
     }
 }
 
 .room-card {
+    cursor: pointer;
     text-align: center;
     position: relative;
     line-height: 1.3;

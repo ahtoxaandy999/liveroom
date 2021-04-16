@@ -13,6 +13,8 @@
 
     .logo {
         margin-right: 12.6rem;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -32,6 +34,8 @@
 
     .user-nav {
         flex-shrink: 0;
+        display: flex;
+        align-items: center;
     }
 }
 
