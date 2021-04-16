@@ -438,9 +438,15 @@ button{
   flex-shrink:0; }
 .more-btn:hover{
     background-color:#EDF3F8; }
+.icon--blue path{
+  fill:#2288DD; }
+.icon--white path{
+  fill:#fff; }
+.icon--red path{
+  fill:#FF6D6D; }
 .icon--hover:hover path{
   fill:#2288DD; }
-.icon path{
+.icon--hover path{
   -webkit-transition:fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
   transition:fill 0.2s ease-in-out, stroke 0.2s ease-in-out; }
 html{
@@ -517,12 +523,14 @@ strong{
     width:2.4rem; }
 .label--sm{
     width:1.6rem; }
-.icon-animate img{
+.icon-animate img,
+.icon-animate svg{
   -webkit-transition:-webkit-transform 0.2s ease-in-out;
   transition:-webkit-transform 0.2s ease-in-out;
   transition:transform 0.2s ease-in-out;
   transition:transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
-.icon-animate:hover img{
+.icon-animate:hover img,
+.icon-animate:hover svg{
   -webkit-transform:rotate(180deg);
   transform:rotate(180deg); }
 .logo-holder{

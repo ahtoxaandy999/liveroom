@@ -84,12 +84,14 @@ strong {
 }
 
 .icon-animate {
-  img {
+  img,
+  svg {
     @include animate(transform);
   }
 
   &:hover {
-    img {
+    img,
+    svg {
       transform: rotate(180deg);
     }
   }

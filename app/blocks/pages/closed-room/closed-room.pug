@@ -8,7 +8,7 @@ section.content-section
 				.flex.flex--aic.m-l-a.m-r-2
 					span.m-r-15 Это закрытая комната
 					button.btn.primary Открыть для...
-				button.more-btn.flex.flex--aic.flex--jcc
+				button(data-modal-to="edit-room-more").more-btn.flex.flex--aic.flex--jcc.js-open-modal
 					img(src="images/icons/font/icon-more-vetrtical.svg" alt="image description")
 			.room__title 
 				h2 Воспитание заказчиков 😈 или как я еще не слетел с катух
@@ -377,6 +377,6 @@ section.content-section
 					.room-card__name.flex.flex--aic.flex--jcc
 						span Yurki
 		include ../../sidebar/sidebar-comments
-	include ../../control-panel/control-panel
+	include ../../control-panel/control-panel--mic
 
 

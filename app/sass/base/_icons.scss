@@ -1,13 +1,31 @@
 .icon {
+    &--blue {
+        path {
+            fill: $blue;
+        }
+    }
+
+    &--white {
+        path {
+            fill: $white;
+        }
+    }
+
+    &--red {
+        path {
+            fill: $red;
+        }
+    }
+
     &--hover {
         &:hover {
             path {
                 fill: $blue;
             }
         }
-    }
 
-    path {
-        @include animate(fill stroke);
+        path {
+            @include animate(fill stroke);
+        }
     }
 }
