@@ -1,18 +1,133 @@
-.modal.js-modal.js-find-in-room-modal
-	.modal__wrap
-		.modal__header 
-			h3 
-				button(data-modal-to="user-modal").modal-back-btn.js-open-modal
-					img(src="images/icons/icon-arrow-blue.svg", alt="")
-				span Поиск участников
-			button.modal__close.js-close-modal.icon--hover
-				include ../../icons/close
-		.modal__row 
-			form.search-form.search-form--simple(action="#")
-				.search-form__wrap 
-					button.search-form__btn(type="submit")
-					input.search-form__input(type="search", placeholder="Поиск")
-		.modal__row 
-            
-
-
+.modal.js-modal.js-find-in-room-modal(style="display: block;")
+    .modal__wrap
+        .modal__header 
+            h3 
+                button(data-modal-to="user-modal").modal-back-btn.js-open-modal
+                    img(src="images/icons/icon-arrow-blue.svg", alt="")
+                span Поиск участников
+            button.modal__close.js-close-modal.icon--hover
+                include ../../icons/close
+        .modal__row 
+            form.search-form.search-form--simple(action="#")
+                .search-form__wrap 
+                    button.search-form__btn(type="submit")
+                    input.search-form__input(type="search", placeholder="Поиск")
+        .modal__row 
+            .bars-holder
+                .bars-holder__item
+                    input(type="checkbox", name="bar1" id="bar1")
+                    label(for="bar1").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar2" id="bar2")
+                    label(for="bar2").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar3" id="bar3")
+                    label(for="bar3").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar4" id="bar4")
+                    label(for="bar4").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar5" id="bar5")
+                    label(for="bar5").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar6" id="bar6")
+                    label(for="bar6").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar7" id="bar7")
+                    label(for="bar7").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar8" id="bar8")
+                    label(for="bar8").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki
+                .bars-holder__item
+                    input(type="checkbox", name="bar9" id="bar9")
+                    label(for="bar9").room-card
+                        .logo-holder.logo-holder--ds.m-x-a.m-b-1
+                            img(src="images/user_80.png" alt="image description")
+                            .logo-holder__labels 
+                                .logo-holder__label.tl.active
+                                    .label.label--pro.m-0 pro
+                                .logo-holder__label.tr.active
+                                    .label--icon.label--sm
+                                        img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                        .room-card__name
+                            span Yurki

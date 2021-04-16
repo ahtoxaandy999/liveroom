@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     padding: 11px 15px;
-    background-color: #EDF3F8;
+    background-color: $gray-secondary;
     @include animate(background-color);
     top: 45%;
 

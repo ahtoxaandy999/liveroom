@@ -12,7 +12,7 @@
         visibility: hidden;
 
         &:checked + label {
-            background: #EDF3F8;
+            background: $gray-secondary;
         }
     }
 

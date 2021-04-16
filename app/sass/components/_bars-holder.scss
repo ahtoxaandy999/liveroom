@@ -1,0 +1,26 @@
+.bars-holder {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 25%;
+        overflow: hidden;
+        padding: 0 0.4rem;
+
+        input {
+            position: absolute;
+            visibility: hidden;
+
+            &:checked + label {
+                background-color: $gray-secondary;
+            }
+        }
+    }
+
+    .room-card {
+        padding: 1rem 0;
+        width: auto;
+        border-radius: 12px;
+        display: block;
+    }
+}
