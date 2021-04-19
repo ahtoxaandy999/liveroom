@@ -1223,8 +1223,8 @@ strong{
 .control-panel{
   position:fixed;
   bottom:3rem;
-  left:-webkit-calc(50% - 46.5rem);
-  left:calc(50% - 46.5rem); }
+  left:-webkit-calc(50% - 49rem);
+  left:calc(50% - 49rem); }
 .control-panel__wrapper{
     background:#fff;
     border:0.5px solid rgba(22, 73, 116, 0.24);
