@@ -22,11 +22,10 @@ button {
   font-weight: 500;
   padding: 0.6rem 1rem;
   transition: all 0.3s ease;
-  font-family: "TT Norms Pro";
   border: 1px solid $white;
   color: $white;
   @include animate(background-color color opacity);
-  min-height: 36px;
+  height: 36px;
 
   &.primary {
     background-color: $blue;

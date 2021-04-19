@@ -78,6 +78,14 @@ strong {
     width: 2.4rem;
   }
 
+  &--white-holder {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 0.4rem;
+  }
+
   &--sm {
     width: 1.6rem;
   }

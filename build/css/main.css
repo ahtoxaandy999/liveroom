@@ -336,12 +336,11 @@ button{
   padding:0.6rem 1rem;
   -webkit-transition:all 0.3s ease;
   transition:all 0.3s ease;
-  font-family:"TT Norms Pro";
   border:1px solid #fff;
   color:#fff;
   -webkit-transition:background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition:background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  min-height:36px; }
+  height:36px; }
 .btn.primary{
     background-color:#2288DD;
     color:#fff; }
@@ -556,6 +555,12 @@ strong{
     padding:0; }
 .label--icon{
     width:2.4rem; }
+.label--white-holder{
+    width:2.4rem;
+    height:2.4rem;
+    background-color:#fff;
+    border-radius:1rem;
+    padding:0.4rem; }
 .label--sm{
     width:1.6rem; }
 .icon-animate img,
@@ -1333,8 +1338,6 @@ strong{
   -webkit-align-items:center;
   align-items:center;
   padding:1.5rem 0; }
-.participants__add-btn img{
-    margin-right:1rem; }
 .room-types{
   display:-webkit-box;
   display:-webkit-flex;
@@ -1762,6 +1765,8 @@ strong{
   line-height:1.33;
   color:#8598a7;
   margin-bottom:8px; }
+.user .btn{
+  height:auto; }
 .p-0{
   padding:0; }
 .p-05{
