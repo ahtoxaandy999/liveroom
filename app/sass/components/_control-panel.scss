@@ -12,6 +12,8 @@
 
     &__btn {
         position: relative;
+        color: $blue;
+        font-weight: 500;
 
         &:hover {
             span {

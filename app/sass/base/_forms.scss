@@ -86,6 +86,21 @@
     margin: 0 -2rem;
     padding-left: 2rem;
   }
+
+  button + button,
+  button + div,
+  div + button {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100% - 1.2rem);
+      border-top: 1px solid rgba(22, 73, 116, 0.12);
+    }
+  }
 }
 
 .custom-input {
@@ -108,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.2rem 2rem;
+    padding: 0.8rem 2rem;
     cursor: pointer;
 
     &:hover {
@@ -217,6 +232,10 @@
     position: absolute;
     top: calc(50% - 1.2rem);
     right: 0.8rem;
+  }
+
+  .search-form__input {
+    padding-right: 3.4rem;
   }
 }
 

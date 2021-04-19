@@ -30,7 +30,7 @@ $(document).ready(function () {
 });
 
 function mousewheelInit() {
-  $('.scroll-holder').mousewheel(function (e, delta) {
+  $('.scroll-holder__wrap').mousewheel(function (e, delta) {
     this.scrollLeft -= delta * 30;
     e.preventDefault();
   });

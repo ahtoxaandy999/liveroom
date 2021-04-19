@@ -1,19 +1,22 @@
 .scroll-holder {
     margin: 0 -2rem;
     border-top: 1px solid rgba(22, 73, 116, 0.12);
-    border-bottom: 1px solid rgba(22, 73, 116, 0.12);
-    padding: 1.5rem 2rem;
-    overflow: hidden;
-    overflow-x: auto;
-    display: flex;
 
-    &::-webkit-scrollbar {
-        width: 4px;
-        height: 4px;
-    }
+    &__wrap {
+        padding: 1.5rem 2rem;
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto;
+        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
 
-    &::-webkit-scrollbar-thumb {
-        background-color: $blue;
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $blue;
+        }
     }
 
     &__item {
@@ -27,6 +30,7 @@
     }
 
     p {
-        margin: 0 0 0.5em;
+        margin: 0 0 0.6em;
+        line-height: 2rem;
     }
 }

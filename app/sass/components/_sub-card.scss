@@ -2,7 +2,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     @include animate(background-color);
 
     &:hover {

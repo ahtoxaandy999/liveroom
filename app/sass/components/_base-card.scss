@@ -41,6 +41,7 @@
 
         &--row {
             display: flex;
+            align-items: center;
 
             .user {
                 &:not(:first-of-type) {
@@ -96,6 +97,10 @@
 
         span {
             margin-right: 2rem;
+
+            &:last-of-type {
+                margin-right: 0.6rem;
+            }
         }
     }
 

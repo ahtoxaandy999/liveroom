@@ -94,7 +94,7 @@ strong {
 .icon-animate {
   img,
   svg {
-    @include animate(transform);
+    transition: transform 0.3s ease-in-out;
   }
 
   &:hover {
@@ -110,6 +110,11 @@ strong {
   height: 4rem;
   flex-shrink: 0;
   border-radius: 50%;
+
+  &--xxs {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 
   &--xs {
     width: 3.2rem;
@@ -229,7 +234,7 @@ strong {
   border-radius: 50%;
 
   &--sm {
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }

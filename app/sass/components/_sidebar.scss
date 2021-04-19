@@ -1,11 +1,15 @@
 .sidebar {
-    width: 37rem;
+    width: 39.5rem;
     flex: none;
     position: relative;
 
     &.js-active {
         .sidebar__wrap {
             width: 37rem;
+            opacity: 1;
+        }
+
+        .link {
             opacity: 1;
         }
     }
@@ -18,6 +22,8 @@
         transform: translateX(-50%);
         
         .link {
+            @include animate(opacity);
+            opacity: 0;
             padding: 1.2rem;
             display: flex;
             align-items: center;
@@ -113,6 +119,11 @@
                 white-space: nowrap;
                 transform: rotate(90deg);
             }
+        }
+
+        .notice {
+            border: 0;
+            font-weight: 700;
         }
 
         img {

@@ -64,6 +64,10 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 1.6rem;
+
+        h3 {
+            margin-bottom: 0;
+        }
     }
 
     &__user-settings {
@@ -119,8 +123,8 @@
     }
 
     &__row {
-        &:not(:last-child) {
-            margin-bottom: 2rem;
+        &:not(:last-child):not(.m-b-1) {
+            margin-bottom: 1.6rem;
         }
     }
 
@@ -135,6 +139,8 @@
         }
 
         &.js-open-modal {
+            @include animate(color);
+
             &:hover {
                 color: $blue;
             }
@@ -143,10 +149,10 @@
 
     &__user-nav {
         margin: 0 -2rem;
-    }
 
-    p {
-        max-width: 27rem;
+        .modal-btn {
+            border-top: 1px solid rgba(22, 73, 116, 0.12);
+        }
     }
 
     &__empty {
