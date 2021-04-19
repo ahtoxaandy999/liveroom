@@ -1,5 +1,4 @@
 .drop-list {
-    font-weight: 500;
 
     &__item {
         &:not(:last-child) {
@@ -11,7 +10,8 @@
         @include animate(background-color);
         width: 100%;
         padding: 1.2rem 2rem;
-
+        font-weight: 500;
+        
         &:hover {
             background-color: rgba(22, 73, 116, 0.04);
         }
