@@ -2,6 +2,7 @@ $(document).ready(function () {
     mousewheelInit();
     modalsInit();
     tabsInit();
+    autosize(document.querySelector('.js-textarea'));
     new Swiper('.swiper-container', {
         navigation: {
             nextEl: '.swiper-button-next',
@@ -22,7 +23,7 @@ $(document).ready(function () {
 });
 
 function mousewheelInit() {
-    $('.scroll-holder__wrap').mousewheel(function(e, delta) {
+    $('.scroll-holder__wrap').mousewheel(function (e, delta) {
         this.scrollLeft -= (delta * 30);
         e.preventDefault();
     });
@@ -34,7 +35,7 @@ function tabsInit() {
         const navLinks = holder.find('.tabs__nav-item');
         const tabs = holder.find('.tabs__tab');
         const activeClass = 'js-active'
-        
+
         navLinks.each((i, link) => {
             $(link).click((e) => {
                 e.preventDefault();
@@ -129,7 +130,7 @@ class OpenClose {
             if (this.hideOnClickOutside) {
                 //hide drop on click outside
                 document.addEventListener('click', (el) => {
-                    if ( el.target.classList.contains('js-open-modal') || !currentEl.contains(el.target)) {
+                    if (el.target.classList.contains('js-open-modal') || !currentEl.contains(el.target)) {
                         this.removeClass(currentEl);
                     }
                 });

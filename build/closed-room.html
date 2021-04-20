@@ -26,7 +26,7 @@
                     <div class="tabs__tab js-active" id="tab1">
                       <ul class="main-list main-list--simple m-x-0">
                         <li class="main-list__item">
-                          <div class="sub-card p-x-0">
+                          <div class="sub-card m-rv-x-2 p-x-2">
                             <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                             <div class="sub-card__content"> 
                               <h4>Анна Кузнецова</h4><span>@aniuta</span>
@@ -35,7 +35,7 @@
                           </div>
                         </li>
                         <li class="main-list__item">
-                          <div class="sub-card p-x-0">
+                          <div class="sub-card m-rv-x-2 p-x-2">
                             <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                             <div class="sub-card__content"> 
                               <h4>Анна Кузнецова</h4><span>@aniuta</span>
@@ -44,7 +44,7 @@
                           </div>
                         </li>
                         <li class="main-list__item">
-                          <div class="sub-card p-x-0">
+                          <div class="sub-card m-rv-x-2 p-x-2">
                             <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                             <div class="sub-card__content"> 
                               <h4>Анна Кузнецова</h4><span>@aniuta</span>
@@ -53,7 +53,7 @@
                           </div>
                         </li>
                         <li class="main-list__item">
-                          <div class="sub-card p-x-0">
+                          <div class="sub-card m-rv-x-2 p-x-2">
                             <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                             <div class="sub-card__content"> 
                               <h4>Анна Кузнецова</h4><span>@aniuta</span>
@@ -62,7 +62,7 @@
                           </div>
                         </li>
                         <li class="main-list__item">
-                          <div class="sub-card p-x-0">
+                          <div class="sub-card m-rv-x-2 p-x-2">
                             <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                             <div class="sub-card__content"> 
                               <h4>Анна Кузнецова</h4><span>@aniuta</span>
@@ -71,7 +71,7 @@
                           </div>
                         </li>
                         <li class="main-list__item">
-                          <div class="sub-card p-x-0">
+                          <div class="sub-card m-rv-x-2 p-x-2">
                             <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
                             <div class="sub-card__content"> 
                               <h4>Анна Кузнецова</h4><span>@aniuta</span>
@@ -913,9 +913,11 @@
                   </div>
                   <div class="sidebar__form m-t-a p-t-15">
                     <form class="search-form" action="#">
-                      <div class="search-form__wrap flex flex--aic">
+                      <div class="search-form__wrap flex flex--aie">
                         <div class="comment-input m-r-1">
-                          <input class="search-form__input p-l-15" type="text" placeholder="Ваше сообщение" value="Я, если честно">
+                          <div class="comment-input__area-wrap scroll-wrap">
+                            <textarea class="js-textarea search-form__input p-l-15" placeholder="Ваше сообщение" value="Я, если честно" row="1"></textarea>
+                          </div>
                           <button class="comment-input__smile icon-animate"><img src="images/icons/font/icon-smile.svg" alt="image description"></button>
                         </div>
                         <button class="btn primary comment-submit">
@@ -1795,7 +1797,7 @@
             </div>
             <div class="modal__row"> 
               <div class="form-control">
-                <div class="custom-input"> 
+                <div class="custom-input m-rv-l-25"> 
                   <input type="checkbox" name="customInput02" id="customInput02">
                   <label for="customInput02"><span>Вести запись комнаты</span>
                     <div class="custom-input__fake-toggle"> </div>
@@ -1803,7 +1805,7 @@
                 </div>
               </div>
               <div class="form-control">
-                <div class="custom-input"> 
+                <div class="custom-input m-rv-l-25"> 
                   <input type="checkbox" name="customInput03" id="customInput03" checked>
                   <label for="customInput03"><span>Все гости — спикеры</span>
                     <div class="custom-input__fake-toggle"> </div>
@@ -1811,7 +1813,7 @@
                 </div>
               </div>
               <div class="form-control">
-                <div class="custom-input"> 
+                <div class="custom-input m-rv-l-25"> 
                   <input type="checkbox" name="customInput04" id="customInput04">
                   <label for="customInput04"><span>Доступен чат</span>
                     <div class="custom-input__fake-toggle"> </div>
@@ -1819,7 +1821,7 @@
                 </div>
               </div>
               <div class="form-control">
-                <div class="custom-input"> 
+                <div class="custom-input m-rv-l-25"> 
                   <input type="checkbox" name="customInput05" id="customInput05" checked>
                   <label for="customInput05"><span>Возможность поднять руку</span>
                     <div class="custom-input__fake-toggle"></div>
@@ -1833,7 +1835,7 @@
           <div class="modal__wrap">
             <div class="modal__header"> 
               <h3> 
-                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>Поиск участников</span>
+                <button class="modal-back-btn js-open-modal" data-modal-to="room-more-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>Поиск участников</span>
               </h3>
               <button class="modal__close js-close-modal icon--hover">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

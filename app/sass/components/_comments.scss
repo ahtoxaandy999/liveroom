@@ -13,7 +13,6 @@
         display: flex;
         align-items: flex-end;
         margin-bottom: 0.4rem;
-        max-width: 26.2rem;
 
         &:first-child {
             .comments__content {
@@ -70,6 +69,7 @@
         background: rgba(22, 73, 116, 0.12);
         border-radius: 6px 17px 17px 6px;
         padding: 0.7rem 1.4rem;
+        max-width: 26.2rem;
 
         span {
             line-height: 2rem;
