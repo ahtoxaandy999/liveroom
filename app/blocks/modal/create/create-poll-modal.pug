@@ -1,0 +1,44 @@
+.modal.js-modal.js-create-poll-modal(style="display: block;")
+	.modal__wrap
+		.modal__header 
+			h3 Опрос
+			button.modal__close.js-close-modal.icon--hover
+				include ../../icons/close
+		.modal__row 
+			.form-control.gray
+				textarea(placeholder="Что вы хотите спросить?").modal-btn.modal-btn--area
+		.modal__row 
+			.form-control.gray
+				button.modal-btn
+					span.text-gray Вариант ответа
+				.participants.p-l-15
+					.participants__content
+						.participants__item
+							span Шляпы с большими полями
+							button.participants__close-btn.icon--hover
+								include ../../icons/close
+					button.participants__add-btn.icon-animate.icon--blue
+						include ../../icons/add
+						strong.m-l-1 Добавить ответ
+		.modal__row 
+			.form-control.bordered.p-t-8
+				.custom-input.m-rv-l-25 
+					input(type="checkbox", name="customInput03" id="customInput03")
+					label(for="customInput03")
+						span Анонимное голосование
+						.custom-input__fake-toggle
+				.custom-input.m-rv-l-25 
+					input(type="checkbox", name="customInput04" id="customInput04" checked)
+					label(for="customInput04")
+						span Режим викторины
+						.custom-input__fake-toggle
+				.custom-input.m-rv-l-25 
+					input(type="checkbox", name="customInput05" id="customInput05")
+					label(for="customInput05")
+						span Выбор нескольких ответов
+						.custom-input__fake-toggle
+		.modal__row 
+			.form-control.gray
+				textarea(placeholder="Комментарий").modal-btn.modal-btn--area
+
+		button.btn.primary.full-width Создать опрос

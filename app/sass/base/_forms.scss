@@ -25,6 +25,12 @@
   }
 }
 
+textarea {
+  font-family: $base-font-family;
+  font-size: 1.5rem;
+  resize: none;
+}
+
 .search-form {
   margin-right: 4rem;
 
@@ -158,6 +164,27 @@
       @include animate(transform);
     }
   }
+
+  &--circle {
+    .custom-input__fake-toggle {
+      width: 2.6rem;
+      height: 2.6rem;
+      border: 1px solid rgba(22, 73, 116, 0.24);
+      border-radius: 50%;
+      background-color: $white;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        content: url('../images/icons/icon-check-white.svg');
+        position: absolute;
+        top: -1px;
+        left: calc(50% - 5px);
+      }
+    }
+  }
 }
 
 .custom-checkbox {
@@ -241,10 +268,11 @@
     display: flex;
     width: 100%;
     max-height: 21.6rem;
+    border-radius: 1rem;
+    padding-right: 0;
   }
 
   .search-form__input {
-    font-family: $base-font-family;
     padding-right: 3.4rem;
     resize: none;
     overflow-x: hidden;

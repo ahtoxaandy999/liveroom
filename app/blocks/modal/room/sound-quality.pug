@@ -1,0 +1,25 @@
+.modal.auth.js-modal.js-sound-quality-modal
+	.modal__wrap
+		.modal__header 
+			h3 Качество звука
+			button.modal__close.js-close-modal.icon--hover
+				include ../../icons/close
+		.modal__row 
+			.form-control
+				.custom-input.custom-input--circle.m-rv-x-25 
+					input(type="radio" name="soundQ" value="customInput12" id="customInput12")
+					label(for="customInput12")
+						span Низкое
+						.custom-input__fake-toggle 
+			.form-control
+				.custom-input.custom-input--circle.m-rv-x-25 
+					input(type="radio" name="soundQ" value="customInput13" id="customInput13" checked)
+					label(for="customInput13")
+						span Среднее
+						.custom-input__fake-toggle 
+			.form-control
+				.custom-input.custom-input--circle.m-rv-x-25 
+					input(type="radio" name="soundQ" value="customInput14" id="customInput14")
+					label(for="customInput14")
+						span Высокое
+						.custom-input__fake-toggle
