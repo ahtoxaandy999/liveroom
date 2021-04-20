@@ -3,10 +3,11 @@
 
     .container {
         display: flex;
+        justify-content: center;
     }
 
     .content-wrap {
-        width: 100%;
+        width: 58rem;
         padding-top: 3rem;
         height: calc(100vh - 6.1rem);
         max-height: none;
