@@ -17,6 +17,14 @@
     align-items: center;
   }
 
+  &--aie {
+    align-items: flex-end;
+  }
+
+  &--ais {
+    align-items: flex-start;
+  }
+
   &--jcc {
     justify-content: center;
   }
@@ -38,6 +46,8 @@
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 34.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(22, 73, 116, 0.24) transparent;
 
   &::-webkit-scrollbar {
     width: 4px;

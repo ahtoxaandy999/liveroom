@@ -10,6 +10,7 @@ $(document).ready(function () {
   mousewheelInit();
   modalsInit();
   tabsInit();
+  autosize(document.querySelector('.js-textarea'));
   new Swiper('.swiper-container', {
     navigation: {
       nextEl: '.swiper-button-next',

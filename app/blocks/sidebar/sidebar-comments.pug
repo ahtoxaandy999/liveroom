@@ -64,9 +64,10 @@
                                 .comments__time 13:45
             .sidebar__form.m-t-a.p-t-15
                 form.search-form(action="#")
-                    .search-form__wrap.flex.flex--aic
+                    .search-form__wrap.flex.flex--aie
                         .comment-input.m-r-1
-                            input.search-form__input.p-l-15(type="text", placeholder="Ваше сообщение" value="Я, если честно")
+                            .comment-input__area-wrap.scroll-wrap
+                                textarea.js-textarea.search-form__input.p-l-15(placeholder="Ваше сообщение" value="Я, если честно" row="1")
                             button.comment-input__smile.icon-animate
                                 img(src="images/icons/font/icon-smile.svg" alt="image description")
                         button.btn.primary.comment-submit

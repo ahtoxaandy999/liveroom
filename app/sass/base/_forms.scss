@@ -227,15 +227,29 @@
 .comment-input {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
 
   &__smile {
     position: absolute;
-    top: calc(50% - 1.2rem);
+    bottom: 0.6rem;
     right: 0.8rem;
+    height: 2.4rem;
+  }
+
+  &__area-wrap {
+    display: flex;
+    width: 100%;
+    max-height: 21.6rem;
   }
 
   .search-form__input {
+    font-family: $base-font-family;
     padding-right: 3.4rem;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 3.6rem;
   }
 }
 
