@@ -22,5 +22,9 @@
         width: auto;
         border-radius: 12px;
         display: block;
+
+        &:hover {
+            background-color: $gray-secondary;
+        }
     }
 }

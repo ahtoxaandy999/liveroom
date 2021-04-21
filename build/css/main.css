@@ -1112,6 +1112,8 @@ strong{
     width:auto;
     border-radius:12px;
     display:block; }
+.bars-holder .room-card:hover{
+      background-color:#EDF3F8; }
 .base-card{
   margin-bottom:1.6rem;
   width:100%; }
@@ -1426,6 +1428,8 @@ strong{
     min-height:4.4rem; }
 .notifications__item.warn{
       background-color:#F2994A; }
+.notifications .btn{
+    height:3.2rem; }
 .participants:not(:only-child){
   border-top:1px solid rgba(22, 73, 116, 0.12); }
 .participants__head{
@@ -1879,6 +1883,8 @@ strong{
     width:calc(100% - 5.6rem); }
 .tabs .base-card{
     cursor:pointer; }
+.tabs .base-card__wrap{
+      color:#000; }
 .user__content{
   display:-webkit-box;
   display:-webkit-flex;
