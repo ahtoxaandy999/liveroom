@@ -30,7 +30,7 @@
         content: '';
         width: calc(100% - 60px);
         height: 1px;
-        background-color: rgba(22, 73, 116, 0.12);
+        background-color: $gray-dark;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -41,7 +41,7 @@
       content: '';
       width: calc(100% - 60px);
       height: 1px;
-      background-color: rgba(22, 73, 116, 0.12);
+      background-color: $gray-dark;
       position: absolute;
       top: 0;
       right: 0;

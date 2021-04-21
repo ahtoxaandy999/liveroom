@@ -3,7 +3,7 @@
 
     &__nav {
         display: flex;
-        background: rgba(22, 73, 116, 0.12);
+        background: $gray-dark;
         border-radius: 1rem;
         padding: 2px;
 
@@ -17,6 +17,7 @@
             position: relative;
             color: $black;
             border-radius: 7px;
+            border: 0.5px solid transparent;
     
             &::before {
                 content: '';
@@ -38,7 +39,7 @@
     
             &.js-active {
                 background: #FFFFFF;
-                border: 0.5px solid rgba(0, 0, 0, 0.04);
+                border-color: rgba(0, 0, 0, 0.04);
                 box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
     
                 &::before {
@@ -55,6 +56,7 @@
 
     &__tab {
         display: none;
+        margin-right: -0.8rem;
 
         &.js-active {
             display: block;
@@ -68,12 +70,12 @@
         justify-content: center;
     }
 
-    .scroll-wrap {
-        min-height: 34.5rem;
-    }
-
     .sub-card {
         line-height: 1.4;
+    }
+
+    .inner-scroll {
+        
     }
 
     .main-list--simple {

@@ -48,6 +48,7 @@
   max-height: 34.5rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(22, 73, 116, 0.24) transparent;
+  margin-right: 0.8rem;
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -57,5 +58,9 @@
   &::-webkit-scrollbar-thumb {
     background: rgba(22, 73, 116, 0.24);
     border-radius: 5px;
+  }
+
+  &.inner-scroll {
+    max-height: 63vh;
   }
 }

@@ -1,12 +1,10 @@
 a {
-  @include animate(opacity);
 
   color: $blue;
   text-decoration: $link-decoration;
 
   &:hover {
     text-decoration: none;
-    opacity: 0.7;
   }
 }
 

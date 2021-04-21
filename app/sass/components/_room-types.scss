@@ -12,7 +12,7 @@
         visibility: hidden;
 
         &:checked + label {
-            background: $gray-secondary;
+            background-color: $gray-secondary;
         }
     }
 
@@ -22,8 +22,12 @@
         text-align: center;
         padding: 1rem 1.4rem;
         display: block;
-        @include animate(background);
+        @include animate(background-color);
         cursor: pointer;
+
+        &:hover {
+            background-color: $blue-light;
+        }
     }
 
     &__icon-holder {
@@ -32,7 +36,7 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto 1rem;
-        background: rgba(22, 73, 116, 0.12);
+        background: $gray-dark;
 
         img {
             width: 2.6rem;

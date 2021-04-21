@@ -1,13 +1,15 @@
 .scroll-holder {
     margin: 0 -2rem;
-    border-top: 1px solid rgba(22, 73, 116, 0.12);
+    border-top: 1px solid $gray-dark;
 
     &__wrap {
         padding: 1.5rem 2rem;
         display: flex;
         overflow: hidden;
         overflow-x: auto;
-        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+        border-bottom: 1px solid $gray-dark;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(22, 73, 116, 0.24) transparent;
 
         &::-webkit-scrollbar {
             width: 4px;

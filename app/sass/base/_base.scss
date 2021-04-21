@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(22, 73, 116, 0.24) transparent;
 
   &::-webkit-scrollbar {
     width: 0;

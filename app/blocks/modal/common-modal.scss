@@ -13,7 +13,9 @@
     display: none;
     position: fixed;
     z-index: 30;
-    top: 15vh;
+    // top: calc(50% - 48vh);
+    top: 50%;
+    transform: translateY(-50%);
     left: calc(50% - 19rem);
     padding: 2rem 0;
     background: $white;
@@ -42,7 +44,9 @@
         overflow: hidden;
         overflow-y: auto;
         min-height: 46rem;
-        max-height: 70vh;
+        max-height: 90vh;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(22, 73, 116, 0.24) transparent;
 
         &::-webkit-scrollbar {
             width: 4px;
@@ -139,10 +143,10 @@
         }
 
         &.js-open-modal {
-            @include animate(color);
-
             &:hover {
-                color: $blue;
+                span:not(.text-xl) {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -151,7 +155,7 @@
         margin: 0 -2rem;
 
         .modal-btn {
-            border-top: 1px solid rgba(22, 73, 116, 0.12);
+            border-top: 1px solid $gray-dark;
         }
     }
 

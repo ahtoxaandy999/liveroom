@@ -1,16 +1,17 @@
 .participants {
     &:not(:only-child) {
-        border-top: 1px solid rgba(22, 73, 116, 0.12);
+        border-top: 1px solid $gray-dark;
     }
 
     &__head {
         padding: 0.8rem 0;
-        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+        border-bottom: 1px solid $gray-dark;
         display: flex;
         align-items: center;
 
         .title {
             margin-right: 0.8rem;
+            min-width: 8rem;
         }
     }
 
@@ -19,15 +20,16 @@
     }
 
     &__content {
-        padding-left: 7.2rem;
-        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+        padding-left: 8.8rem;
+        border-bottom: 1px solid $gray-dark;
     }
 
     &__item {
         display: flex;
+        align-items: center;
         padding: 0.8rem 0;
         padding-right: 1.2rem;
-        border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+        border-bottom: 1px solid $gray-dark;
 
         &:last-child {
             border-bottom: 0;
@@ -36,10 +38,16 @@
 
     &__close-btn {
         margin-left: auto;
-        width: 2rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        display: flex;
+        align-items: center;
+        padding: 0.4rem;
 
-        img {
+        img,
+        svg {
             width: 100%;
+            height: auto;
         }
     }
 

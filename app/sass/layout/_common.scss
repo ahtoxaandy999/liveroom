@@ -94,13 +94,13 @@ strong {
 .icon-animate {
   img,
   svg {
-    transition: transform 0.3s ease-in-out;
+    @include animate(opacity);
   }
 
   &:hover {
     img,
     svg {
-      transform: rotate(180deg);
+      opacity: 0.6;
     }
   }
 }
@@ -204,7 +204,7 @@ strong {
 
   &::before {
     content: '';
-    border-top: 1px solid rgba(22, 73, 116, 0.12);
+    border-top: 1px solid $gray-dark;
     position: absolute;
     bottom: 0;
     left: -1.6rem;
