@@ -11,34 +11,41 @@
 			.form-control.gray
 				button.modal-btn
 					span.text-gray Вариант ответа
-				.participants.p-l-15
-					.participants__content
+				.participants.participants--simple.p-l-15
+					.participants__content.p-l-0
 						.participants__item
 							span Шляпы с большими полями
 							button.participants__close-btn.icon--hover
 								include ../../icons/close
-					button.participants__add-btn.icon-animate.icon--blue
+						.participants__item
+							span Шляпы с большими полями
+							button.participants__close-btn.icon--hover
+								include ../../icons/close
+					button.participants__add-btn.link.icon--blue
 						include ../../icons/add
 						strong.m-l-1 Добавить ответ
 		.modal__row 
-			.form-control.bordered.p-t-8
-				.custom-input.m-rv-l-25 
+			.form-control.bordered.m-rv-x-25.p-x-25.p-t-8
+				.custom-input.m-rv-l-1 
 					input(type="checkbox", name="customInput03" id="customInput03")
 					label(for="customInput03")
 						span Анонимное голосование
 						.custom-input__fake-toggle
-				.custom-input.m-rv-l-25 
+				.custom-input.m-rv-l-1 
 					input(type="checkbox", name="customInput04" id="customInput04" checked)
 					label(for="customInput04")
 						span Режим викторины
 						.custom-input__fake-toggle
-				.custom-input.m-rv-l-25 
+				.custom-input.m-rv-l-1 
 					input(type="checkbox", name="customInput05" id="customInput05")
 					label(for="customInput05")
 						span Выбор нескольких ответов
 						.custom-input__fake-toggle
 		.modal__row 
-			.form-control.gray
+			.form-control.bordered.m-rv-x-25.p-x-25.p-t-1
+				strong.text-sm.text-gray Никто не видит голосующих участников
+		.modal__row 
+			.form-control.gray.bordered
 				textarea(placeholder="Комментарий").modal-btn.modal-btn--area
 
 		button.btn.primary.full-width Создать опрос

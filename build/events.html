@@ -1271,20 +1271,20 @@
               </div>
             </div>
             <div class="modal__row"> 
-              <div class="form-control bordered p-t-8">
-                <div class="custom-input m-rv-l-25"> 
+              <div class="form-control bordered m-rv-x-25 p-x-25 p-t-8">
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput3" id="customInput3">
                   <label for="customInput3"><span>Вести запись комнаты</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput4" id="customInput4" checked>
                   <label for="customInput4"><span>Все гости — спикеры</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput5" id="customInput5">
                   <label for="customInput5"><span>Доступен чат</span>
                     <div class="custom-input__fake-toggle"></div>
@@ -1313,8 +1313,15 @@
             <div class="modal__row"> 
               <div class="form-control gray">
                 <button class="modal-btn"><span class="text-gray">Вариант ответа</span></button>
-                <div class="participants p-l-15">
-                  <div class="participants__content">
+                <div class="participants participants--simple p-l-15">
+                  <div class="participants__content p-l-0">
+                    <div class="participants__item"><span>Шляпы с большими полями</span>
+                      <button class="participants__close-btn icon--hover">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                        </svg>
+                      </button>
+                    </div>
                     <div class="participants__item"><span>Шляпы с большими полями</span>
                       <button class="participants__close-btn icon--hover">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1323,7 +1330,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="participants__add-btn icon-animate icon--blue">
+                  <button class="participants__add-btn link icon--blue">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 3C13.0523 3 13.5 3.44772 13.5 4V11H20.5C21.0523 11 21.5 11.4477 21.5 12C21.5 12.5523 21.0523 13 20.5 13H13.5V20C13.5 20.5523 13.0523 21 12.5 21C11.9477 21 11.5 20.5523 11.5 20V13H4.5C3.94772 13 3.5 12.5523 3.5 12C3.5 11.4477 3.94772 11 4.5 11H11.5V4C11.5 3.44772 11.9477 3 12.5 3Z" fill="#8598A7"></path>
                     </svg><strong class="m-l-1">Добавить ответ</strong>
@@ -1332,20 +1339,20 @@
               </div>
             </div>
             <div class="modal__row"> 
-              <div class="form-control bordered p-t-8">
-                <div class="custom-input m-rv-l-25"> 
+              <div class="form-control bordered m-rv-x-25 p-x-25 p-t-8">
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput03" id="customInput03">
                   <label for="customInput03"><span>Анонимное голосование</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput04" id="customInput04" checked>
                   <label for="customInput04"><span>Режим викторины</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput05" id="customInput05">
                   <label for="customInput05"><span>Выбор нескольких ответов</span>
                     <div class="custom-input__fake-toggle"></div>
@@ -1354,7 +1361,10 @@
               </div>
             </div>
             <div class="modal__row"> 
-              <div class="form-control gray">
+              <div class="form-control bordered m-rv-x-25 p-x-25 p-t-1"><strong class="text-sm text-gray">Никто не видит голосующих участников</strong></div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray bordered">
                 <textarea class="modal-btn modal-btn--area" placeholder="Комментарий"></textarea>
               </div>
             </div>
@@ -1721,7 +1731,7 @@
               </ul>
             </div>
             <div class="modal__row"> 
-              <div class="form-control bordered">
+              <div class="form-control bordered m-rv-x-25 p-x-25">
                 <button class="link primary full-width text-center p-15 m-rv-l-25"><strong>Вернуть всех</strong></button>
               </div>
             </div>
@@ -1763,6 +1773,65 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="modal more js-modal js-show-reaction-modal p-0">
+          <div class="modal__wrap p-0"><strong class="text-sm text-gray text-center p-15">Проявить реакцию</strong>
+            <ul class="drop-list">
+              <li class="drop-list__item">
+                <ul class="smile-list m-b-15">
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac1">
+                    <label for="reac1">👋</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac2">
+                    <label for="reac2">👍</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac3">
+                    <label for="reac3">😂</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac4">
+                    <label for="reac4">❤️</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac5">
+                    <label for="reac5">😢</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac6">
+                    <label for="reac6">😲</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac7">
+                    <label for="reac7">😡</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac8">
+                    <label for="reac8">✋</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac9">
+                    <label for="reac9">🎉</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac10">
+                    <label for="reac10">😐</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="drop-list__item">
+                <button>Участвовать в опросе</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Поднять руку</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="mask js-mask"></div>

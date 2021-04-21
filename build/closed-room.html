@@ -953,7 +953,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 3C13.0523 3 13.5 3.44772 13.5 4V11H20.5C21.0523 11 21.5 11.4477 21.5 12C21.5 12.5523 21.0523 13 20.5 13H13.5V20C13.5 20.5523 13.0523 21 12.5 21C11.9477 21 11.5 20.5523 11.5 20V13H4.5C3.94772 13 3.5 12.5523 3.5 12C3.5 11.4477 3.94772 11 4.5 11H11.5V4C11.5 3.44772 11.9477 3 12.5 3Z" fill="#8598A7"></path>
                 </svg><span class="m-l-15">Пригласить</span>
               </button>
-              <button class="control-panel__btn flex flex--aic p-1 m-r-2 icon--blue">
+              <button class="js-open-modal control-panel__btn flex flex--aic p-1 m-r-2 icon--blue" data-modal-to="show-reaction-modal">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5277 0.0833893C8.45664 0.0833893 6.77771 1.76232 6.77771 3.83339V8.0427C3.18285 8.86145 0.5 12.0777 0.5 15.9205C0.5 20.3826 4.11728 23.9999 8.57941 23.9999C11.3048 23.9999 13.7149 22.6505 15.1783 20.5834H20.5277C22.5988 20.5834 24.2777 18.9045 24.2777 16.8334V3.83339C24.2777 1.76232 22.5988 0.0833893 20.5277 0.0833893H10.5277ZM16.0163 19.0834H20.5277C21.7704 19.0834 22.7777 18.076 22.7777 16.8334V3.83339C22.7777 2.59075 21.7704 1.58339 20.5277 1.58339H10.5277C9.28507 1.58339 8.27771 2.59075 8.27771 3.83339V7.8466C8.37782 7.84293 8.4784 7.84107 8.57941 7.84107C10.1626 7.84107 11.6395 8.29646 12.8862 9.08339H18.5277C18.9419 9.08339 19.2777 9.41918 19.2777 9.83339C19.2777 10.2476 18.9419 10.5834 18.5277 10.5834H14.6452C15.2869 11.3121 15.7993 12.1574 16.1467 13.0834H18.5277C18.9419 13.0834 19.2777 13.4192 19.2777 13.8334C19.2777 14.2476 18.9419 14.5834 18.5277 14.5834H16.5487C16.6211 15.0183 16.6588 15.465 16.6588 15.9205C16.6588 17.043 16.4299 18.112 16.0163 19.0834ZM12.5277 5.08339C12.1135 5.08339 11.7777 5.41918 11.7777 5.83339C11.7777 6.2476 12.1135 6.58339 12.5277 6.58339H18.5277C18.9419 6.58339 19.2777 6.2476 19.2777 5.83339C19.2777 5.41918 18.9419 5.08339 18.5277 5.08339H12.5277ZM12.2518 14.0843C12.2518 14.6928 11.7586 15.1861 11.1501 15.1861C10.5416 15.1861 10.0484 14.6928 10.0484 14.0843C10.0484 13.4759 10.5416 12.9826 11.1501 12.9826C11.7586 12.9826 12.2518 13.4759 12.2518 14.0843ZM7.11039 14.0846C7.11039 14.6931 6.61712 15.1864 6.00865 15.1864C5.40018 15.1864 4.90691 14.6931 4.90691 14.0846C4.90691 13.4762 5.40018 12.9829 6.00865 12.9829C6.61712 12.9829 7.11039 13.4762 7.11039 14.0846ZM4.89281 18.2732C4.83869 18.1879 4.80735 18.0868 4.80735 17.9783C4.80735 17.6741 5.05398 17.4275 5.35822 17.4275C5.55325 17.4275 5.72461 17.5288 5.8225 17.6817L5.83628 17.7001C5.85881 17.7296 5.89588 17.7758 5.9479 17.8333C6.0522 17.9484 6.21482 18.1068 6.43892 18.2663C6.88328 18.5828 7.57511 18.9089 8.55766 18.9089C9.5408 18.9089 10.2451 18.5823 10.7025 18.2633C10.9328 18.1026 11.1013 17.9431 11.21 17.8269C11.2642 17.7689 11.303 17.7222 11.3268 17.6922C11.3386 17.6772 11.3467 17.6665 11.351 17.6607L11.3542 17.6563L11.353 17.658L11.358 17.6616C11.4578 17.5216 11.6216 17.4303 11.8067 17.4303C12.1109 17.4303 12.3575 17.677 12.3575 17.9812C12.3575 18.1365 12.2933 18.2768 12.1899 18.3769C12.1491 18.4283 12.0909 18.4978 12.0148 18.5793C11.8623 18.7423 11.6363 18.9552 11.3328 19.1669C10.7226 19.5926 9.80239 20.0107 8.55766 20.0107C7.31233 20.0107 6.40134 19.5921 5.79985 19.1638C5.50103 18.951 5.27997 18.737 5.13132 18.5729C5.05686 18.4907 5.00014 18.4205 4.9605 18.3686C4.94066 18.3426 4.92505 18.3211 4.91359 18.3049L4.89949 18.2845L4.89474 18.2775L4.89293 18.2748L4.89281 18.2732Z" fill="#8598A7"></path>
@@ -1714,20 +1714,20 @@
               </div>
             </div>
             <div class="modal__row"> 
-              <div class="form-control bordered p-t-8">
-                <div class="custom-input m-rv-l-25"> 
+              <div class="form-control bordered m-rv-x-25 p-x-25 p-t-8">
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput3" id="customInput3">
                   <label for="customInput3"><span>Вести запись комнаты</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput4" id="customInput4" checked>
                   <label for="customInput4"><span>Все гости — спикеры</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput5" id="customInput5">
                   <label for="customInput5"><span>Доступен чат</span>
                     <div class="custom-input__fake-toggle"></div>
@@ -1756,8 +1756,15 @@
             <div class="modal__row"> 
               <div class="form-control gray">
                 <button class="modal-btn"><span class="text-gray">Вариант ответа</span></button>
-                <div class="participants p-l-15">
-                  <div class="participants__content">
+                <div class="participants participants--simple p-l-15">
+                  <div class="participants__content p-l-0">
+                    <div class="participants__item"><span>Шляпы с большими полями</span>
+                      <button class="participants__close-btn icon--hover">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                        </svg>
+                      </button>
+                    </div>
                     <div class="participants__item"><span>Шляпы с большими полями</span>
                       <button class="participants__close-btn icon--hover">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1766,7 +1773,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="participants__add-btn icon-animate icon--blue">
+                  <button class="participants__add-btn link icon--blue">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 3C13.0523 3 13.5 3.44772 13.5 4V11H20.5C21.0523 11 21.5 11.4477 21.5 12C21.5 12.5523 21.0523 13 20.5 13H13.5V20C13.5 20.5523 13.0523 21 12.5 21C11.9477 21 11.5 20.5523 11.5 20V13H4.5C3.94772 13 3.5 12.5523 3.5 12C3.5 11.4477 3.94772 11 4.5 11H11.5V4C11.5 3.44772 11.9477 3 12.5 3Z" fill="#8598A7"></path>
                     </svg><strong class="m-l-1">Добавить ответ</strong>
@@ -1775,20 +1782,20 @@
               </div>
             </div>
             <div class="modal__row"> 
-              <div class="form-control bordered p-t-8">
-                <div class="custom-input m-rv-l-25"> 
+              <div class="form-control bordered m-rv-x-25 p-x-25 p-t-8">
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput03" id="customInput03">
                   <label for="customInput03"><span>Анонимное голосование</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput04" id="customInput04" checked>
                   <label for="customInput04"><span>Режим викторины</span>
                     <div class="custom-input__fake-toggle"></div>
                   </label>
                 </div>
-                <div class="custom-input m-rv-l-25"> 
+                <div class="custom-input m-rv-l-1"> 
                   <input type="checkbox" name="customInput05" id="customInput05">
                   <label for="customInput05"><span>Выбор нескольких ответов</span>
                     <div class="custom-input__fake-toggle"></div>
@@ -1797,7 +1804,10 @@
               </div>
             </div>
             <div class="modal__row"> 
-              <div class="form-control gray">
+              <div class="form-control bordered m-rv-x-25 p-x-25 p-t-1"><strong class="text-sm text-gray">Никто не видит голосующих участников</strong></div>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray bordered">
                 <textarea class="modal-btn modal-btn--area" placeholder="Комментарий"></textarea>
               </div>
             </div>
@@ -2164,7 +2174,7 @@
               </ul>
             </div>
             <div class="modal__row"> 
-              <div class="form-control bordered">
+              <div class="form-control bordered m-rv-x-25 p-x-25">
                 <button class="link primary full-width text-center p-15 m-rv-l-25"><strong>Вернуть всех</strong></button>
               </div>
             </div>
@@ -2206,6 +2216,65 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="modal more js-modal js-show-reaction-modal p-0">
+          <div class="modal__wrap p-0"><strong class="text-sm text-gray text-center p-15">Проявить реакцию</strong>
+            <ul class="drop-list">
+              <li class="drop-list__item">
+                <ul class="smile-list m-b-15">
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac1">
+                    <label for="reac1">👋</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac2">
+                    <label for="reac2">👍</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac3">
+                    <label for="reac3">😂</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac4">
+                    <label for="reac4">❤️</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac5">
+                    <label for="reac5">😢</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac6">
+                    <label for="reac6">😲</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac7">
+                    <label for="reac7">😡</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac8">
+                    <label for="reac8">✋</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac9">
+                    <label for="reac9">🎉</label>
+                  </li>
+                  <li class="smile-list__item"> 
+                    <input type="radio" name="reaction" id="reac10">
+                    <label for="reac10">😐</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="drop-list__item">
+                <button>Участвовать в опросе</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Поднять руку</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="mask js-mask"></div>

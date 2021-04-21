@@ -1,5 +1,5 @@
 .participants {
-    &:not(:only-child) {
+    &:not(:only-child):not(.participants--simple) {
         border-top: 1px solid $gray-dark;
     }
 
@@ -56,5 +56,6 @@
         display: flex;
         align-items: center;
         padding: 1.5rem 0;
+        width: 100%;
     }
 }

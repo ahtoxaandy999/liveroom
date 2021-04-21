@@ -1,0 +1,30 @@
+.smile-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked + label {
+            background-color: $gray-secondary;
+        }
+    }
+
+    label {
+        cursor: pointer;
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+
+        @include animate(background-color);
+        &:hover {
+            background-color: $blue-light;
+        }
+    }
+}
