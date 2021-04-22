@@ -13,7 +13,6 @@
     display: none;
     position: fixed;
     z-index: 30;
-    // top: calc(50% - 48vh);
     top: 50%;
     transform: translateY(-50%);
     left: calc(50% - 19rem);
@@ -32,7 +31,6 @@
     &.more {
         width: 32rem;
         left: calc(50% - 16rem);
-        top: 30vh;
 
         .modal__wrap {
             min-height: 0;

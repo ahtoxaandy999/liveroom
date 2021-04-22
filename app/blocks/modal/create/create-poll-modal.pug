@@ -1,4 +1,4 @@
-.modal.js-modal.js-create-poll-modal
+.modal.js-modal.js-create-poll-modal(style="display: block;")
 	.modal__wrap
 		.modal__header 
 			h3 Опрос
@@ -13,12 +13,32 @@
 					span.text-gray Вариант ответа
 				.participants.participants--simple.p-l-15
 					.participants__content.p-l-0
-						.participants__item
-							span Шляпы с большими полями
+						.participants__item.custom-input.custom-input--circle
+							input(type="radio" name="poolA" value="poolA1" id="poolA1" checked)
+							label(for="poolA1")
+								.custom-input__fake-toggle.m-r-15
+								span Шляпы с большими полями
 							button.participants__close-btn.icon--hover
 								include ../../icons/close
-						.participants__item
-							span Шляпы с большими полями
+						.participants__item.custom-input.custom-input--circle
+							input(type="radio" name="poolA" value="poolA2" id="poolA2")
+							label(for="poolA2")
+								.custom-input__fake-toggle.m-r-15
+								span Очки в роговой оправе
+							button.participants__close-btn.icon--hover
+								include ../../icons/close
+						.participants__item.custom-input.custom-input--circle
+							input(type="radio" name="poolA" value="poolA3" id="poolA3")
+							label(for="poolA3")
+								.custom-input__fake-toggle.m-r-15
+								span Розовые кеды Converse
+							button.participants__close-btn.icon--hover
+								include ../../icons/close
+						.participants__item.custom-input.custom-input--circle
+							input(type="radio" name="poolA" value="poolA4" id="poolA4")
+							label(for="poolA4")
+								.custom-input__fake-toggle.m-r-15
+								span Волчья шуба
 							button.participants__close-btn.icon--hover
 								include ../../icons/close
 					button.participants__add-btn.link.icon--blue
@@ -45,7 +65,7 @@
 			.form-control.bordered.m-rv-x-25.p-x-25.p-t-1
 				strong.text-sm.text-gray Никто не видит голосующих участников
 		.modal__row 
-			.form-control.gray.bordered
+			.form-control.gray
 				textarea(placeholder="Комментарий").modal-btn.modal-btn--area
 
 		button.btn.primary.full-width Создать опрос

@@ -69,7 +69,6 @@ textarea {
     color: $text-color;
     background-color: rgba(22, 73, 116, 0.08);
     border-radius: 10px;
-    height: 3.6rem;
     width: 100%;
     font-size: 1.7rem;
     padding: 0.8rem 2rem 0.8rem 3rem;
@@ -128,6 +127,9 @@ textarea {
         &::before {
           transform: translateX(20px);
         }
+        &::after {
+          opacity: 1;
+        }
       }
     }
   }
@@ -178,13 +180,15 @@ textarea {
       height: 2.6rem;
       border: 1px solid rgba(22, 73, 116, 0.24);
       border-radius: 50%;
-      background-color: $white;
+      background-color: transparent;
 
       &::before {
         display: none;
       }
 
       &::after {
+        @include animate(opacity);
+        opacity: 0;
         content: url('../images/icons/icon-check-white.svg');
         position: absolute;
         top: -1px;
@@ -302,4 +306,8 @@ textarea {
   display: flex;
   align-items: center;  
   justify-content: center;
+}
+
+.js-textarea {
+  height: 3.6rem;
 }
