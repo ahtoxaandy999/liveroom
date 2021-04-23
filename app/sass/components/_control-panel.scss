@@ -2,7 +2,7 @@
     @include animate(left);
     position: fixed;
     bottom: 3rem;
-    z-index: 5;
+    z-index: 99;
     left: calc(50% - 30rem);
 
     .js-sidebar-active & {
@@ -10,7 +10,7 @@
     }
 
     &.static {
-        left: calc(50% - 48rem);
+        left: calc(50% - 45.75rem);
         width: 54rem;
     }
 

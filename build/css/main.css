@@ -137,9 +137,19 @@ body.js-scroll-lock{
     background:rgba(22, 73, 116, 0.24);
     border-radius:5px; }
 .scroll-wrap.inner-scroll{
-    max-height:63vh; }
+    max-height:63vh;
+    padding-bottom:4rem;
+    scrollbar-width:none; }
+.scroll-wrap.inner-scroll::-webkit-scrollbar{
+      width:0;
+      height:0; }
 .scroll-wrap.tab-scroll{
-    max-height:70vh; }
+    max-height:80vh;
+    padding-bottom:8rem;
+    scrollbar-width:none; }
+.scroll-wrap.tab-scroll::-webkit-scrollbar{
+      width:0;
+      height:0; }
 @font-face{
   font-family:'TT Norms Pro';
   src:url("../fonts/TTNormsPro-Regular.woff2") format("woff2"), url("../fonts/TTNormsPro-Regular.woff") format("woff");
@@ -1133,7 +1143,10 @@ strong{
       background-color:#EDF3F8; }
 .base-card{
   margin-bottom:1.6rem;
-  width:100%; }
+  width:100%;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex; }
 .base-card__wrap{
     color:#000;
     position:relative;
@@ -1344,15 +1357,15 @@ strong{
   transition:left 0.2s ease-in-out;
   position:fixed;
   bottom:3rem;
-  z-index:5;
+  z-index:99;
   left:-webkit-calc(50% - 30rem);
   left:calc(50% - 30rem); }
 .js-sidebar-active .control-panel{
     left:-webkit-calc(50% - 48rem);
     left:calc(50% - 48rem); }
 .control-panel.static{
-    left:-webkit-calc(50% - 48rem);
-    left:calc(50% - 48rem);
+    left:-webkit-calc(50% - 45.75rem);
+    left:calc(50% - 45.75rem);
     width:54rem; }
 .control-panel__wrapper{
     width:100%;
@@ -1931,7 +1944,8 @@ strong{
     display:flex;
     background:rgba(22, 73, 116, 0.12);
     border-radius:1rem;
-    padding:2px; }
+    padding:2px;
+    max-width:51.9rem; }
 .tabs__nav-item{
       font-weight:500;
       -webkit-flex-basis:100%;

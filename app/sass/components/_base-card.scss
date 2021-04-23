@@ -1,6 +1,7 @@
 .base-card {
     margin-bottom: 1.6rem;
     width: 100%;
+    display: flex;
 
     &__wrap {
         color: $black;
