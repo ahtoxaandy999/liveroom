@@ -2,16 +2,8 @@ $(document).ready(function () {
     mousewheelInit();
     modalsInit();
     tabsInit();
+    swiperInit();
     autosize(document.querySelectorAll('.js-textarea'));
-    new Swiper('.swiper-container', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-        slidesPerColumnFill: 'row',
-    });
     new OpenClose({
         holders: '.js-open-close',
         hideOnClickOutside: true
@@ -28,6 +20,20 @@ function mousewheelInit() {
         this.scrollLeft -= (delta * 30);
         e.preventDefault();
     });
+}
+
+function swiperInit() {
+    if(document.querySelector('.swiper-container')) {
+        new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
+        });
+    }
 }
 
 function tabsInit() {
