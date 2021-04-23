@@ -1,7 +1,7 @@
 .mask {
     display: none;
     position: fixed;
-    z-index: 10;
+    z-index: 189;
     top: 0;
     left: 0;
     right: 0;
@@ -12,7 +12,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 30;
+    z-index: 199;
     top: 50%;
     transform: translateY(-50%);
     left: calc(50% - 19rem);
