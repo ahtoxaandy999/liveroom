@@ -26,7 +26,11 @@ button {
   border: 1px solid $white;
   color: $white;
   @include animate(background-color color opacity);
-  height: 36px;
+  height: 3.6rem;
+
+  &.lg {
+    height: 4rem;
+  }
 
   &.primary {
     background-color: $blue;
@@ -52,6 +56,14 @@ button {
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &.red {
+    background-color: $red;
+
+    &:hover {
+      background-color: rgba(255, 109, 109, 0.8);
     }
   }
 

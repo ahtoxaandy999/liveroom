@@ -1,0 +1,22 @@
+.modal.js-modal.js-view-blocked-user-modal
+	.modal__wrap
+		.modal__header 
+			.modal__logo.logo-holder.logo-holder--lg
+				img(src="images/user_80.png", alt="")
+			div.text-right
+				button.modal__close.js-close-modal.icon--hover.m-b-15
+					include ../../icons/close
+				.modal__icon-holder
+					button.btn.red.lg Заблокирован
+		.modal__row
+			h4.m-b-0 Клим Ворошилов
+				strong.label pro
+			p.m-b-0 @kost
+		.modal__row
+			button(data-modal-to="subscribers-modal").js-open-modal.modal__col
+				span.text-xl 14 
+				span подписчиков
+			button(data-modal-to="subscriptions-modal").js-open-modal.modal__col
+				span.text-xl 145 
+				span подписок
+		

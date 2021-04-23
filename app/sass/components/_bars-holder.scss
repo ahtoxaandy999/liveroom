@@ -13,6 +13,10 @@
 
             &:checked + label {
                 background-color: $gray-secondary;
+
+                .logo-holder__label.br {
+                    opacity: 1;
+                }
             }
         }
     }

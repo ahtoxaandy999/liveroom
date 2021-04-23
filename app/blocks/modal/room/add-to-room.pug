@@ -5,11 +5,41 @@
                 span Добавить в комнату
             button.modal__close.js-close-modal.icon--hover
                 include ../../icons/close
-        .modal__row 
-            form.search-form.search-form--simple(action="#")
+        .modal__row.flex.flex--aic
+            form.search-form.search-form--simple.full-width
                 .search-form__wrap 
-                    button.search-form__btn(type="submit")
+                    button.search-form__btn
                     input.search-form__input(type="search", placeholder="Поиск")
+            .base-drop.js-open-close.m-l-2
+                button.icon--blue.js-opener
+                    include ../../icons/link
+                .base-drop__drop.base-drop__drop--social
+                    strong.text-sm.text-gray.text-center.p-y-15 Поделиться в соцсетях
+                    ul.social-list
+                        li.social-list__item
+                            input(type="radio", name="social" id="social1")
+                            label(for="social1")
+                                img(src="images/icons/social-vk.png" alt="image description")
+                        li.social-list__item
+                            input(type="radio", name="social" id="social2")
+                            label(for="social2")
+                                img(src="images/icons/social-fb.png" alt="image description")
+                        li.social-list__item
+                            input(type="radio", name="social" id="social3")
+                            label(for="social3")
+                                img(src="images/icons/social-inst.png" alt="image description")
+                        li.social-list__item
+                            input(type="radio", name="social" id="social4")
+                            label(for="social4")
+                                img(src="images/icons/social-ok.png" alt="image description")
+                        li.social-list__item
+                            input(type="radio", name="social" id="social5")
+                            label(for="social5")
+                                img(src="images/icons/social-tw.png" alt="image description")
+                    ul.drop-list.border-top
+                        li.drop-list__item
+                            button
+                                strong Скопировать ссылку
         .modal__row 
             .bars-holder
                 .bars-holder__item
@@ -23,6 +53,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -36,6 +68,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -49,6 +83,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -62,6 +98,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -75,6 +113,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -88,6 +128,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -101,6 +143,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -114,6 +158,8 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki
                 .bars-holder__item
@@ -127,5 +173,7 @@
                                 .logo-holder__label.tr.active
                                     .label--icon.label--sm
                                         img(src="images/icons/font/icon-check-green.svg" alt="image description")
+                                .logo-holder__label.br 
+                                    img(src="images/icons/done-icon.svg" alt="image description")
                         .room-card__name
                             span Yurki

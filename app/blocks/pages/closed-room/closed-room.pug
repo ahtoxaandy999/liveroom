@@ -16,9 +16,9 @@ section.content-section
 			.scroll-wrap.inner-scroll.m-rv-r-15
 				strong.text-gray.m-b-2 Спикеры
 				.room__row
-					.room-card.active
+					.room-card.active.js-open-modal(data-modal-to="view-user-modal")
 						.logo-holder.logo-holder--lg.m-x-a.m-b-1
-							img(src="images/user_80.png" alt="image description")
+							img(src="images/user_1_80.png" alt="image description")
 							.logo-holder__labels 
 								.logo-holder__label.tl.active
 									include ../../icons/pro
@@ -33,8 +33,8 @@ section.content-section
 										img(src="images/like-icon.png" alt="image description")
 						.room-card__name.flex.flex--aic.flex--jcc
 							img(src="images/icons/font/icon-circle-star.svg" alt="image description").m-r-05
-							span Yurki
-					.room-card
+							span kost 
+					.room-card.js-open-modal(data-modal-to="view-blocked-user-modal")
 						.logo-holder.logo-holder--lg.m-x-a.m-b-1
 							img(src="images/user_80.png" alt="image description")
 							.logo-holder__labels 

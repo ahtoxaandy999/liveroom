@@ -16,4 +16,9 @@
             background-color: rgba(22, 73, 116, 0.04);
         }
     }
+
+    &.border-top {
+        border-top: 1px solid rgba(22, 73, 116, 0.12);
+        border-radius: 0;
+    }
 }

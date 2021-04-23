@@ -1,0 +1,47 @@
+.modal.js-modal.js-view-user-modal
+	.modal__wrap
+		.modal__header 
+			.modal__logo.logo-holder.logo-holder--lg
+				img(src="images/user_1_80.png", alt="")
+			div.text-right
+				button.modal__close.js-close-modal.icon--hover.m-b-15
+					include ../../icons/close
+				.modal__icon-holder.flex.flex--aic
+					button(data-modal-to="user-notification-modal").user-btn.icon--hover.m-r-25.js-open-modal
+						include ../../icons/bell
+					button.btn.subscription.lg Подписка
+		.modal__row
+			h4.m-b-0 Константин Константинопольский
+				strong.label pro
+			p.m-b-0 @kost
+		.modal__row
+			button(data-modal-to="subscribers-modal").js-open-modal.modal__col
+				span.text-xl 14 
+				span подписчиков
+			button(data-modal-to="subscriptions-modal").js-open-modal.modal__col
+				span.text-xl 145 
+				span подписок
+		.modal__row
+			p.m-b-0 Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru	
+		.modal__row 
+			.modal__user-nav 
+				button.modal-btn
+					span Участник сообществ
+					span.text-gray 
+						span 14 
+						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
+				button(data-modal-to="community-modal").js-open-modal.modal-btn
+					span Мои сообщества
+					span.text-gray 
+						span Нет сообществ
+						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
+				button.modal-btn
+					span Запись трансляций
+					span.text-gray 
+						span 4
+						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
+				button.modal-btn
+					span Мои события
+					span.text-gray 
+						span Нет событий
+						img(src="images/icons/font/icon-arrow.svg", alt="").arrow

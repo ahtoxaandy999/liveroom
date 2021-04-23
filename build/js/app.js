@@ -26,7 +26,8 @@ $(document).ready(function () {
   });
   new OpenClose({
     holders: '.js-sidebar',
-    hideOnClickOutside: false
+    hideOnClickOutside: false,
+    classToBody: 'js-sidebar-active'
   });
 });
 
@@ -107,19 +108,11 @@ var OpenClose = /*#__PURE__*/function () {
             if (_this.finishClass) {
               _this.removeFinishClass(currentEl);
             }
-
-            if (_this.classToBody) {
-              document.querySelector('body').classList.remove(_this.classToBody);
-            }
           } else {
             _this.addClass(currentEl);
 
             if (_this.finishClass) {
               _this.addFinishClass(currentEl);
-            }
-
-            if (_this.classToBody) {
-              document.querySelector('body').classList.add(_this.classToBody);
             }
           }
 
@@ -156,11 +149,19 @@ var OpenClose = /*#__PURE__*/function () {
     key: "addClass",
     value: function addClass(e) {
       e.classList.add(this.activeClass);
+
+      if (this.classToBody) {
+        document.querySelector('body').classList.add(this.classToBody);
+      }
     }
   }, {
     key: "removeClass",
     value: function removeClass(e) {
       e.classList.remove(this.activeClass);
+
+      if (this.classToBody) {
+        document.querySelector('body').classList.remove(this.classToBody);
+      }
     }
   }, {
     key: "addFinishClass",

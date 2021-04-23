@@ -18,7 +18,8 @@ $(document).ready(function () {
     });
     new OpenClose({
         holders: '.js-sidebar',
-        hideOnClickOutside: false
+        hideOnClickOutside: false,
+        classToBody: 'js-sidebar-active'
     });
 });
 
@@ -96,16 +97,10 @@ class OpenClose {
                     if (this.finishClass) {
                         this.removeFinishClass(currentEl)
                     }
-                    if (this.classToBody) {
-                        document.querySelector('body').classList.remove(this.classToBody);
-                    }
                 } else {
                     this.addClass(currentEl);
                     if (this.finishClass) {
                         this.addFinishClass(currentEl)
-                    }
-                    if (this.classToBody) {
-                        document.querySelector('body').classList.add(this.classToBody);
                     }
                 }
 
@@ -140,10 +135,18 @@ class OpenClose {
 
     addClass(e) {
         e.classList.add(this.activeClass);
+        
+        if (this.classToBody) {
+            document.querySelector('body').classList.add(this.classToBody);
+        }
     }
 
     removeClass(e) {
         e.classList.remove(this.activeClass);
+        
+        if (this.classToBody) {
+            document.querySelector('body').classList.remove(this.classToBody);
+        }
     }
 
     addFinishClass(e) {

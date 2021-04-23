@@ -39,7 +39,7 @@
 
     &__wrap {
         padding: 0 2rem;
-        overflow: hidden;
+        overflow-x: visible;
         overflow-y: auto;
         min-height: 46rem;
         max-height: 90vh;

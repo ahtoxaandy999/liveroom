@@ -46,6 +46,17 @@
             }
         }
 
+        &--social {
+            left: auto;
+            right: -0.8rem;
+            min-width: 19.4rem;
+
+            &::before {
+                left: auto;
+                right: 0.2rem;
+            }
+        }
+
         &--wide {
             min-width: 36rem;
             left: calc(50% - 18rem);

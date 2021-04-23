@@ -1,7 +1,13 @@
 .control-panel {
+    @include animate(left);
     position: fixed;
     bottom: 3rem;
-    left: calc(50% - 49rem);
+    z-index: 5;
+    left: calc(50% - 30rem);
+
+    .js-sidebar-active & {
+        left: calc(50% - 49rem);
+    }
 
     &__wrapper {
         background: $white;

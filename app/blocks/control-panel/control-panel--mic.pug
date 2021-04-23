@@ -1,9 +1,9 @@
 .control-panel.flex.flex--jcb
     .control-panel__wrapper.flex.flex--aic.p-15.m-r-15
-        button.control-panel__btn.text-red.flex.flex--aic.p-1.m-r-2.icon--red
+        button(data-modal-to="leave-room-modal").js-open-modal.control-panel__btn.text-red.flex.flex--aic.p-1.m-r-2.icon--red
             include ../icons/close
             span.m-l-15 Покинуть комнату
-        button.control-panel__btn.flex.flex--aic.p-1.m-r-2.icon--blue
+        button(data-modal-to="add-to-room-modal").js-open-modal.control-panel__btn.flex.flex--aic.p-1.m-r-2.icon--blue
             include ../icons/add
             span.m-l-15 Пригласить
         button(data-modal-to="show-reaction-modal").js-open-modal.control-panel__btn.flex.flex--aic.p-1.m-r-2.icon--blue
