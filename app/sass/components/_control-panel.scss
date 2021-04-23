@@ -6,10 +6,16 @@
     left: calc(50% - 30rem);
 
     .js-sidebar-active & {
-        left: calc(50% - 49rem);
+        left: calc(50% - 48rem);
+    }
+
+    &.static {
+        left: calc(50% - 48rem);
+        width: 54rem;
     }
 
     &__wrapper {
+        width: 100%;
         background: $white;
         border: 0.5px solid rgba(22, 73, 116, 0.24);
         box-shadow: 0px 4px 16px rgba(9, 60, 102, 0.1);

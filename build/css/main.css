@@ -565,7 +565,9 @@ button{
   justify-content:center;
   background-color:#2288DD;
   border:0.5px solid rgba(22, 73, 116, 0.24);
-  box-shadow:0px 4px 16px rgba(9, 60, 102, 0.1); }
+  box-shadow:0px 4px 16px rgba(9, 60, 102, 0.1);
+  -webkit-flex-shrink:0;
+  flex-shrink:0; }
 .circle-btn:hover{
     background-color:#1E78C2; }
 .more-btn{
@@ -1133,6 +1135,7 @@ strong{
   margin-bottom:1.6rem;
   width:100%; }
 .base-card__wrap{
+    color:#000;
     position:relative;
     width:100%;
     margin:0 auto;
@@ -1345,9 +1348,14 @@ strong{
   left:-webkit-calc(50% - 30rem);
   left:calc(50% - 30rem); }
 .js-sidebar-active .control-panel{
-    left:-webkit-calc(50% - 49rem);
-    left:calc(50% - 49rem); }
+    left:-webkit-calc(50% - 48rem);
+    left:calc(50% - 48rem); }
+.control-panel.static{
+    left:-webkit-calc(50% - 48rem);
+    left:calc(50% - 48rem);
+    width:54rem; }
 .control-panel__wrapper{
+    width:100%;
     background:#fff;
     border:0.5px solid rgba(22, 73, 116, 0.24);
     box-shadow:0px 4px 16px rgba(9, 60, 102, 0.1);
@@ -1522,6 +1530,8 @@ strong{
   width:100%; }
 .participants .custom-input label{
   padding:0; }
+.record-holder__title{
+  max-width:23rem; }
 .room-types{
   display:-webkit-box;
   display:-webkit-flex;
@@ -1649,7 +1659,7 @@ strong{
   flex:none;
   position:relative; }
 .sidebar.js-active .sidebar__wrap{
-    width:37rem;
+    width:39.5rem;
     opacity:1; }
 .sidebar.js-active .link{
     opacity:1; }
