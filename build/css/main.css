@@ -854,7 +854,13 @@ strong{
     -webkit-align-items:center;
     align-items:center; }
 .user-btn{
-  margin-right:2.8rem; }
+  margin-right:2.8rem;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items:center; }
 .user-btn:last-child{
     margin-right:0; }
 .user-wrap{
