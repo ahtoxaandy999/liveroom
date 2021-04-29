@@ -7,12 +7,11 @@
 				span Подписчики
 			button.modal__close.js-close-modal.icon--hover
 				include ../../icons/close
-		.modal__row 
-			form.search-form.search-form--simple(action="#")
-				.search-form__wrap 
-					button.search-form__btn(type="submit")
-					input.search-form__input(type="search", placeholder="Поиск")
-		.modal__row 
+		.modal__row--empty
+				img(src="images/icons/font/icon-user.svg" alt="image description").m-b-1
+				span У вас пока нет подписчиков. Создавайте события и подписывайтесь на интересных людей и своих знакомых сами
+		.modal__row.modal__row--bordered.p-t-2.m-rv-x-25.p-x-25
+			h3.m-b-05 Интересные люди в liveroom
 			ul.main-list.main-list--simple.scroll-wrap.inner-scroll
 				li.main-list__item
 					.sub-card
@@ -29,23 +28,7 @@
 						.sub-card__content 
 							h4 Анна Кузнецова
 							span @aniuta
-						button.btn.subscription Подписка
-				li.main-list__item
-					.sub-card
-						.sub-card__logo-holder.logo-holder
-							img(src="images/user_1_40.jpg", alt="")
-						.sub-card__content 
-							h4 Анна Кузнецова
-							span @aniuta
 						button.btn.secondary Подписаться
-				li.main-list__item
-					.sub-card
-						.sub-card__logo-holder.logo-holder
-							img(src="images/user_1_40.jpg", alt="")
-						.sub-card__content 
-							h4 Анна Кузнецова
-							span @aniuta
-						button.btn.subscription Подписка
 				li.main-list__item
 					.sub-card
 						.sub-card__logo-holder.logo-holder
@@ -69,7 +52,23 @@
 						.sub-card__content 
 							h4 Анна Кузнецова
 							span @aniuta
-						button.btn.subscription Подписка
+						button.btn.secondary Подписаться
+				li.main-list__item
+					.sub-card
+						.sub-card__logo-holder.logo-holder
+							img(src="images/user_1_40.jpg", alt="")
+						.sub-card__content 
+							h4 Анна Кузнецова
+							span @aniuta
+						button.btn.secondary Подписаться
+				li.main-list__item
+					.sub-card
+						.sub-card__logo-holder.logo-holder
+							img(src="images/user_1_40.jpg", alt="")
+						.sub-card__content 
+							h4 Анна Кузнецова
+							span @aniuta
+						button.btn.secondary Подписаться
 				li.main-list__item
 					.sub-card
 						.sub-card__logo-holder.logo-holder

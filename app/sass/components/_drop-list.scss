@@ -1,15 +1,27 @@
 .drop-list {
-
     &__item {
         &:not(:last-child) {
             border-bottom: 1px solid $gray-dark;
         }
     }
 
+    &--bool {
+        display: flex;
+        
+        .drop-list__item {
+            width: 50%;
+
+            &:first-child {
+                border-right: 1px solid $gray-dark;
+                border-bottom: 0;
+            }
+        }
+    }
+
     button {
         @include animate(background-color);
         width: 100%;
-        padding: 1.2rem 2rem;
+        padding: 1.2rem 1.6rem;
         font-weight: 500;
         
         &:hover {

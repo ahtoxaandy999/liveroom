@@ -1,4 +1,4 @@
-.modal.js-modal.js-community-modal
+.modal.js-modal.js-my-community-modal
 	.modal__wrap
 		.modal__header 
 			h3 
@@ -7,39 +7,38 @@
 				span Мои сообщества
 			button.modal__close.js-close-modal.icon--hover
 				include ../../icons/close
-		.modal__row 
-			form.search-form.search-form--simple(action="#")
-				.search-form__wrap 
-					button.search-form__btn(type="submit")
-					input.search-form__input(type="search", placeholder="Поиск")
-		.modal__row
-			.secondary-card.secondary-card--simple.m-b-2
-				a.secondary-card__wrap 
-					.secondary-card__img-holder
-						img(src="images/base-img1.png", alt="")
-					.secondary-card__content-holder.p-15
-						.secondary-card__head 
-							strong.secondary-card__title.p-r-2 Российский рынок недвижимости
-						.secondary-card__info-panel 
-							span.text-gray.text-sm.m-r-15 1,4K
-							.secondary-card__users 
-								.base-card__body.base-card__body--row
-									.user
-										.user__wrap
-											.user__photo.user__photo--row.logo-holder.logo-holder--xs
-												img(src="images/user-one.png", alt="")
-									.user
-										.user__wrap
-											.user__photo.user__photo--row.logo-holder.logo-holder--xs
-												img(src="images/user-one.png", alt="")
-									.user
-										.user__wrap
-											.user__photo.user__photo--row.logo-holder.logo-holder--xs
-												img(src="images/user-one.png", alt="")
+		.modal__row--empty
+			img(src="images/icons/font/icon-comu.svg" alt="image description").m-b-1
+			span Вы еще не создали ни одного сообщества
 		.modal__row.modal__row--bordered.p-t-2.m-rv-x-25.p-x-25
 			h3.m-b-1 Интересные сообщества в liveroom
 			.secondary-card.secondary-card--simple.m-b-2
-				a.secondary-card__wrap 
+				.secondary-card__wrap 
+					.secondary-card__img-holder
+						img(src="images/base-img1.png", alt="")
+					.secondary-card__content-holder.p-15
+						.secondary-card__head 
+							strong.secondary-card__title.p-r-2 Российский рынок недвижимости
+							span.status-icon
+						.secondary-card__info-panel 
+							span.text-gray.text-sm.m-r-15 1,4K
+							.secondary-card__users 
+								.base-card__body.base-card__body--row
+									.user
+										.user__wrap
+											.user__photo.user__photo--row.logo-holder.logo-holder--xs
+												img(src="images/user-one.png", alt="")
+									.user
+										.user__wrap
+											.user__photo.user__photo--row.logo-holder.logo-holder--xs
+												img(src="images/user-one.png", alt="")
+									.user
+										.user__wrap
+											.user__photo.user__photo--row.logo-holder.logo-holder--xs
+												img(src="images/user-one.png", alt="")
+							button.btn.secondary.m-l-a Подписаться
+			.secondary-card.secondary-card--simple.m-b-2
+				.secondary-card__wrap 
 					.secondary-card__img-holder
 						img(src="images/base-img1.png", alt="")
 					.secondary-card__content-holder.p-15
@@ -63,31 +62,7 @@
 												img(src="images/user-one.png", alt="")
 							button.btn.secondary.m-l-a Подписаться
 			.secondary-card.secondary-card--simple.m-b-2
-				a.secondary-card__wrap 
-					.secondary-card__img-holder
-						img(src="images/base-img1.png", alt="")
-					.secondary-card__content-holder.p-15
-						.secondary-card__head 
-							strong.secondary-card__title.p-r-2 Российский рынок недвижимости
-						.secondary-card__info-panel 
-							span.text-gray.text-sm.m-r-15 1,4K
-							.secondary-card__users 
-								.base-card__body.base-card__body--row
-									.user
-										.user__wrap
-											.user__photo.user__photo--row.logo-holder.logo-holder--xs
-												img(src="images/user-one.png", alt="")
-									.user
-										.user__wrap
-											.user__photo.user__photo--row.logo-holder.logo-holder--xs
-												img(src="images/user-one.png", alt="")
-									.user
-										.user__wrap
-											.user__photo.user__photo--row.logo-holder.logo-holder--xs
-												img(src="images/user-one.png", alt="")
-							button.btn.secondary.m-l-a Подписаться
-			.secondary-card.secondary-card--simple.m-b-2
-				a.secondary-card__wrap 
+				.secondary-card__wrap 
 					.secondary-card__img-holder
 						img(src="images/base-img1.png", alt="")
 					.secondary-card__content-holder.p-15

@@ -1,27 +1,3 @@
-$breakpoints: (
-  'xs-phone': 320px,
-  's-phone': 375px,
-  'phone': 520px,
-  'phone-lg': 640px,
-  'tablet': 768px,
-  'desktop': 1024px,
-  'laptop': 1280px,
-  'widescreen': 1366px,
-  'widescreen-lg': 1440px,
-  'widescreen-xl': 1600px
-);
-
-// keywords
-$media-expressions: (
-  'screen': 'screen',
-  'print': 'print',
-  'handheld': 'handheld',
-  'landscape': '(orientation: landscape)',
-  'portrait': '(orientation: portrait)',
-  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
-  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
-);
-
 // Color system
 $white: #fff;
 $black: #000;
@@ -64,59 +40,6 @@ $blue: $blue !default;
 $link-decoration: none !default;
 $link-hover-color: $blue !default;
 $link-hover-decoration: underline !default;
-
-// Buttons
-$buttons: (
-  'button',
-  '[type="button"]',
-  '[type="reset"]',
-  '[type="submit"]',
-  '.btn'
-);
-
-$btn-color: $white !default;
-$btn-background: $black !default;
-$btn-padding: 22px 40px !default;
-$btn-font-size: 18px !default;
-$btn-line-height: 1 !default;
-$btn-font-weight: 400 !default;
-
-// Forms
-$form-elements: (
-  'input[type="text"]',
-  'input[type="email"]',
-  'input[type="tel"]',
-  'input[type="search"]',
-  'input[type="password"]',
-  'input[type="url"]',
-  'input[type="date"]',
-  'input[type="datetime"]',
-  'input[type="datetime-local"]',
-  'input[type="time"]',
-  'input[type="week"]',
-  'input[type="month"]',
-  'input[type="number"]',
-  'input[type="color"]',
-  'input:not([type])',
-  'textarea'
-);
-
-$form-element-font-size: $font-size-base !default;
-$form-element-padding: 5px 15px !default;
-$form-element-height: 50px !default;
-$form-element-border-radius: 10px !default; //set to null if you don't need border-radius
-$form-element-border-width: 0 !default; //set to null if you don't need border
-$form-element-border-color: $black !default;
-$form-element-focus-border-color: $blue !default;
-$form-element-outline: true !default; // set to false if you don't need outline
-$form-background-color: $gray-light !default;
-
-$placeholder-color: $gray !default;
-$placeholder-font-size: $form-element-font-size !default;
-
-$textarea-height: 150px !default;
-$textarea-padding: $form-element-padding !default;
-$textarea-font-size: $form-element-font-size !default;
 
 // Headers
 $headings: (

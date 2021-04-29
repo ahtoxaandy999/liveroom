@@ -1,6 +1,8 @@
 a {
-  &.base-card__wrap {
+  &.base-card__wrap,
+  &.secondary-card__wrap {
     @include animate(box-shadow);
+    display: block;
 
     &:hover {
       opacity: 1;

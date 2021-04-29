@@ -15,6 +15,7 @@
     }
 
     &__content {
+        position: relative;
         padding: 1.2rem 7rem 1.2rem 1.6rem;
 
         &--has-nav {
@@ -23,6 +24,11 @@
 
         &--simple {
             padding: 2rem;
+        }
+
+        h3,
+        h4 {
+            max-width: 90%;
         }
     }
 
@@ -114,5 +120,16 @@
 
     &__lock-btn {
         margin-left: 3px;
+    }
+
+    &__img-holder {
+        height: 18.9rem;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+        }
     }
 }

@@ -72,10 +72,6 @@
         }
     }
 
-    &__user-settings {
-        margin-top: 3rem;
-    }
-
     &__title {
         margin-bottom: 0;
         line-height: 1.3;
@@ -128,6 +124,19 @@
         &:not(:last-child):not(.m-b-1) {
             margin-bottom: 1.6rem;
         }
+
+        &--empty {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem 2rem 2rem;
+        }
+
+        &--bordered {
+            border-top: 1px solid rgba(22, 73, 116, 0.12);
+        }
     }
 
     &__col {
@@ -160,9 +169,21 @@
     &__empty {
         min-height: 30rem;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         padding: 8rem;
+
+        &--sm {
+            padding: 1rem 3rem 2rem;
+            min-height: 0;
+        }
+    }
+
+    &__user-settings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

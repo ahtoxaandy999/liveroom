@@ -368,7 +368,11 @@
                 </button>
               </div>
               <div class="room__title"> 
-                <h2>Воспитание заказчиков 😈 или как я еще не слетел с катух<img class="lock-icon" src="images/icons/icon-lock-black.svg" alt="image description"></h2>
+                <h2>Воспитание заказчиков 😈 или как я еще не слетел с катух</h2>
+                <div class="base-drop lock-icon js-open-close"> 
+                  <button class="js-opener"> <img src="images/icons/icon-lock-black.svg" alt="image description"></button>
+                  <div class="base-drop__drop base-drop__drop--tooltip-left"><span>Закрытая комната создана для приватных бесед с теми, кого пригласит модератор</span></div>
+                </div>
               </div>
               <div class="scroll-wrap inner-scroll m-rv-r-15 p-b-3"><strong class="text-gray m-b-2">Спикеры</strong>
                 <div class="room__row">
@@ -1113,13 +1117,37 @@
             <div class="modal__header"> 
               <div class="modal__logo logo-holder logo-holder--lg"><img src="images/user_80.png" alt=""></div>
               <div>
-                <button class="modal__close js-close-modal icon--hover">
+                <button class="modal__close js-close-modal icon--hover flex m-l-a m-b-3">
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
                   </svg>
                 </button>
-                <div class="modal__icon-holder">
-                  <button class="modal__user-settings js-open-modal" data-modal-to="settings-modal"><img src="images/icons/font/icon-settings.svg" alt=""></button>
+                <div class="flex flex--aic">
+                  <button class="modal__user-settings js-open-modal m-r-25" data-modal-to="settings-modal">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.753 3.693c.249.412.695.665 1.177.665h3.01c.49 0 .944.263 1.19.687l1.458 2.527c.25.433.246.968-.012 1.395l-1.398 2.324a1.375 1.375 0 000 1.418c.401.667 1 1.66 1.398 2.324.258.427.262.962.012 1.395-.412.715-1.049 1.816-1.458 2.527-.246.424-.7.687-1.19.687h-3.01c-.482 0-.928.253-1.177.665-.34.567-.829 1.377-1.17 1.943a1.374 1.374 0 01-1.177.666h-2.812c-.482 0-.929-.252-1.177-.666-.341-.566-.83-1.376-1.17-1.943a1.376 1.376 0 00-1.178-.665H4.06c-.49 0-.944-.263-1.19-.687l-1.458-2.527a1.37 1.37 0 01.012-1.395l1.398-2.324a1.376 1.376 0 000-1.418c-.401-.667-1-1.66-1.398-2.324a1.37 1.37 0 01-.012-1.395L2.87 5.045c.246-.424.7-.687 1.19-.687h3.01c.482 0 .928-.253 1.177-.665.34-.567.829-1.377 1.17-1.943a1.374 1.374 0 011.177-.666h2.812c.482 0 .929.252 1.177.666.341.566.83 1.376 1.17 1.943zM12 7.877A4.124 4.124 0 0116.122 12 4.124 4.124 0 0112 16.122 4.124 4.124 0 017.877 12 4.124 4.124 0 0112 7.877z" fill="#fff"></path>
+                      <path d="M21.13 5.045l.866-.5-.866.5zm1.458 2.527l-.867.5h.001l.866-.5zm-.012 1.395l-.856-.517-.002.002.858.515zm-1.398 2.324l-.857-.516v.001l.857.515zm0 1.418l-.857.515.857-.515zm1.398 2.324l-.858.515.002.002.856-.517zm.012 1.395l-.866-.5.866.5zm-1.458 2.527l.865.501.001-.002-.866-.5zm-5.377 1.352l-.856-.517-.001.002.857.515zm-1.17 1.943l-.856-.516.856.516zm-5.166 0l.857-.515-.857.515zm-1.17-1.943l.857-.515v-.002l-.857.517zM2.87 18.955l-.866.5v.001l.866-.501zm-1.458-2.527l.867-.5h-.001l-.866.5zm.012-1.395l.856.517.002-.002-.858-.515zm1.398-2.324l.857.516v-.001l-.857-.515zm0-1.418l.857-.515-.857.515zM1.424 8.967l.858-.515-.002-.002-.856.517zm-.012-1.395l.866.5-.866-.5zM2.87 5.045l-.865-.5h-.001l.866.5zm5.377-1.352l.856.517.001-.002-.857-.515zm1.17-1.943l.856.516-.856-.516zm5.166 0l-.857.515.857-.515zm.314 2.46c.429.711 1.2 1.148 2.033 1.148v-2a.376.376 0 01-.32-.181L14.896 4.21zm2.033 1.148H19.94v-2H16.93v2zm3.01 0c.132 0 .257.071.325.189l1.73-1.003a2.376 2.376 0 00-2.055-1.186v2zm.324.187c.41.713 1.045 1.81 1.457 2.526l1.734-.998-1.459-2.527-1.732.999zm1.458 2.528a.37.37 0 01-.002.377l1.711 1.035a2.37 2.37 0 00.023-2.413l-1.732 1zm-.004.38c-.398.663-.995 1.656-1.397 2.322l1.714 1.032c.401-.667 1-1.66 1.398-2.325l-1.715-1.03zm-1.397 2.323a2.376 2.376 0 000 2.448l1.714-1.03a.375.375 0 010-.388l-1.714-1.03zm0 2.449c.402.666 1 1.66 1.397 2.323l1.715-1.03-1.398-2.325-1.714 1.032zm1.399 2.325a.37.37 0 01.002.377l1.732 1a2.37 2.37 0 00-.023-2.412L21.72 15.55zm.001.379l-1.457 2.526 1.732 1 1.459-2.528-1.734-.998zm-1.456 2.524a.376.376 0 01-.325.189v2c.849 0 1.631-.454 2.055-1.186l-1.73-1.003zm-.325.189H16.93v2H19.94v-2zm-3.01 0c-.833 0-1.604.437-2.033 1.148l1.712 1.034a.376.376 0 01.321-.182v-2zm-2.034 1.15c-.34.567-.828 1.375-1.17 1.942l1.714 1.032 1.17-1.944-1.714-1.03zm-1.17 1.943a.374.374 0 01-.32.181v2c.833 0 1.605-.437 2.034-1.15l-1.713-1.031zm-.32.181H10.594v2H13.406v-2zm-2.812 0a.374.374 0 01-.32-.181l-1.714 1.03c.429.714 1.2 1.151 2.034 1.151v-2zm-.32-.182c-.342-.567-.83-1.375-1.17-1.942l-1.714 1.03 1.17 1.944 1.713-1.032zm-1.17-1.944a2.376 2.376 0 00-2.035-1.148v2c.132 0 .254.069.322.181l1.712-1.033zm-2.035-1.148H4.06v2H7.069v-2zm-3.009 0a.376.376 0 01-.325-.189l-1.73 1.003a2.376 2.376 0 002.055 1.186v-2zm-.324-.187c-.41-.713-1.045-1.81-1.457-2.526l-1.734.998 1.459 2.527 1.732-.999zm-1.458-2.528a.37.37 0 01.002-.377L.57 14.515a2.37 2.37 0 00-.023 2.413l1.732-1zm.004-.38c.398-.663.995-1.656 1.397-2.322l-1.714-1.032c-.401.667-1 1.66-1.398 2.325l1.715 1.03zm1.397-2.323a2.376 2.376 0 000-2.448l-1.714 1.03a.376.376 0 010 .388l1.714 1.03zm0-2.449c-.402-.666-1-1.66-1.397-2.323L.567 9.482l1.398 2.325 1.714-1.032zM2.28 8.45a.37.37 0 01-.002-.377l-1.732-1A2.37 2.37 0 00.57 9.484L2.28 8.45zM2.28 8.07l1.457-2.526-1.732-1L.545 7.074l1.734.998zm1.456-2.524a.376.376 0 01.325-.189v-2c-.849 0-1.631.454-2.055 1.186l1.73 1.003zm.325-.189H7.069v-2H4.06v2zm3.01 0c.833 0 1.604-.437 2.033-1.148L7.391 3.177a.376.376 0 01-.322.181v2zm2.034-1.15c.34-.567.828-1.375 1.17-1.942L8.56 1.234 7.39 3.178l1.714 1.03zm1.17-1.943a.374.374 0 01.32-.181v-2C9.76.084 8.99.52 8.56 1.234l1.713 1.031zm.32-.181H13.406v-2H10.594v2zm2.812 0c.13 0 .252.068.32.181l1.714-1.03A2.374 2.374 0 0013.406.084v2zm.32.182c.342.567.83 1.375 1.17 1.942l1.714-1.03-1.17-1.944-1.713 1.032zM12 8.877c1.723 0 3.123 1.4 3.123 3.123h2A5.124 5.124 0 0012 6.877v2zM15.123 12c0 1.723-1.4 3.123-3.123 3.123v2A5.124 5.124 0 0017.122 12h-2zM12 15.123A3.124 3.124 0 018.877 12h-2A5.124 5.124 0 0012 17.122v-2zM8.877 12c0-1.723 1.4-3.123 3.123-3.123v-2A5.124 5.124 0 006.877 12h2z" fill="#28D"></path>
+                    </svg>
+                  </button>
+                  <div class="base-drop js-open-close inline-block">
+                    <button class="modal__user-settings js-opener icon--blue">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 4C14.5 5.10457 13.6046 6 12.5 6C11.3954 6 10.5 5.10457 10.5 4C10.5 2.89543 11.3954 2 12.5 2C13.6046 2 14.5 2.89543 14.5 4Z" fill="#8598A7"></path>
+                        <path d="M14.5 12C14.5 13.1046 13.6046 14 12.5 14C11.3954 14 10.5 13.1046 10.5 12C10.5 10.8954 11.3954 10 12.5 10C13.6046 10 14.5 10.8954 14.5 12Z" fill="#8598A7"></path>
+                        <path d="M14.5 20C14.5 21.1046 13.6046 22 12.5 22C11.3954 22 10.5 21.1046 10.5 20C10.5 18.8954 11.3954 18 12.5 18C13.6046 18 14.5 18.8954 14.5 20Z" fill="#8598A7"></path>
+                      </svg>
+                    </button>
+                    <div class="base-drop__drop base-drop__drop--simple">
+                      <ul class="drop-list">
+                        <li class="drop-list__item">
+                          <button class="js-open-modal" data-modal-to="edit-user-modal">Редактировать профиль</button>
+                        </li>
+                        <li class="drop-list__item">
+                          <button>Поделиться профилем</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1128,11 +1156,11 @@
               <p class="m-b-0">@yk</p>
             </div>
             <div class="modal__row">
-              <button class="js-open-modal modal__col" data-modal-to="subscribers-modal"><span class="text-xl">14 </span><span>подписчиков</span></button>
+              <button class="js-open-modal modal__col" data-modal-to="subscribers-modal"><span class="text-xl">0 </span><span>подписчиков</span></button>
               <button class="js-open-modal modal__col" data-modal-to="subscriptions-modal"><span class="text-xl">145 </span><span>подписок</span></button>
             </div>
             <div class="modal__row"><span class="base-text">
-                <button>Добавить инфо</button></span></div>
+                <button class="js-open-modal" data-modal-to="edit-user-info-modal">Добавить инфо</button></span></div>
             <div class="modal__row">
               <div class="scroll-holder">
                 <div class="flex flex--jcb flex--aic p-x-25 p-t-15">
@@ -1183,10 +1211,10 @@
             </div>
             <div class="modal__row"> 
               <div class="modal__user-nav"> 
-                <button class="modal-btn"><span>Участник сообществ</span><span class="text-gray"> <span>14 </span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
-                <button class="js-open-modal modal-btn" data-modal-to="community-modal"><span>Мои сообщества</span><span class="text-gray"> <span>Нет сообществ</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Запись трансляций</span><span class="text-gray"> <span>4</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Мои события</span><span class="text-gray"> <span>Нет событий</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
+                <button class="js-open-modal modal-btn" data-modal-to="community-modal"><span>Участник сообществ</span><span class="text-gray"> <span>14 </span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
+                <button class="js-open-modal modal-btn" data-modal-to="my-community-modal"><span>Мои сообщества</span><span class="text-gray"> <span>Нет сообществ</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
+                <button class="js-open-modal modal-btn" data-modal-to="broadcast-recording-modal"><span>Запись трансляций</span><span class="text-gray"> <span>Нет трансляций</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
+                <button class="js-open-modal modal-btn" data-modal-to="my-events-modal"><span>Мои события</span><span class="text-gray"> <span>Нет событий</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
               </div>
             </div>
           </div>
@@ -1306,6 +1334,24 @@
             <button class="btn primary full-width">Сохранить</button>
           </div>
         </div>
+        <div class="modal auth js-modal js-edit-user-info-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3>О себе</h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <textarea class="modal-btn modal-btn--area modal-btn--lg" placeholder="Пара слов"></textarea>
+              </div>
+            </div>
+            <button class="btn primary full-width">Сохранить</button>
+          </div>
+        </div>
         <div class="modal js-modal js-subscribers-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 
@@ -1318,15 +1364,9 @@
                 </svg>
               </button>
             </div>
-            <div class="modal__row"> 
-              <form class="search-form search-form--simple" action="#">
-                <div class="search-form__wrap"> 
-                  <button class="search-form__btn" type="submit"></button>
-                  <input class="search-form__input" type="search" placeholder="Поиск">
-                </div>
-              </form>
-            </div>
-            <div class="modal__row"> 
+            <div class="modal__row--empty"><img class="m-b-1" src="images/icons/font/icon-user.svg" alt="image description"><span>У вас пока нет подписчиков. Создавайте события и подписывайтесь на интересных людей и своих знакомых сами</span></div>
+            <div class="modal__row modal__row--bordered p-t-2 m-rv-x-25 p-x-25">
+              <h3 class="m-b-05">Интересные люди в liveroom</h3>
               <ul class="main-list main-list--simple scroll-wrap inner-scroll">
                 <li class="main-list__item">
                   <div class="sub-card">
@@ -1343,25 +1383,7 @@
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
-                    <button class="btn subscription">Подписка</button>
-                  </div>
-                </li>
-                <li class="main-list__item">
-                  <div class="sub-card">
-                    <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
-                    <div class="sub-card__content"> 
-                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
-                    </div>
                     <button class="btn secondary">Подписаться</button>
-                  </div>
-                </li>
-                <li class="main-list__item">
-                  <div class="sub-card">
-                    <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
-                    <div class="sub-card__content"> 
-                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
-                    </div>
-                    <button class="btn subscription">Подписка</button>
                   </div>
                 </li>
                 <li class="main-list__item">
@@ -1388,7 +1410,25 @@
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
-                    <button class="btn subscription">Подписка</button>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn secondary">Подписаться</button>
                   </div>
                 </li>
                 <li class="main-list__item">
@@ -1432,7 +1472,7 @@
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
-                    <button class="btn secondary">Подписаться</button>
+                    <button class="btn subscription">Подписка</button>
                   </div>
                 </li>
                 <li class="main-list__item">
@@ -1450,7 +1490,7 @@
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
-                    <button class="btn secondary">Подписаться</button>
+                    <button class="btn subscription">Подписка</button>
                   </div>
                 </li>
                 <li class="main-list__item">
@@ -1468,16 +1508,7 @@
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
-                    <button class="btn secondary">Подписаться</button>
-                  </div>
-                </li>
-                <li class="main-list__item">
-                  <div class="sub-card">
-                    <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
-                    <div class="sub-card__content"> 
-                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
-                    </div>
-                    <button class="btn secondary">Подписаться</button>
+                    <button class="btn subscription">Подписка</button>
                   </div>
                 </li>
                 <li class="main-list__item">
@@ -1495,7 +1526,16 @@
                     <div class="sub-card__content"> 
                       <h4>Анна Кузнецова</h4><span>@aniuta</span>
                     </div>
-                    <button class="btn secondary">Подписаться</button>
+                    <button class="btn subscription">Подписка</button>
+                  </div>
+                </li>
+                <li class="main-list__item">
+                  <div class="sub-card">
+                    <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                    <div class="sub-card__content"> 
+                      <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                    </div>
+                    <button class="btn subscription">Подписка</button>
                   </div>
                 </li>
               </ul>
@@ -1522,10 +1562,381 @@
                 </div>
               </form>
             </div>
-            <div class="modal__row"> 
-              <div class="modal__empty">
-                <p>Вы еще не создали ни одного сообщества</p>
+            <div class="modal__row">
+              <div class="secondary-card secondary-card--simple m-b-2"><a class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div></a></div>
+            </div>
+            <div class="modal__row modal__row--bordered p-t-2 m-rv-x-25 p-x-25">
+              <h3 class="m-b-1">Интересные сообщества в liveroom</h3>
+              <div class="secondary-card secondary-card--simple m-b-2"><a class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div></a></div>
+              <div class="secondary-card secondary-card--simple m-b-2"><a class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div></a></div>
+              <div class="secondary-card secondary-card--simple m-b-2"><a class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-my-community-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>Мои сообщества</span>
+              </h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row--empty"><img class="m-b-1" src="images/icons/font/icon-comu.svg" alt="image description"><span>Вы еще не создали ни одного сообщества</span></div>
+            <div class="modal__row modal__row--bordered p-t-2 m-rv-x-25 p-x-25">
+              <h3 class="m-b-1">Интересные сообщества в liveroom</h3>
+              <div class="secondary-card secondary-card--simple m-b-2">
+                <div class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong><span class="status-icon"></span></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="secondary-card secondary-card--simple m-b-2">
+                <div class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="secondary-card secondary-card--simple m-b-2">
+                <div class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-my-events-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>События</span>
+              </h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row--empty"><img class="m-b-1" src="images/icons/font/icon-calendar.svg" alt="image description"><span>Вы пока не планировали события</span></div>
+            <div class="modal__row modal__row--bordered p-t-2 m-rv-x-25 p-x-25">
+              <h3 class="m-b-1">Интересные события в liveroom</h3>
+              <div class="secondary-card secondary-card--simple m-b-2">
+                <div class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong><span class="status-icon"></span></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="secondary-card secondary-card--simple m-b-2">
+                <div class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="secondary-card secondary-card--simple m-b-2">
+                <div class="secondary-card__wrap"> 
+                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
+                  <div class="secondary-card__content-holder p-15">
+                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong></div>
+                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
+                      <div class="secondary-card__users"> 
+                        <div class="base-card__body base-card__body--row">
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="user__wrap">
+                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn secondary m-l-a">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal js-modal js-broadcast-recording-modal">
+          <div class="modal__wrap">
+            <div class="modal__header"> 
+              <h3> 
+                <button class="modal-back-btn js-open-modal" data-modal-to="user-modal"><img src="images/icons/icon-arrow-blue.svg" alt=""></button><span>Запись трансляций</span>
+              </h3>
+              <button class="modal__close js-close-modal icon--hover">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__row--empty"><img class="m-b-1" src="images/icons/font/icon-user.svg" alt="image description"><span>Вы пока не записывали трансляции</span></div>
+            <div class="modal__row modal__row--bordered p-t-2 m-rv-x-25 p-x-25">
+              <h3 class="m-b-1">Интересные трансляции в liveroom</h3>
+              <div class="base-card"><a class="base-card__wrap">
+                  <div class="base-card__content"><strong class="text-gray m-b-05"><img src="images/icons/font/icon-club.svg" alt=""><span class="p-l-1">ДЕЗИГН</span></strong>
+                    <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3>
+                    <div class="base-card__body base-card__body--row">
+                      <div class="base-card__info p-l-0"> <span>156</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                    </div>
+                    <div class="base-card__nav simple"><span class="base-card__time m-r-1">1:45:13</span>
+                      <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                    </div>
+                  </div></a></div>
+              <div class="base-card"><a class="base-card__wrap">
+                  <div class="base-card__content"><strong class="text-gray m-b-05"><img src="images/icons/font/icon-club.svg" alt=""><span class="p-l-1">ДЕЗИГН</span></strong>
+                    <h3>Насколько сильно пандемия затронула малый и средний бизнес</h3>
+                    <div class="base-card__body base-card__body--row">
+                      <div class="base-card__info p-l-0"> <span>12</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                    </div>
+                    <div class="base-card__nav simple"><span class="base-card__time m-r-1">34:12</span>
+                      <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                    </div>
+                  </div></a></div>
+              <div class="base-card"><a class="base-card__wrap">
+                  <div class="base-card__content">
+                    <h3>Насколько сильно пандемия затронула малый и средний бизнес</h3>
+                    <div class="base-card__body base-card__body--row">
+                      <div class="base-card__info p-l-0"> <span>12</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                    </div>
+                    <div class="base-card__nav simple"><span class="base-card__time m-r-1">34:12</span>
+                      <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                    </div>
+                  </div></a></div>
             </div>
           </div>
         </div>
@@ -1872,13 +2283,28 @@
           <div class="modal__wrap p-0">
             <ul class="drop-list">
               <li class="drop-list__item">
+                <button>Сделать комнату открытой</button>
+              </li>
+              <li class="drop-list__item">
                 <button class="js-open-modal" data-modal-to="find-in-room-modal">Найти в комнате</button>
               </li>
               <li class="drop-list__item">
                 <button class="js-open-modal" data-modal-to="room-settings-modal">Настройки комнаты</button>
               </li>
               <li class="drop-list__item">
-                <button class="js-open-modal" data-modal-to="sound-quality-modal">Качество звука</button>
+                <button>Изменить опрос</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Удалить опрос</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Позвонить в комнату (плохой сигнал)</button>
+              </li>
+              <li class="drop-list__item">
+                <button class="js-open-modal" data-modal-to="sound-quality-modal">Качество звука (высокое)</button>
+              </li>
+              <li class="drop-list__item">
+                <button>Временно отключить всем микрофон</button>
               </li>
               <li class="drop-list__item">
                 <button class="js-open-modal" data-modal-to="removed-listeners-modal">Удаленные слушатели</button>
@@ -2587,14 +3013,52 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
                   </svg>
                 </button>
-                <div class="modal__icon-holder flex flex--aic">
-                  <button class="user-btn icon--hover m-r-25 js-open-modal" data-modal-to="user-notification-modal">
-                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="fs fill" fill-rule="evenodd" clip-rule="evenodd" d="M9.50012 3.67363V3C9.50012 1.34315 10.8433 0 12.5001 0C14.157 0 15.5001 1.34315 15.5001 3V3.67363C17.8651 4.79709 19.5001 7.2076 19.5001 10V13C19.5001 15.8677 21.1448 17.584 22.5476 18.8094C23.7955 19.8994 23.157 21 21.5001 21H3.50012C1.84327 21 1.20477 19.8994 2.4526 18.8094C3.85542 17.584 5.50012 15.8677 5.50012 13L5.50012 10C5.50012 7.2076 7.13518 4.7971 9.50012 3.67363ZM13.5001 3V3.07089C13.1735 3.02417 12.8396 3 12.5001 3C12.1606 3 11.8267 3.02417 11.5001 3.07089V3C11.5001 2.44772 11.9478 2 12.5001 2C13.0524 2 13.5001 2.44772 13.5001 3ZM7.50012 10C7.50012 7.23858 9.7387 5 12.5001 5C15.2615 5 17.5001 7.23858 17.5001 10V13C17.5001 15.7286 18.6636 17.6482 19.878 19H5.12224C6.3366 17.6482 7.50012 15.7286 7.50012 13L7.50012 10Z" fill="#8598A7"></path>
-                      <path class="fs fill" d="M9.50012 22C10.0524 22 10.5001 21.5523 10.5001 21H12.5001C12.5001 22.6569 11.157 24 9.50012 24C7.84327 24 6.50012 22.6569 6.50012 21H8.50012C8.50012 21.5523 8.94784 22 9.50012 22Z" fill="#8598A7"></path>
-                    </svg>
-                  </button>
-                  <button class="btn subscription lg">Подписка</button>
+                <div class="flex flex--aic">
+                  <div class="base-drop js-open-close m-r-25">
+                    <button class="user-btn icon--hover js-opener m-r-0">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fs fill" fill-rule="evenodd" clip-rule="evenodd" d="M9.50012 3.67363V3C9.50012 1.34315 10.8433 0 12.5001 0C14.157 0 15.5001 1.34315 15.5001 3V3.67363C17.8651 4.79709 19.5001 7.2076 19.5001 10V13C19.5001 15.8677 21.1448 17.584 22.5476 18.8094C23.7955 19.8994 23.157 21 21.5001 21H3.50012C1.84327 21 1.20477 19.8994 2.4526 18.8094C3.85542 17.584 5.50012 15.8677 5.50012 13L5.50012 10C5.50012 7.2076 7.13518 4.7971 9.50012 3.67363ZM13.5001 3V3.07089C13.1735 3.02417 12.8396 3 12.5001 3C12.1606 3 11.8267 3.02417 11.5001 3.07089V3C11.5001 2.44772 11.9478 2 12.5001 2C13.0524 2 13.5001 2.44772 13.5001 3ZM7.50012 10C7.50012 7.23858 9.7387 5 12.5001 5C15.2615 5 17.5001 7.23858 17.5001 10V13C17.5001 15.7286 18.6636 17.6482 19.878 19H5.12224C6.3366 17.6482 7.50012 15.7286 7.50012 13L7.50012 10Z" fill="#8598A7"></path>
+                        <path class="fs fill" d="M9.50012 22C10.0524 22 10.5001 21.5523 10.5001 21H12.5001C12.5001 22.6569 11.157 24 9.50012 24C7.84327 24 6.50012 22.6569 6.50012 21H8.50012C8.50012 21.5523 8.94784 22 9.50012 22Z" fill="#8598A7"></path>
+                      </svg>
+                    </button>
+                    <div class="base-drop__drop base-drop__drop--inner">
+                      <ul class="drop-list">
+                        <li class="drop-list__item"><strong class="text-sm text-gray text-center p-15">Когда Клим говорит, оповещать меня...</strong></li>
+                        <li class="drop-list__item">
+                          <button>Всегда</button>
+                        </li>
+                        <li class="drop-list__item">
+                          <button>Иногда</button>
+                        </li>
+                        <li class="drop-list__item">
+                          <button>Никогда не оповещать</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="btn subscription lg m-r-25">Подписка</button>
+                  <div class="base-drop js-open-close">
+                    <button class="modal__user-settings js-opener icon--blue">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 4C14.5 5.10457 13.6046 6 12.5 6C11.3954 6 10.5 5.10457 10.5 4C10.5 2.89543 11.3954 2 12.5 2C13.6046 2 14.5 2.89543 14.5 4Z" fill="#8598A7"></path>
+                        <path d="M14.5 12C14.5 13.1046 13.6046 14 12.5 14C11.3954 14 10.5 13.1046 10.5 12C10.5 10.8954 11.3954 10 12.5 10C13.6046 10 14.5 10.8954 14.5 12Z" fill="#8598A7"></path>
+                        <path d="M14.5 20C14.5 21.1046 13.6046 22 12.5 22C11.3954 22 10.5 21.1046 10.5 20C10.5 18.8954 11.3954 18 12.5 18C13.6046 18 14.5 18.8954 14.5 20Z" fill="#8598A7"></path>
+                      </svg>
+                    </button>
+                    <div class="base-drop__drop base-drop__drop--simple">
+                      <ul class="drop-list">
+                        <li class="drop-list__item">
+                          <button class="js-open-modal" data-modal-to="share-profile">Поделиться профилем</button>
+                        </li>
+                        <li class="drop-list__item">
+                          <button class="js-open-modal text-red" data-modal-to="block-profile">Заблокировать</button>
+                        </li>
+                        <li class="drop-list__item">
+                          <button class="js-open-modal text-red" data-modal-to="report-profile">Сообщить о нарушении</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2609,12 +3073,51 @@
             <div class="modal__row">
               <p class="m-b-0">Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru	</p>
             </div>
+            <div class="modal__row">
+              <h4>Сейчас в прямом эфире</h4>
+              <div class="base-card"><a class="base-card__wrap">
+                  <div class="base-card__img-holder"><img src="images/base-img4.jpg" alt="image description"></div>
+                  <div class="base-card__content">
+                    <h4>Воспитание заказчиков 😈 или как я еще не слетел с катух</h4>
+                    <div class="base-card__body base-card__body--row">
+                      <div class="user">
+                        <div class="user__wrap"></div>
+                        <div class="user__photo user__photo--row logo-holder logo-holder--md"><img src="images/user-one.png" alt=""></div>
+                      </div>
+                      <div class="user">
+                        <div class="user__wrap"></div>
+                        <div class="user__photo user__photo--row logo-holder logo-holder--md"><img src="images/user-one.png" alt=""></div>
+                      </div>
+                      <div class="user">
+                        <div class="user__wrap"></div>
+                        <div class="user__photo user__photo--row logo-holder logo-holder--md"><img src="images/user-one.png" alt=""></div>
+                      </div>
+                      <div class="base-card__info text-sm"> <span>34</span><span>12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                    </div>
+                    <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
+                      <button class="base-card__lock-btn"><img src="images/icons/font/icon-lock.svg" alt=""></button>
+                    </div>
+                  </div></a></div>
+            </div>
             <div class="modal__row"> 
               <div class="modal__user-nav"> 
-                <button class="modal-btn"><span>Участник сообществ</span><span class="text-gray"> <span>14 </span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
-                <button class="js-open-modal modal-btn" data-modal-to="community-modal"><span>Мои сообщества</span><span class="text-gray"> <span>Нет сообществ</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Запись трансляций</span><span class="text-gray"> <span>4</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
-                <button class="modal-btn"><span>Мои события</span><span class="text-gray"> <span>Нет событий</span><img class="arrow" src="images/icons/font/icon-arrow.svg" alt=""></span></button>
+                <ul class="drop-list">
+                  <li class="drop-list__item">
+                    <button>Перейти в профиль</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button>Сделать модератором</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button>Переместить в слушатели</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button class="js-open-modal text-red" data-modal-to="delete-profile">Удалить из комнаты</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button class="text-red">Сообщить о нарушении</button>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -2629,8 +3132,24 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.864 3.63603C21.2545 4.02656 21.2545 4.65972 20.864 5.05025L13.9142 12L20.864 18.9498C21.2545 19.3403 21.2545 19.9734 20.864 20.364C20.4734 20.7545 19.8403 20.7545 19.4497 20.364L12.5 13.4142L5.55025 20.364C5.15972 20.7545 4.52656 20.7545 4.13603 20.364C3.74551 19.9734 3.74551 19.3403 4.13603 18.9497L11.0858 12L4.13603 5.05025C3.74551 4.65973 3.74551 4.02656 4.13603 3.63604C4.52656 3.24551 5.15972 3.24551 5.55025 3.63604L12.5 10.5858L19.4497 3.63603C19.8403 3.24551 20.4734 3.24551 20.864 3.63603Z" fill="#8598A7"></path>
                   </svg>
                 </button>
-                <div class="modal__icon-holder">
-                  <button class="btn red lg">Заблокирован</button>
+                <div class="flex flex--aic">
+                  <button class="btn red lg m-r-25">Заблокирован</button>
+                  <div class="base-drop js-open-close">
+                    <button class="modal__user-settings js-opener icon--blue">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 4C14.5 5.10457 13.6046 6 12.5 6C11.3954 6 10.5 5.10457 10.5 4C10.5 2.89543 11.3954 2 12.5 2C13.6046 2 14.5 2.89543 14.5 4Z" fill="#8598A7"></path>
+                        <path d="M14.5 12C14.5 13.1046 13.6046 14 12.5 14C11.3954 14 10.5 13.1046 10.5 12C10.5 10.8954 11.3954 10 12.5 10C13.6046 10 14.5 10.8954 14.5 12Z" fill="#8598A7"></path>
+                        <path d="M14.5 20C14.5 21.1046 13.6046 22 12.5 22C11.3954 22 10.5 21.1046 10.5 20C10.5 18.8954 11.3954 18 12.5 18C13.6046 18 14.5 18.8954 14.5 20Z" fill="#8598A7"></path>
+                      </svg>
+                    </button>
+                    <div class="base-drop__drop base-drop__drop--simple">
+                      <ul class="drop-list">
+                        <li class="drop-list__item">
+                          <button>Разблокировать</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2659,6 +3178,87 @@
               </li>
               <li class="drop-list__item">
                 <button class="text-gray js-close-modal">Отмена</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal more js-modal js-share-profile p-0">
+          <div class="modal__wrap p-0"><strong class="text-sm text-gray text-center p-y-15">Поделиться в соцсетях</strong>
+            <ul class="social-list social-list--simple p-x-25">
+              <li class="social-list__item">
+                <input type="radio" name="social0" id="social01">
+                <label for="social01"><img src="images/icons/social-vk.png" alt="image description"></label>
+              </li>
+              <li class="social-list__item">
+                <input type="radio" name="social0" id="social02">
+                <label for="social02"><img src="images/icons/social-fb.png" alt="image description"></label>
+              </li>
+              <li class="social-list__item">
+                <input type="radio" name="social0" id="social03">
+                <label for="social03"><img src="images/icons/social-inst.png" alt="image description"></label>
+              </li>
+              <li class="social-list__item">
+                <input type="radio" name="social0" id="social04">
+                <label for="social04"><img src="images/icons/social-ok.png" alt="image description"></label>
+              </li>
+              <li class="social-list__item">
+                <input type="radio" name="social0" id="social05">
+                <label for="social05"><img src="images/icons/social-tw.png" alt="image description"></label>
+              </li>
+            </ul>
+            <ul class="drop-list border-top">
+              <li class="drop-list__item">
+                <button><strong>Скопировать ссылку</strong></button>
+              </li>
+              <li class="drop-list__item">
+                <button class="js-close-modal"><strong class="text-gray">Отмена</strong></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal more js-modal js-report-profile p-b-0">
+          <div class="modal__wrap text-center">
+            <h3>Заблокировать<br> пользователя Клим?</h3>
+            <p>Вы не будете получать уведомления об активности пользователя, комнаты, где он спикер будут удалены из поиска</p>
+            <ul class="drop-list drop-list--bool border-top m-rv-x-25">
+              <li class="drop-list__item">
+                <button class="js-close-modal"><strong>Отмена</strong></button>
+              </li>
+              <li class="drop-list__item">
+                <button><strong class="text-red">Да</strong></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal more js-modal js-report-profile p-b-0">
+          <div class="modal__wrap text-center">
+            <h3>Суть нарушения</h3>
+            <p>Сообщите нам, какие действия совершил пользователь</p>
+            <div class="modal__row"> 
+              <div class="form-control gray">
+                <textarea class="modal-btn modal-btn--area-lg" placeholder=""></textarea>
+              </div>
+            </div>
+            <ul class="drop-list drop-list--bool border-top m-rv-x-25">
+              <li class="drop-list__item">
+                <button class="js-close-modal"><strong>Отмена</strong></button>
+              </li>
+              <li class="drop-list__item">
+                <button><strong>Отправить</strong></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal more js-modal js-delete-profile p-b-0">
+          <div class="modal__wrap text-center">
+            <h3>Удалить из комнаты пользователя Татьяна?</h3>
+            <p>Пользователь будет заблокирован и не сможет войти в эту комнату</p>
+            <ul class="drop-list drop-list--bool border-top m-rv-x-25">
+              <li class="drop-list__item">
+                <button class="js-close-modal"><strong>Отмена</strong></button>
+              </li>
+              <li class="drop-list__item">
+                <button><strong class="text-red">Удалить</strong></button>
               </li>
             </ul>
           </div>

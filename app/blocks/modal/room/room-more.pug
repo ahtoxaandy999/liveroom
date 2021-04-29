@@ -2,11 +2,21 @@
   .modal__wrap.p-0
     ul.drop-list
       li.drop-list__item
+        button Сделать комнату открытой
+      li.drop-list__item
         button(data-modal-to="find-in-room-modal").js-open-modal Найти в комнате
       li.drop-list__item
         button(data-modal-to="room-settings-modal").js-open-modal Настройки комнаты
       li.drop-list__item
-        button(data-modal-to="sound-quality-modal").js-open-modal Качество звука
+        button Изменить опрос
+      li.drop-list__item
+        button Удалить опрос
+      li.drop-list__item
+        button Позвонить в комнату (плохой сигнал)
+      li.drop-list__item
+        button(data-modal-to="sound-quality-modal").js-open-modal Качество звука (высокое)
+      li.drop-list__item
+        button Временно отключить всем микрофон
       li.drop-list__item
         button(data-modal-to="removed-listeners-modal").js-open-modal Удаленные слушатели
       li.drop-list__item

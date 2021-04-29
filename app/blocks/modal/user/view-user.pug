@@ -6,10 +6,32 @@
 			div.text-right
 				button.modal__close.js-close-modal.icon--hover.m-b-15
 					include ../../icons/close
-				.modal__icon-holder.flex.flex--aic
-					button(data-modal-to="user-notification-modal").user-btn.icon--hover.m-r-25.js-open-modal
-						include ../../icons/bell
-					button.btn.subscription.lg Подписка
+				.flex.flex--aic
+					.base-drop.js-open-close.m-r-25
+						button.user-btn.icon--hover.js-opener.m-r-0
+							include ../../icons/bell
+						.base-drop__drop.base-drop__drop--inner
+							ul.drop-list
+								li.drop-list__item
+									strong.text-sm.text-gray.text-center.p-15 Когда Клим говорит, оповещать меня...
+								li.drop-list__item
+									button Всегда
+								li.drop-list__item
+									button Иногда
+								li.drop-list__item
+									button Никогда не оповещать
+					button.btn.subscription.lg.m-r-25 Подписка
+					.base-drop.js-open-close
+						button.modal__user-settings.js-opener.icon--blue
+							include ../../icons/more
+						.base-drop__drop.base-drop__drop--simple
+							ul.drop-list
+								li.drop-list__item
+									button(data-modal-to="share-profile").js-open-modal Поделиться профилем
+								li.drop-list__item
+									button(data-modal-to="block-profile").js-open-modal.text-red Заблокировать
+								li.drop-list__item
+									button(data-modal-to="report-profile").js-open-modal.text-red Сообщить о нарушении
 		.modal__row
 			h4.m-b-0 Константин Константинопольский
 				strong.label pro
@@ -23,25 +45,46 @@
 				span подписок
 		.modal__row
 			p.m-b-0 Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru	
+		.modal__row
+			h4 Сейчас в прямом эфире
+			.base-card
+				a.base-card__wrap
+					.base-card__img-holder
+						img(src="images/base-img4.jpg" alt="image description")
+					.base-card__content
+						h4 Воспитание заказчиков 😈 или как я еще не слетел с катух
+						.base-card__body.base-card__body--row
+							.user
+								.user__wrap
+								.user__photo.user__photo--row.logo-holder.logo-holder--md
+									img(src="images/user-one.png", alt="")
+							.user
+								.user__wrap
+								.user__photo.user__photo--row.logo-holder.logo-holder--md
+									img(src="images/user-one.png", alt="")
+							.user
+								.user__wrap
+								.user__photo.user__photo--row.logo-holder.logo-holder--md
+									img(src="images/user-one.png", alt="")
+							.base-card__info.text-sm 
+								span 34
+								span 12
+								img(src="images/icons/font/icon-mic.svg", alt="")
+						.base-card__nav
+							span.base-card__time 1:45:13
+							span.status-icon
+							button.base-card__lock-btn
+								img(src="images/icons/font/icon-lock.svg", alt="")
 		.modal__row 
 			.modal__user-nav 
-				button.modal-btn
-					span Участник сообществ
-					span.text-gray 
-						span 14 
-						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
-				button(data-modal-to="community-modal").js-open-modal.modal-btn
-					span Мои сообщества
-					span.text-gray 
-						span Нет сообществ
-						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
-				button.modal-btn
-					span Запись трансляций
-					span.text-gray 
-						span 4
-						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
-				button.modal-btn
-					span Мои события
-					span.text-gray 
-						span Нет событий
-						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
+				ul.drop-list
+					li.drop-list__item
+						button Перейти в профиль
+					li.drop-list__item
+						button Сделать модератором
+					li.drop-list__item
+						button Переместить в слушатели
+					li.drop-list__item
+						button(data-modal-to="delete-profile").js-open-modal.text-red Удалить из комнаты
+					li.drop-list__item
+						button.text-red Сообщить о нарушении

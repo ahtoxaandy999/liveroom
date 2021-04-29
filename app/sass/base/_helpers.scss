@@ -38,6 +38,15 @@
   }
 }
 
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .full-width {
   width: 100%;
 }

@@ -3,6 +3,14 @@
     align-items: center;
     padding-bottom: 1.2rem;
 
+    &--simple {
+        justify-content: space-between;
+        
+        .social-list__item {
+            padding: 0;
+        }
+    }
+
     &__item {
         padding: 0 1rem;
     }

@@ -4,25 +4,34 @@
 			.modal__logo.logo-holder.logo-holder--lg
 				img(src="images/user_80.png", alt="")
 			div
-				button.modal__close.js-close-modal.icon--hover
+				button.modal__close.js-close-modal.icon--hover.flex.m-l-a.m-b-3
 					include ../../icons/close
-				.modal__icon-holder
-					button(data-modal-to="settings-modal").modal__user-settings.js-open-modal
-						img(src="images/icons/font/icon-settings.svg", alt="")
+				.flex.flex--aic
+					button(data-modal-to="settings-modal").modal__user-settings.js-open-modal.m-r-25
+						include ../../icons/settings
+					.base-drop.js-open-close.inline-block
+						button.modal__user-settings.js-opener.icon--blue
+							include ../../icons/more
+						.base-drop__drop.base-drop__drop--simple
+							ul.drop-list
+								li.drop-list__item
+									button(data-modal-to="edit-user-modal").js-open-modal Редактировать профиль
+								li.drop-list__item
+									button Поделиться профилем
 		.modal__row
 			h4.m-b-0 yurki kallio
 				strong.label pro
 			p.m-b-0 @yk
 		.modal__row
 			button(data-modal-to="subscribers-modal").js-open-modal.modal__col
-				span.text-xl 14 
+				span.text-xl 0 
 				span подписчиков
 			button(data-modal-to="subscriptions-modal").js-open-modal.modal__col
 				span.text-xl 145 
 				span подписок
 		.modal__row
 			span.base-text
-				button Добавить инфо
+				button(data-modal-to="edit-user-info-modal").js-open-modal Добавить инфо
 		.modal__row
 			.scroll-holder
 				.flex.flex--jcb.flex--aic.p-x-25.p-t-15
@@ -63,22 +72,22 @@
 			p.m-b-0 Работаю удаленно 12 лет из 38 стран мира. Клиенты: Mail.ru Group, Ростех, Райффайзен банк. Пишу о удаленке и образовании клиентов на ykallio.ru	
 		.modal__row 
 			.modal__user-nav 
-				button.modal-btn
+				button(data-modal-to="community-modal").js-open-modal.modal-btn
 					span Участник сообществ
 					span.text-gray 
 						span 14 
 						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
-				button(data-modal-to="community-modal").js-open-modal.modal-btn
+				button(data-modal-to="my-community-modal").js-open-modal.modal-btn
 					span Мои сообщества
 					span.text-gray 
 						span Нет сообществ
 						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
-				button.modal-btn
+				button(data-modal-to="broadcast-recording-modal").js-open-modal.modal-btn
 					span Запись трансляций
 					span.text-gray 
-						span 4
+						span Нет трансляций
 						img(src="images/icons/font/icon-arrow.svg", alt="").arrow
-				button.modal-btn
+				button(data-modal-to="my-events-modal").js-open-modal.modal-btn
 					span Мои события
 					span.text-gray 
 						span Нет событий

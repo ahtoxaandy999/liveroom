@@ -5,9 +5,17 @@
     overflow: hidden;
     max-width: 25rem;
     margin: 0 auto;
+
+    &--simple {
+        max-width: none;
+    }
     
     &--lg {
         max-width: 52rem;
+    }
+
+    &__wrap {
+        color: $black;
     }
 
     &__img-holder {

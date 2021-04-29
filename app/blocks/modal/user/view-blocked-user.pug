@@ -6,8 +6,15 @@
 			div.text-right
 				button.modal__close.js-close-modal.icon--hover.m-b-15
 					include ../../icons/close
-				.modal__icon-holder
-					button.btn.red.lg Заблокирован
+				.flex.flex--aic
+					button.btn.red.lg.m-r-25 Заблокирован
+					.base-drop.js-open-close
+						button.modal__user-settings.js-opener.icon--blue
+							include ../../icons/more
+						.base-drop__drop.base-drop__drop--simple
+							ul.drop-list
+								li.drop-list__item
+									button Разблокировать
 		.modal__row
 			h4.m-b-0 Клим Ворошилов
 				strong.label pro
