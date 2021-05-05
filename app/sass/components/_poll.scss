@@ -1,0 +1,61 @@
+.poll {
+    &__list {
+        margin-bottom: 2rem;
+    }
+
+    li {
+        margin-bottom: 1.2rem;
+
+        input {
+            position: absolute;
+            visibility: hidden;
+
+            &:checked + label {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        label {
+            cursor: pointer;
+            background-color: rgba(22, 73, 116, 0.08);
+            border-radius: 10px;
+            min-height: 4.4rem;
+            padding: 0.4rem 1.6rem;
+            overflow: hidden;
+            position: relative;
+
+            &::before {
+                @include animate(opacity);
+                opacity: 0;
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                content: '';
+                background-color: $blue;
+                border-radius: 50%;
+                width: 2.4rem;
+                height: 2.4rem;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.35294L4.2 6L9 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+
+    &__answer {
+        &:only-child {
+            margin: 0 auto;
+        }
+    }
+
+    &__answer-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: rgba(22, 73, 116, 0.16);
+    }
+}
