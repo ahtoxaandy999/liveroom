@@ -104,6 +104,7 @@ var OpenClose = /*#__PURE__*/function () {
 
       this.holders.forEach(function (currentEl) {
         var opener = currentEl.querySelector(_this.opener);
+        if (!opener) return;
         opener.addEventListener('click', function (e) {
           e.stopPropagation();
           e.preventDefault();

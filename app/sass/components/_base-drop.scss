@@ -62,6 +62,11 @@
             left: calc(50% - 18rem);
         }
 
+        &--xwide {
+            min-width: 39rem;
+            left: calc(50% - 19.5rem);
+        }
+
         &--simple {
             left: auto;
             right: 0;

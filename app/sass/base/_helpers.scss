@@ -13,6 +13,22 @@
 .flex {
   display: flex;
 
+  &--fsn {
+    flex-shrink: 0;
+  }
+
+  &--asc {
+    align-self: center;
+  }
+
+  &--ass {
+    align-self: start;
+  }
+
+  &--ase {
+    align-self: end;
+  }
+
   &--aic {
     align-items: center;
   }
@@ -44,7 +60,6 @@
 
 .inline-block {
   display: inline-block;
-  vertical-align: top;
 }
 
 .full-width {

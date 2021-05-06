@@ -23,14 +23,20 @@ header.header
 
     .user-wrap
       .user-nav
-        button.user-btn.icon--hover
-          include ../icons/door
-        button.user-btn.icon--hover
-          include ../icons/calendar
-        button.user-btn.icon--hover
-          include ../icons/comu
-        button.user-btn.icon--hover
-          include ../icons/bell
+        .user-btn
+          button.icon--hover.js-opener
+            include ../icons/door
+        .user-btn
+          button.icon--hover.js-opener
+            include ../icons/calendar
+        .user-btn
+          button.icon--hover.js-opener
+            include ../icons/comu
+        .user-btn.js-open-close.base-drop
+          button.icon--hover.js-opener.notification-avtive
+            include ../icons/bell
+          .base-drop__drop.base-drop__drop--xwide
+            include ./notifications-drop
 
       .user-lk.base-drop.js-open-close
         button.logo-holder.js-opener

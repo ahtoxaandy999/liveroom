@@ -94,6 +94,8 @@ class OpenClose {
     attachEvents() {
         this.holders.forEach((currentEl) => {
             const opener = currentEl.querySelector(this.opener);
+            if (!opener) return;
+            
             opener.addEventListener('click', (e) => {
                 e.stopPropagation();
                 e.preventDefault();
