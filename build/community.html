@@ -14,45 +14,540 @@
       <div class="wrapper-inner">
         <header class="header">
           <div class="container"> <a class="logo" href="/"><img src="images/icons/liveroom.svg" alt="Logo"></a>
-            <button class="btn secondary js-open-modal" data-modal-to="auth-modal">Войти</button>
-          </div>
-        </header>
-        <section class="content-section">
-          <div class="container">
-            <div class="content-wrap simple">
-              <div class="secondary-card">
-                <div class="secondary-card__wrap"> 
-                  <div class="secondary-card__img-holder"><img src="images/base-img1.png" alt=""></div>
-                  <div class="secondary-card__content-holder p-15">
-                    <div class="secondary-card__head"> <strong class="secondary-card__title p-r-2">Российский рынок недвижимости</strong><span class="status-icon"></span></div>
-                    <div class="secondary-card__info-panel"> <span class="text-gray text-sm m-r-15">1,4K</span>
-                      <div class="secondary-card__users"> 
-                        <div class="base-card__body base-card__body--row">
-                          <div class="user">
-                            <div class="user__wrap">
-                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+            <form class="search-form base-drop js-open-close" action="#">
+              <div class="search-form__wrap"> 
+                <button class="search-form__btn" type="submit"></button>
+                <input class="search-form__input js-opener" type="search" placeholder="Поиск">
+              </div>
+              <div class="base-drop__drop base-drop__drop--wide">
+                <div class="tabs js-tabs">
+                  <div class="tabs__nav-wrap p-2 p-b-0">
+                    <div class="tabs__nav"><a class="tabs__nav-item js-active" href="#tab1"><span>Люди</span></a><a class="tabs__nav-item" href="#tab2"><span>Комнаты</span></a><a class="tabs__nav-item" href="#tab3"><span>События</span></a><a class="tabs__nav-item" href="#tab4"> <span>Сообщ</span></a></div>
+                  </div>
+                  <div class="tabs__content p-y-2">
+                    <div class="scroll-wrap inner-scroll p-x-2 p-b-0">
+                      <div class="tabs__tab js-active" id="tab1">
+                        <ul class="main-list main-list--simple m-x-0">
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn secondary">Подписаться</button>
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="user__wrap">
-                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn secondary">Подписаться</button>
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="user__wrap">
-                              <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn secondary">Подписаться</button>
                             </div>
-                          </div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn secondary">Подписаться</button>
+                            </div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn subscription">Подписка</button>
+                            </div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn secondary">Подписаться</button>
+                            </div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn subscription">Подписка</button>
+                            </div>
+                          </li>
+                          <li class="main-list__item">
+                            <div class="sub-card m-rv-x-2 p-x-2">
+                              <div class="sub-card__logo-holder logo-holder"><img src="images/user_1_40.jpg" alt=""></div>
+                              <div class="sub-card__content"> 
+                                <h4>Анна Кузнецова</h4><span>@aniuta</span>
+                              </div>
+                              <button class="btn secondary">Подписаться</button>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tabs__tab" id="tab2">
+                        <div class="m-rv-x-25 p-x-25">
+                          <div class="base-card"><a class="base-card__wrap" href="closed-room.html">
+                              <div class="base-card__content"><strong class="m-b-1">Воспитание заказчиков 😈 или как я еще не слетел с катух</strong>
+                                <div class="base-card__body base-card__body--row">
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="base-card__info text-sm"> <span>34</span><span class="m-r-1">12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                                </div>
+                              </div></a></div>
+                          <div class="base-card"><a class="base-card__wrap" href="closed-room.html">
+                              <div class="base-card__content"><strong class="m-b-1">Воспитание заказчиков 😈 или как я еще не слетел с катух</strong>
+                                <div class="base-card__body base-card__body--row">
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="base-card__info text-sm"> <span>34</span><span class="m-r-1">12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                                </div>
+                              </div></a></div>
                         </div>
                       </div>
-                      <button class="btn secondary m-l-a">Подписаться</button>
+                      <div class="tabs__tab" id="tab3">
+                        <div class="tabs__empty search-separator p-y-25 m-b-15">
+                          <div class="tabs__empty-icon"><img src="images/icons/font/icon-calendar.svg" alt="image description"></div><span class="text-gray">Событий не найдено</span>
+                        </div>
+                        <div class="search-separator p-b-25 m-b-15"><strong class="text-sm text-gray m-b-1">Комнаты онлайн</strong>
+                          <div class="base-card"><a class="base-card__wrap" href="closed-room.html">
+                              <div class="base-card__content base-card__content--has-nav"><strong class="m-b-1">Воспитание заказчиков 😈 или как я еще не слетел с катух</strong>
+                                <div class="base-card__body base-card__body--row">
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="base-card__info text-sm"> <span>34</span><span>12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                                </div>
+                                <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span></div>
+                              </div></a></div>
+                          <div class="base-card"><a class="base-card__wrap" href="closed-room.html">
+                              <div class="base-card__content base-card__content--has-nav"><strong class="m-b-1">Воспитание заказчиков 😈 или как я еще не слетел с катух</strong>
+                                <div class="base-card__body base-card__body--row">
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="user__wrap">
+                                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="base-card__info text-sm"> <span>34</span><span>12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                                </div>
+                                <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span></div>
+                              </div></a></div>
+                        </div>
+                        <div class="search-separator m-b-15"><strong class="text-sm text-gray m-b-1">Сообщества</strong>
+                          <div class="base-card m-b-15"><a class="base-card__wrap" href="community.html">
+                              <div class="base-card__content"><strong class="m-b-1">Российский рынок недвижимости</strong></div>
+                              <div class="base-card__body base-card__body--row p-x-2 p-b-2">
+                                <div class="base-card__info text-sm m-r-1 p-l-0"><strong>134</strong></div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <button class="btn secondary m-l-a">Подписаться</button>
+                                <div class="base-card__nav"><span class="status-icon"></span></div>
+                              </div></a></div>
+                          <div class="base-card m-b-15"><a class="base-card__wrap" href="community.html">
+                              <div class="base-card__content"><strong class="m-b-1">Российский рынок недвижимости</strong></div>
+                              <div class="base-card__body base-card__body--row p-x-2 p-b-2">
+                                <div class="base-card__info text-sm m-r-1 p-l-0"><strong>134</strong></div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <button class="btn secondary m-l-a">Подписаться</button>
+                                <div class="base-card__nav"><span class="status-icon"></span></div>
+                              </div></a></div>
+                          <div class="base-card m-b-15"><a class="base-card__wrap" href="community.html">
+                              <div class="base-card__content"><strong class="m-b-1">Российский рынок недвижимости</strong></div>
+                              <div class="base-card__body base-card__body--row p-x-2 p-b-2">
+                                <div class="base-card__info text-sm m-r-1 p-l-0"><strong>134</strong></div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <div class="user">
+                                  <div class="user__wrap">
+                                    <div class="user__photo user__photo--row logo-holder logo-holder--xxs"><img src="images/user-one.png" alt=""></div>
+                                  </div>
+                                </div>
+                                <button class="btn secondary m-l-a">Подписаться</button>
+                                <div class="base-card__nav"><span class="status-icon"></span></div>
+                              </div></a></div>
+                        </div>
+                      </div>
+                      <div class="tabs__tab" id="tab4">
+                        <div class="tabs__empty p-y-25 m-b-15 search-separator">
+                          <div class="tabs__empty-icon"><img src="images/icons/font/icon-comu.svg" alt="image description"></div><span class="text-gray">Сообществ с таким именем нет</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="app-links"> 
-                <p>Все еще не в liveroom? Скачайте приложение и получите доступ в сообщество</p>
-                <div class="app-links__row"> <a href=""><img src="images/icons/app-store-icon.svg" alt=""></a><a href=""><img src="images/icons/app-google-icon.svg" alt=""></a></div>
+            </form>
+            <div class="base-drop js-open-close">
+              <button class="btn secondary js-opener">Создать...</button>
+              <div class="base-drop__drop">
+                <ul class="drop-list">
+                  <li class="drop-list__item">
+                    <button class="js-open-modal" data-modal-to="create-room-modal">Комнату</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button class="js-open-modal" data-modal-to="create-event-modal">Событие</button>
+                  </li>
+                  <li class="drop-list__item">
+                    <button class="js-open-modal" data-modal-to="create-community-modal">Сообщество</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="user-wrap">
+              <div class="user-nav">
+                <div class="user-btn"><a class="icon--hover" href="index.html">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4999 0.5H6.5C4.29086 0.5 2.5 2.29086 2.5 4.5V19.5C2.5 21.7091 4.29086 23.5 6.5 23.5H18.5C20.7091 23.5 22.5 21.7091 22.5 19.5V8.5L22.4999 8.4851V4.5C22.4999 2.29086 20.709 0.5 18.4999 0.5ZM8.10029 21.5H18.5C19.6046 21.5 20.5 20.6046 20.5 19.5L20.4999 4.5C20.4999 3.39543 19.6045 2.5 18.4999 2.5H8.09971L14.509 4.78903C15.703 5.21546 16.5 6.34642 16.5 7.61426V16.3859C16.5 17.6538 15.703 18.7847 14.509 19.2112L8.10029 21.5ZM14.5 11.5001C14.5 12.0524 14.0523 12.5001 13.5 12.5001C12.9477 12.5001 12.5 12.0524 12.5 11.5001C12.5 10.9478 12.9477 10.5001 13.5 10.5001C14.0523 10.5001 14.5 10.9478 14.5 11.5001Z" fill="#8598A7"></path>
+                    </svg></a></div>
+                <div class="user-btn"><a class="icon--hover" href="events.html">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fs fill" d="M9 17.4242C9 18.2526 8.32843 18.9242 7.5 18.9242C6.67157 18.9242 6 18.2526 6 17.4242C6 16.5958 6.67157 15.9242 7.5 15.9242C8.32843 15.9242 9 16.5958 9 17.4242Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M12.5 13.9613C13.3284 13.9613 14 13.2897 14 12.4613C14 11.6329 13.3284 10.9613 12.5 10.9613C11.6716 10.9613 11 11.6329 11 12.4613C11 13.2897 11.6716 13.9613 12.5 13.9613Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M14 17.4242C14 18.2526 13.3284 18.9242 12.5 18.9242C11.6716 18.9242 11 18.2526 11 17.4242C11 16.5958 11.6716 15.9242 12.5 15.9242C13.3284 15.9242 14 16.5958 14 17.4242Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M17.5 13.9613C18.3284 13.9613 19 13.2897 19 12.4613C19 11.6329 18.3284 10.9613 17.5 10.9613C16.6716 10.9613 16 11.6329 16 12.4613C16 13.2897 16.6716 13.9613 17.5 13.9613Z" fill="#8598A7"></path>
+                      <path class="fs fill" fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5.5C1.5 2.73858 3.73858 0.5 6.5 0.5H18.5C21.2614 0.5 23.5 2.73858 23.5 5.5V18.5C23.5 21.2614 21.2614 23.5 18.5 23.5H6.5C3.73858 23.5 1.5 21.2614 1.5 18.5V5.5ZM21.5 8.5V18.5C21.5 20.1569 20.1569 21.5 18.5 21.5H6.5C4.84315 21.5 3.5 20.1569 3.5 18.5V8.5H21.5Z" fill="#8598A7"></path>
+                      <g opacity="0.3">
+                        <path class="fs fill" d="M7.5 13.9613C8.32843 13.9613 9 13.2897 9 12.4613C9 11.6329 8.32843 10.9613 7.5 10.9613C6.67157 10.9613 6 11.6329 6 12.4613C6 13.2897 6.67157 13.9613 7.5 13.9613Z" fill="#8598A7"></path>
+                        <path class="fs fill" d="M17.5 18.9242C18.3284 18.9242 19 18.2526 19 17.4242C19 16.5958 18.3284 15.9242 17.5 15.9242C16.6716 15.9242 16 16.5958 16 17.4242C16 18.2526 16.6716 18.9242 17.5 18.9242Z" fill="#8598A7"></path>
+                      </g>
+                    </svg></a></div>
+                <div class="user-btn"><a class="icon--hover" href="communites.html">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fs fill" fill-rule="evenodd" clip-rule="evenodd" d="M2.91895 4.92136C2.91895 3.30794 4.22688 2 5.84031 2C7.45373 2 8.76167 3.30794 8.76167 4.92136V5.75604C8.76167 7.36946 7.45373 8.6774 5.84031 8.6774C4.22688 8.6774 2.91895 7.36946 2.91895 5.75604V4.92136ZM6.76167 4.92136V5.75604C6.76167 6.26489 6.34916 6.6774 5.84031 6.6774C5.33145 6.6774 4.91895 6.26489 4.91895 5.75604V4.92136C4.91895 4.41251 5.33145 4 5.84031 4C6.34916 4 6.76167 4.41251 6.76167 4.92136Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M5.05952 11.2832C5.53082 11.1116 6.05086 11.1333 6.50628 11.3435C7.00773 11.5749 7.60186 11.356 7.8333 10.8546C8.06474 10.3531 7.84585 9.75897 7.34439 9.52753C6.40973 9.09615 5.34244 9.05174 4.37517 9.40397L2.91654 9.93514C1.46562 10.4635 0.5 11.8428 0.5 13.3869V14.0724C0.5 15.7959 1.94012 17.1697 3.66164 17.0886C4.21331 17.0626 4.63946 16.5943 4.61346 16.0427C4.58747 15.491 4.11918 15.0648 3.56751 15.0908C2.98625 15.1182 2.5 14.6543 2.5 14.0724V13.3869C2.5 12.6835 2.9399 12.0551 3.60088 11.8144L5.05952 11.2832Z" fill="#8598A7"></path>
+                      <path class="fs fill" fill-rule="evenodd" clip-rule="evenodd" d="M19.1095 2.00004C20.7418 2.00004 22.0651 3.32335 22.0651 4.95573V5.80021C22.0651 7.4326 20.7418 8.7559 19.1095 8.7559C17.4771 8.7559 16.1538 7.4326 16.1538 5.80021V4.95573C16.1538 3.32335 17.4771 2.00004 19.1095 2.00004ZM18.1538 5.80021V4.95573C18.1538 4.42792 18.5816 4.00004 19.1095 4.00004C19.6373 4.00004 20.0651 4.42792 20.0651 4.95573V5.80021C20.0651 6.32803 19.6373 6.7559 19.1095 6.7559C18.5816 6.7559 18.1538 6.32803 18.1538 5.80021Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M19.9027 11.3813C19.4229 11.2066 18.8936 11.2286 18.43 11.4426C17.9285 11.674 17.3344 11.4551 17.103 10.9537C16.8715 10.4522 17.0904 9.8581 17.5919 9.62666C18.5347 9.19151 19.6113 9.14671 20.587 9.50202L22.0628 10.0394C23.5261 10.5723 24.5 11.9634 24.5 13.5207V14.2143C24.5 15.9513 23.0486 17.3359 21.3135 17.2542C20.7618 17.2282 20.3357 16.7599 20.3617 16.2082C20.3877 15.6566 20.856 15.2304 21.4076 15.2564C22.0024 15.2844 22.5 14.8098 22.5 14.2143V13.5207C22.5 12.8041 22.0518 12.1639 21.3785 11.9187L19.9027 11.3813Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M4.88902 18.9443C5.61167 17.6797 6.71082 16.672 8.03331 16.0616L8.72853 15.7407C11.1216 14.6362 13.8785 14.6362 16.2716 15.7407L16.9668 16.0616C18.2893 16.672 19.3884 17.6797 20.1111 18.9443L20.4352 19.5116C21.5781 21.5116 20.134 24 17.8305 24H7.16959C4.86613 24 3.42202 21.5116 4.56486 19.5116L4.88902 18.9443Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M12.5 6C10.567 6 9 7.567 9 9.5V10.5C9 12.433 10.567 14 12.5 14C14.433 14 16 12.433 16 10.5V9.5C16 7.567 14.433 6 12.5 6Z" fill="#8598A7"></path>
+                    </svg></a></div>
+                <div class="user-btn js-open-close base-drop">
+                  <button class="icon--hover js-opener notification-avtive">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fs fill" fill-rule="evenodd" clip-rule="evenodd" d="M9.50012 3.67363V3C9.50012 1.34315 10.8433 0 12.5001 0C14.157 0 15.5001 1.34315 15.5001 3V3.67363C17.8651 4.79709 19.5001 7.2076 19.5001 10V13C19.5001 15.8677 21.1448 17.584 22.5476 18.8094C23.7955 19.8994 23.157 21 21.5001 21H3.50012C1.84327 21 1.20477 19.8994 2.4526 18.8094C3.85542 17.584 5.50012 15.8677 5.50012 13L5.50012 10C5.50012 7.2076 7.13518 4.7971 9.50012 3.67363ZM13.5001 3V3.07089C13.1735 3.02417 12.8396 3 12.5001 3C12.1606 3 11.8267 3.02417 11.5001 3.07089V3C11.5001 2.44772 11.9478 2 12.5001 2C13.0524 2 13.5001 2.44772 13.5001 3ZM7.50012 10C7.50012 7.23858 9.7387 5 12.5001 5C15.2615 5 17.5001 7.23858 17.5001 10V13C17.5001 15.7286 18.6636 17.6482 19.878 19H5.12224C6.3366 17.6482 7.50012 15.7286 7.50012 13L7.50012 10Z" fill="#8598A7"></path>
+                      <path class="fs fill" d="M9.50012 22C10.0524 22 10.5001 21.5523 10.5001 21H12.5001C12.5001 22.6569 11.157 24 9.50012 24C7.84327 24 6.50012 22.6569 6.50012 21H8.50012C8.50012 21.5523 8.94784 22 9.50012 22Z" fill="#8598A7"></path>
+                    </svg>
+                  </button>
+                  <div class="base-drop__drop base-drop__drop--xwide">
+                    <div class="p-2">
+                      <div class="flex flex--jcb m-b-15"><strong class="text-sm text-gray">Новые уведомления</strong>
+                        <button class="link primary text-sm">Пометить как просмотренные</button>
+                      </div>
+                      <div class="scroll-wrap p-r-15 m-rv-r-1">
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Анна Кузнецова</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">14 мин</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Кристина Васильева</strong> приглашает тебя стать спикером в комнате “Воспитание заказчиков”</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">30 мин</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                        <div class="flex flex--ais m-b-15">
+                          <div class="logo-holder m-r-15"><img src="images/user_1_40.jpg" alt="image description"></div><span class="p-r-1 flex--asc"><strong class="inline-block">Борис Петров</strong> новый подписчик</span><span class="text-sm text-gray p-t-15 m-l-a flex--fsn">2 ч</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="user-lk base-drop js-open-close">
+                <button class="logo-holder js-opener"><img src="images/user_40.png" alt=""></button>
+                <div class="base-drop__drop base-drop__drop--right">
+                  <ul class="drop-list">
+                    <li class="drop-list__item">
+                      <button class="js-open-modal text-left" data-modal-to="user-modal">Yurki Kallio</button>
+                    </li>
+                    <li class="drop-list__item">
+                      <button class="js-open-modal text-left" data-modal-to="settings-modal">Настройки</button>
+                    </li>
+                    <li class="drop-list__item">
+                      <button class="js-open-modal text-left" data-modal-to="edit-user-modal">Редактировать</button>
+                    </li>
+                    <li class="drop-list__item">
+                      <button class="js-open-logout-modal text-red text-left">Выйти</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="content-section">
+          <div class="container">
+            <div class="content-wrap p-r-25 p-l-1">
+              <div class="flex flex--aic m-b-2"><a class="link primary flex flex--aic" href="communites.html"><img class="m-r-1" src="images/icons/icon-arrow-blue.svg" alt=""><span class="text-lg">Сообщества</span></a>
+                <button class="more-btn flex flex--aic flex--jcc js-open-modal icon--hover m-l-a" data-modal-to="room-more-modal">
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 4C14.5 5.10457 13.6046 6 12.5 6C11.3954 6 10.5 5.10457 10.5 4C10.5 2.89543 11.3954 2 12.5 2C13.6046 2 14.5 2.89543 14.5 4Z" fill="#8598A7"></path>
+                    <path d="M14.5 12C14.5 13.1046 13.6046 14 12.5 14C11.3954 14 10.5 13.1046 10.5 12C10.5 10.8954 11.3954 10 12.5 10C13.6046 10 14.5 10.8954 14.5 12Z" fill="#8598A7"></path>
+                    <path d="M14.5 20C14.5 21.1046 13.6046 22 12.5 22C11.3954 22 10.5 21.1046 10.5 20C10.5 18.8954 11.3954 18 12.5 18C13.6046 18 14.5 18.8954 14.5 20Z" fill="#8598A7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="img-banner m-b-2"><img src="images/base-img2.jpg" alt="image description"></div>
+              <div class="room__title"> 
+                <h2>ДЕЗИГН</h2>
+              </div>
+              <div class="flex flex--aic m-b-25"><strong class="text-sm text-gray m-r-25">Участники 1,4К</strong><span class="text-sm text-gray m-r-15">Друзья</span>
+                <div class="base-card__body base-card__body--row">
+                  <div class="user">
+                    <div class="user__wrap">
+                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="user__wrap">
+                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="user__wrap">
+                      <div class="user__photo user__photo--row logo-holder logo-holder--sm"><img src="images/user-one.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="base-card__info text-sm"> <span>+31</span></div>
+                </div>
+                <button class="btn secondary m-l-a">Подписаться</button>
+              </div>
+              <p>Че каво? Делаем дизайн и всякое такое <br><br>мы в телеге https://t.me/ExpertMax_Boе <br>мы в фейсбуке https://fb.com/emb</p>
+            </div>
+            <div class="sidebar js-sidebar js-active">
+              <div class="sidebar__wrap">
+                <div class="sidebar__body p-t-3">
+                  <div class="sidebar__content">
+                    <div class="flex flex--aic m-b-2">
+                      <h3 class="m-b-0">Сейчас в прямом эфире</h3>
+                    </div>
+                    <div class="scroll-wrap inner-scroll tab-scroll p-x-25 m-rv-x-25">
+                      <div class="base-card m-b-2"><a class="base-card__wrap" href="closed-room.html">
+                          <div class="base-card__img-holder"><img src="images/base-img4.jpg" alt="image description"></div>
+                          <div class="base-card__content">
+                            <h4>Воспитание заказчиков 😈 или как я еще не слетел с катух</h4>
+                            <div class="base-card__body base-card__body--row">
+                              <div class="user">
+                                <div class="user__wrap"></div>
+                                <div class="user__photo user__photo--row logo-holder logo-holder--md"><img src="images/user-one.png" alt=""></div>
+                              </div>
+                              <div class="user">
+                                <div class="user__wrap"></div>
+                                <div class="user__photo user__photo--row logo-holder logo-holder--md"><img src="images/user-one.png" alt=""></div>
+                              </div>
+                              <div class="user">
+                                <div class="user__wrap"></div>
+                                <div class="user__photo user__photo--row logo-holder logo-holder--md"><img src="images/user-one.png" alt=""></div>
+                              </div>
+                              <div class="base-card__info text-sm"> <span>34</span><span>12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                            </div>
+                            <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
+                              <button class="base-card__lock-btn"><img src="images/icons/font/icon-lock.svg" alt=""></button>
+                            </div>
+                          </div></a></div>
+                      <div class="tabs js-tabs">
+                        <div class="tabs__nav events-tab-nav"><a class="tabs__nav-item btn js-active" href="#tab001"><span>События</span></a><a class="tabs__nav-item btn" href="#tab002"><span>Записи</span></a></div>
+                        <div class="tabs__content scroll-wrap inner-scroll tab-scroll p-t-2">
+                          <div class="tabs__tab js-active" id="tab001">
+                            <div class="base-card"><a class="base-card__wrap" href="event.html">
+                                <div class="base-card__content">
+                                  <div class="base-card__title p-r-2"><span class="m-b-05">Сегодня 15:45</span>
+                                    <h4>Воспитание заказчиков</h4>
+                                  </div>
+                                  <div class="base-card__body base-card__body--row">
+                                    <div class="base-card__body base-card__body--row">
+                                      <div class="user">
+                                        <div class="user__wrap">
+                                          <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                                        </div>
+                                      </div>
+                                      <div class="user">
+                                        <div class="user__wrap">
+                                          <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                                        </div>
+                                      </div>
+                                      <div class="user">
+                                        <div class="user__wrap">
+                                          <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                                        </div>
+                                      </div>
+                                      <div class="base-card__info"> <span>34</span></div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                            <div class="base-card"><a class="base-card__wrap" href="event.html">
+                                <div class="base-card__img-holder m-b-05"><img src="images/base-img4.jpg" alt="image description"></div>
+                                <div class="base-card__content">
+                                  <div class="base-card__title p-r-2"><span class="m-b-05">Завтра 18:00</span>
+                                    <h4>Основы безопасности жизнедеятельности или как гоним на АСАШАЙ</h4>
+                                  </div>
+                                  <div class="base-card__body base-card__body--row">
+                                    <div class="base-card__body base-card__body--row">
+                                      <div class="user">
+                                        <div class="user__wrap">
+                                          <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                                        </div>
+                                      </div>
+                                      <div class="user">
+                                        <div class="user__wrap">
+                                          <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                                        </div>
+                                      </div>
+                                      <div class="user">
+                                        <div class="user__wrap">
+                                          <div class="user__photo user__photo--row logo-holder logo-holder--xs"><img src="images/user-one.png" alt=""></div>
+                                        </div>
+                                      </div>
+                                      <div class="base-card__info"> <span>34</span></div>
+                                    </div>
+                                  </div>
+                                </div></a></div>
+                          </div>
+                          <div class="tabs__tab" id="tab002">
+                            <div class="base-card"><a class="base-card__wrap" href="record.html">
+                                <div class="base-card__content"><strong class="text-gray m-b-1"><img src="images/icons/font/icon-club.svg" alt=""><span class="p-l-1">Безопасный мир</span></strong>
+                                  <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3>
+                                  <div class="base-card__body base-card__body--row">
+                                    <div class="base-card__info p-l-0"> <span>156</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                                  </div>
+                                  <div class="base-card__nav simple"><span class="base-card__time m-r-1">1:45:13</span>
+                                    <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                                  </div>
+                                </div></a></div>
+                            <div class="base-card"><a class="base-card__wrap" href="record.html">
+                                <div class="base-card__content"><strong class="text-gray m-b-1"><img src="images/icons/font/icon-club.svg" alt=""><span class="p-l-1">ДЕЗИГН</span></strong>
+                                  <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3>
+                                  <div class="base-card__body base-card__body--row">
+                                    <div class="base-card__info p-l-0"> <span>156</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                                  </div>
+                                  <div class="base-card__nav simple"><span class="base-card__time m-r-1">1:45:13</span>
+                                    <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                                  </div>
+                                </div></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

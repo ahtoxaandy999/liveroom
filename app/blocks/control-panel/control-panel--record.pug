@@ -1,14 +1,15 @@
-.control-panel.flex.flex--jcb.static
-    .control-panel__wrapper.flex.flex--aic.p-y-15.p-x-2
-        .record-holder.flex.flex--aic.flex--jcb.full-width
-            strong.record-holder__title Воспитание заказчиков 😈 или как я еще не слетел с катух
-            .base-card__body.base-card__body--row
-                .user
-                    .user__wrap
-                        .user__photo.user__photo--row.logo-holder
-                            img(src="images/user-one.png", alt="")
-                .user
-                    .user__wrap
-                        .user__photo.user__photo--row.logo-holder
-                            img(src="images/user-one.png", alt="")
-            span 0:07:02 / 2:36:44
+.control-panel.flex.flex--jcb.record
+    .control-panel__wrapper 
+        .player-panel
+            .player-panel__play-line 
+                .player-panel__play-circle(style="left: 3%;")
+            .player-panel__time 
+                span 0:07:02
+                span -2:36:44
+            .player-panel__controls 
+                button.player-panel__controls-btn
+                    img(src="images/icons/font/icon-backward.svg" alt="image description")
+                button.player-panel__controls-btn.player-panel__controls-btn--play
+                    img(src="images/icons/font/icon-play.svg" alt="image description")
+                button.player-panel__controls-btn
+                    img(src="images/icons/font/icon-forward.svg" alt="image description")
