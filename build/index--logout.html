@@ -46,209 +46,271 @@
             <button class="btn secondary js-open-modal" data-modal-to="auth-modal">Войти</button>
           </div>
         </header>
-        <div class="base-card"><a class="base-card__wrap" href="strange-room.html">
-            <div class="base-card__content">
-              <div class="base-card__body">
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                    <div class="user__data"><span class="user__name">Yurki Kallio</span></div>
+        <section class="content-section">
+          <div class="container">
+            <div class="content-wrap">
+              <div class="tabs js-tabs">
+                <div class="tabs__nav events-tab-nav"><a class="tabs__nav-item btn js-active" href="#tab01"><span>Онлайн</span></a><a class="tabs__nav-item btn" href="#tab02"><span>Записи</span></a></div>
+                <div class="tabs__content scroll-wrap inner-scroll tab-scroll p-t-2">
+                  <div class="tabs__tab js-active" id="tab01">
+                    <div class="base-card"><a class="base-card__wrap" href="strange-room.html">
+                        <div class="base-card__content">
+                          <div class="base-card__body">
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                <div class="user__data"><span class="user__name">Yurki Kallio</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="base-card__nav"><span class="base-card__time">0:14</span><span class="status-icon"></span></div>
+                        </div></a></div>
+                    <div class="base-card"><a class="base-card__wrap" href="strange-room.html">
+                        <div class="base-card__content">
+                          <div class="base-card__body">
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                <div class="user__data"><span class="user__name">Анна Кондратова</span></div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                <div class="user__data"><span class="user__name">Константин Василевский</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div></a></div>
+                    <div class="base-card"><a class="base-card__wrap" href="closed-room.html">
+                        <div class="base-card__content">
+                          <div class="base-card__body">
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                <div class="user__data"><span class="user__name">Анна Кондратова</span></div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                <div class="user__data"><span class="user__name">Константин Василевский</span></div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                <div class="user__data"><span class="user__name">Герман Боярский</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
+                            <button class="base-card__lock-btn"><img src="images/icons/font/icon-lock.svg" alt=""></button>
+                          </div>
+                        </div></a></div>
+                    <div class="base-card">
+                      <div class="base-card__wrap">
+                        <div class="base-card__head">
+                          <h4 class="base-card__head-title">Вы можете их знать</h4>
+                          <div class="base-card__head-nav">
+                            <button class="link primary">Смотреть всех</button>
+                            <button class="link secondary">Скрыть</button>
+                          </div>
+                        </div>
+                        <div class="base-card__slider">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
+                                        <button class="btn secondary">Подписаться</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">UX/UI designer BRB</p>
+                                        <button class="btn subscription">Подписка</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">Большой и добрый человек, приду на выруч...</p>
+                                        <button class="btn secondary">Подписаться</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">Дизайнер всея Руси</p>
+                                        <button class="btn secondary">Подписаться</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
+                                        <button class="btn subscription">Подписка</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
+                                        <button class="btn secondary">Подписаться</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
+                                        <button class="btn secondary">Подписаться</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="slide-item">
+                                  <div class="user">
+                                    <div class="user__content"> 
+                                      <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
+                                      <div class="user__data"><span class="user__name">Yurki Kallio</span>
+                                        <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
+                                        <button class="btn secondary">Подписаться</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="base-card"><a class="base-card__wrap" href="strange-room.html">
+                        <div class="base-card__content">
+                          <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3>
+                          <div class="base-card__body base-card__body--row">
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="user__wrap">
+                                <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
+                              </div>
+                            </div>
+                            <div class="base-card__info"> <span>34</span><span>12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
+                          </div>
+                          <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
+                            <button class="base-card__lock-btn"><img src="images/icons/font/icon-lock.svg" alt=""></button>
+                          </div>
+                        </div></a></div>
+                  </div>
+                  <div class="tabs__tab" id="tab02">
+                    <div class="base-card"><a class="base-card__wrap" href="record.html">
+                        <div class="base-card__content">
+                          <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3><strong class="text-gray m-b-2"> <img src="images/icons/font/icon-club.svg" alt=""><span class="p-l-1">Безопасный мир</span></strong>
+                          <div class="base-card__body base-card__body--row">
+                            <div class="base-card__info p-l-0"> <span>156</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                          </div>
+                          <div class="base-card__nav simple"><span class="base-card__time m-r-1">1:45:13</span>
+                            <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                          </div>
+                        </div></a></div>
+                    <div class="base-card"><a class="base-card__wrap" href="record.html">
+                        <div class="base-card__content">
+                          <h3>Насколько сильно пандемия затронула малый и средний бизнес</h3>
+                          <div class="base-card__body base-card__body--row">
+                            <div class="base-card__info p-l-0"> <span>12</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                          </div>
+                          <div class="base-card__nav simple"><span class="base-card__time m-r-1">34:12</span>
+                            <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                          </div>
+                        </div></a></div>
+                    <div class="base-card"><a class="base-card__wrap" href="record.html">
+                        <div class="base-card__content">
+                          <h3>Насколько сильно пандемия затронула малый и средний бизнес</h3>
+                          <div class="base-card__body base-card__body--row">
+                            <div class="base-card__info p-l-0"> <span>12</span><img src="images/icons/font/icon-hear.svg" alt=""></div>
+                          </div>
+                          <div class="base-card__nav simple"><span class="base-card__time m-r-1">34:12</span>
+                            <button class="base-card__lock-btn"><img src="images/icons/font/icon-play.svg" alt=""></button>
+                          </div>
+                        </div></a></div>
                   </div>
                 </div>
-              </div>
-              <div class="base-card__nav"><span class="base-card__time">0:14</span><span class="status-icon"></span></div>
-            </div></a></div>
-        <div class="base-card"><a class="base-card__wrap" href="strange-room.html">
-            <div class="base-card__content">
-              <div class="base-card__body">
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                    <div class="user__data"><span class="user__name">Анна Кондратова</span></div>
-                  </div>
-                </div>
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                    <div class="user__data"><span class="user__name">Константин Василевский</span></div>
-                  </div>
-                </div>
-              </div>
-            </div></a></div>
-        <div class="base-card"><a class="base-card__wrap" href="closed-room.html">
-            <div class="base-card__content">
-              <div class="base-card__body">
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                    <div class="user__data"><span class="user__name">Анна Кондратова</span></div>
-                  </div>
-                </div>
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                    <div class="user__data"><span class="user__name">Константин Василевский</span></div>
-                  </div>
-                </div>
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                    <div class="user__data"><span class="user__name">Герман Боярский</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
-                <button class="base-card__lock-btn"><img src="images/icons/font/icon-lock.svg" alt=""></button>
-              </div>
-            </div></a></div>
-        <div class="base-card">
-          <div class="base-card__wrap">
-            <div class="base-card__head">
-              <h4 class="base-card__head-title">Вы можете их знать</h4>
-              <div class="base-card__head-nav">
-                <button class="link primary">Смотреть всех</button>
-                <button class="link secondary">Скрыть</button>
               </div>
             </div>
-            <div class="base-card__slider">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                            <button class="btn secondary">Подписаться</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">UX/UI designer BRB</p>
-                            <button class="btn subscription">Подписка</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">Большой и добрый человек, приду на выруч...</p>
-                            <button class="btn secondary">Подписаться</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">Дизайнер всея Руси</p>
-                            <button class="btn secondary">Подписаться</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                            <button class="btn subscription">Подписка</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                            <button class="btn secondary">Подписаться</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                            <button class="btn secondary">Подписаться</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"> 
-                    <div class="slide-item">
-                      <div class="user">
-                        <div class="user__content"> 
-                          <div class="user__photo logo-holder"><img src="images/user-one.png" alt=""></div>
-                          <div class="user__data"><span class="user__name">Yurki Kallio</span>
-                            <p class="user__descr">IT менеджер в северном городе, недалеко от Бело...</p>
-                            <button class="btn secondary">Подписаться</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="sidebar js-sidebar js-active"><a class="sidebar__opener js-opener" href="#">
+                <div class="sidebar__opener-icon"><img src="images/icons/font/icon-arrow.svg" alt=""></div>
+                <div class="sidebar__opener-text m-y-15"><span>Показать события</span></div></a>
+              <div class="sidebar__wrap">
+                <div class="sidebar__head"><a class="link secondary js-close" href="#"><img src="images/icons/font/icon-arrow.svg" alt=""><span>Скрыть события</span></a></div>
+                <div class="sidebar__body">
+                  <div class="sidebar__content">
+                    <div class="calendar-icon m-x-a"><img src="images/calendar-icon.png" alt=""></div>
+                    <p class="base-text">У вас нет запланированных событий</p>
+                    <p class="base-text">Послушайте
+                      <button>события других пользователей</button>или создайте свое
+                    </p>
+                    <button class="js-open-modal btn secondary" data-modal-to="create-event-modal">Создать событие</button>
                   </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="base-card"><a class="base-card__wrap" href="strange-room.html">
-            <div class="base-card__content">
-              <h3>Воспитание заказчиков 😈 или как я еще не слетел с катух</h3>
-              <div class="base-card__body base-card__body--row">
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
-                  </div>
-                </div>
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
-                  </div>
-                </div>
-                <div class="user">
-                  <div class="user__wrap">
-                    <div class="user__photo user__photo--row logo-holder"><img src="images/user-one.png" alt=""></div>
-                  </div>
-                </div>
-                <div class="base-card__info"> <span>34</span><span>12</span><img src="images/icons/font/icon-mic.svg" alt=""></div>
-              </div>
-              <div class="base-card__nav"><span class="base-card__time">1:45:13</span><span class="status-icon"></span>
-                <button class="base-card__lock-btn"><img src="images/icons/font/icon-lock.svg" alt=""></button>
-              </div>
-            </div></a></div>
+        </section>
         <div class="modal js-modal js-add-users-modal">
           <div class="modal__wrap">
             <div class="modal__header"> 

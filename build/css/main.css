@@ -2032,6 +2032,10 @@ strong{
       width:100%; }
 .sidebar .calendar-icon{
     margin-bottom:8px; }
+.sidebar h3{
+    line-height:1.3; }
+.sidebar h4{
+    line-height:1.4; }
 .simple-card{
   width:100%;
   display:-webkit-box;
