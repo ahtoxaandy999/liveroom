@@ -7,6 +7,7 @@
         border-radius: 1rem;
         padding: 2px;
         max-width: 51.9rem;
+        margin-bottom: 1.6rem;
 
         &-item {
             font-weight: 500;
@@ -57,7 +58,6 @@
 
     &__tab {
         display: none;
-        margin-right: -0.8rem;
 
         &.js-active {
             display: block;
@@ -69,6 +69,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    &__section {
+        &--bordered {
+            border-top: 1px solid rgba(22, 73, 116, 0.12);
+            border-bottom: 1px solid rgba(22, 73, 116, 0.12);
+        }
     }
 
     .sub-card {

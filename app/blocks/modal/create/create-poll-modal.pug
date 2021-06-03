@@ -1,9 +1,9 @@
 .modal.js-modal.js-create-poll-modal
+	.modal__header.p-x-25
+		h3 Опрос
+		button.modal__close.js-close-modal.icon--hover
+			include ../../icons/close
 	.modal__wrap
-		.modal__header 
-			h3 Опрос
-			button.modal__close.js-close-modal.icon--hover
-				include ../../icons/close
 		.modal__row 
 			.form-control.gray
 				textarea(placeholder="Что вы хотите спросить?").modal-btn.modal-btn--area.validate-error
@@ -67,6 +67,6 @@
 		.modal__row 
 			.form-control.gray
 				textarea(placeholder="Комментарий").modal-btn.modal-btn--area
-
+	.p-x-25.p-t-15
 		button.btn.primary.full-width Создать опрос
 

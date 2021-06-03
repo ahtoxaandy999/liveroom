@@ -1,5 +1,14 @@
 .record-holder {
     &__title {
-        max-width: 23rem;
+        line-height: 2rem;
+        max-width: 18.8rem;
+        flex-shrink: 0;
+        margin-right: 2rem;
+        height: 4rem;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }

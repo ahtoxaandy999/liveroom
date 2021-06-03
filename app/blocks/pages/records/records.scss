@@ -1,0 +1,25 @@
+.events-tab-nav {
+    padding: .2rem;
+    background: rgba(#164974, .12);
+    border-radius: 9px;
+    display: flex;
+    max-width: 51.9rem;
+    margin: 0 auto;
+
+    .btn {
+        @include animate(background box-shadow opacity);
+
+        width: 50%;
+        border-radius: 7px;
+        color: $black;
+        border-width: 0;
+        font-weight: 500;
+        padding: .5rem;
+        height: 28px;
+
+        &.js-active {
+            background: $white;
+            border: 0;
+        }
+    }
+}

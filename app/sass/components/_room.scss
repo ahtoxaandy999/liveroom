@@ -67,3 +67,15 @@
         }
     }
 }
+
+.hover-open-close {
+    &:hover {
+        .base-drop__drop {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .opener {
+        cursor: pointer;
+    }
+}

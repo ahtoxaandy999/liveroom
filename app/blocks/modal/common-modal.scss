@@ -42,18 +42,12 @@
         overflow-x: visible;
         overflow-y: auto;
         min-height: 46rem;
-        max-height: 90vh;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(22, 73, 116, 0.24) transparent;
+        max-height: 75vh;
+        scrollbar-width: none;
 
         &::-webkit-scrollbar {
-            width: 4px;
-            height: 4px;
-        }
-    
-        &::-webkit-scrollbar-thumb {
-            background: rgba(22, 73, 116, 0.24);
-            border-radius: 5px;
+            width:0;
+            height:0;
         }
 
         &--sm {
@@ -185,5 +179,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    &__close {
+        &--absolute {
+            position: absolute;
+            top: 1.6rem;
+            right: 1.6rem;
+        }
     }
 }

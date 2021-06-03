@@ -2,13 +2,16 @@
 .base-card
 	a(href="strange-room.html").base-card__wrap
 		.base-card__content
-			.base-card__body
+			.base-card__body.base-card__body--row
 				.user
 					.user__wrap
-						.user__photo.logo-holder
+						.user__photo.user__photo--row.logo-holder
 							img(src="images/user-one.png", alt="")
-						.user__data
-							span.user__name Yurki Kallio
+				.flex.flex--aic.p-x-1.m-x-2
+					.m-r-15 
+						include ../../icons/mic
+					span.text-gray 1
+
 			.base-card__nav
 				span.base-card__time 0:14
 				span.status-icon
@@ -16,42 +19,40 @@
 .base-card
 	a(href="strange-room.html").base-card__wrap
 		.base-card__content
-			.base-card__body
+			.base-card__body.base-card__body--row
 				.user
 					.user__wrap
-						.user__photo.logo-holder
+						.user__photo.user__photo--row.logo-holder
 							img(src="images/user-one.png", alt="")
-						.user__data
-							span.user__name Анна Кондратова
 				.user
 					.user__wrap
-						.user__photo.logo-holder
+						.user__photo.user__photo--row.logo-holder
 							img(src="images/user-one.png", alt="")
-						.user__data
-							span.user__name Константин Василевский
+				.flex.flex--aic.p-x-1.m-x-2
+					.m-r-15 
+						include ../../icons/mic
+					span.text-gray 2
 
 .base-card
 	a(href="closed-room.html").base-card__wrap
 		.base-card__content
-			.base-card__body
+			.base-card__body.base-card__body--row
 				.user
 					.user__wrap
-						.user__photo.logo-holder
+						.user__photo.user__photo--row.logo-holder
 							img(src="images/user-one.png", alt="")
-						.user__data
-							span.user__name Анна Кондратова
 				.user
 					.user__wrap
-						.user__photo.logo-holder
+						.user__photo.user__photo--row.logo-holder
 							img(src="images/user-one.png", alt="")
-						.user__data
-							span.user__name Константин Василевский
 				.user
 					.user__wrap
-						.user__photo.logo-holder
+						.user__photo.user__photo--row.logo-holder
 							img(src="images/user-one.png", alt="")
-						.user__data
-							span.user__name Герман Боярский
+				.flex.flex--aic.p-x-1.m-x-2
+					.m-r-15 
+						include ../../icons/mic
+					span.text-gray 3
 			.base-card__nav
 				span.base-card__time 1:45:13
 				span.status-icon
@@ -63,8 +64,8 @@
 			h4.base-card__head-title Вы можете их знать
 			.base-card__head-nav
 				button.link.primary Смотреть всех
-				button.link.secondary Скрыть
 		include ../../know-them/know-them
+
 .base-card
 	a(href="strange-room.html").base-card__wrap
 		.base-card__content
@@ -85,7 +86,66 @@
 				.base-card__info 
 					span 34
 					span 12
-					img(src="images/icons/font/icon-mic.svg", alt="")
+					include ../../icons/mic
+			.base-card__nav
+				span.base-card__time 1:45:13
+				span.status-icon
+				button.base-card__lock-btn
+					img(src="images/icons/font/icon-lock.svg", alt="")
+
+.base-card
+	a(href="record.html").base-card__wrap
+		.base-card__content
+			strong.text-gray.m-b-1
+				img(src="images/icons/font/icon-club.svg", alt="")
+				span.p-l-1 Безопасный мир
+			h3 Воспитание заказчиков 😈 или как я еще не слетел с катух
+			.base-card__body.base-card__body--row
+				.user
+					.user__wrap
+						.user__photo.user__photo--row.logo-holder
+							img(src="images/user-one.png", alt="")
+				.user
+					.user__wrap
+						.user__photo.user__photo--row.logo-holder
+							img(src="images/user-one.png", alt="")
+				.user
+					.user__wrap
+						.user__photo.user__photo--row.logo-holder
+							img(src="images/user-one.png", alt="")
+				.base-card__info 
+					span 34
+					span 12
+					include ../../icons/mic
+			.base-card__nav
+				span.base-card__time 1:45:13
+				span.status-icon
+				button.base-card__lock-btn
+					img(src="images/icons/font/icon-lock.svg", alt="")
+
+.base-card
+	a(href="strange-room.html").base-card__wrap
+		.base-card__img-holder.base-card__img-holder--lg.m-b-15
+			img(src="images/base-img5.jpg" alt="image description")
+		.base-card__content
+			h3 Воспитание заказчиков 😈 или как я еще не слетел с катух
+			.base-card__body.base-card__body--row
+				.user
+					.user__wrap
+						.user__photo.user__photo--row.logo-holder
+							img(src="images/user-one.png", alt="")
+				.user
+					.user__wrap
+						.user__photo.user__photo--row.logo-holder
+							img(src="images/user-one.png", alt="")
+				.user
+					.user__wrap
+						.user__photo.user__photo--row.logo-holder
+							img(src="images/user-one.png", alt="")
+				.base-card__info 
+					span 34
+					span 12
+					include ../../icons/mic
 			.base-card__nav
 				span.base-card__time 1:45:13
 				span.status-icon

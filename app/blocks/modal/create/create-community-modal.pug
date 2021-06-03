@@ -1,9 +1,9 @@
 .modal.js-modal.js-create-community-modal
+	.modal__header.p-x-25
+		h3 Новое сообщество
+		button.modal__close.js-close-modal.icon--hover
+			include ../../icons/close
 	.modal__wrap
-		.modal__header 
-			h3 Новое сообщество
-			button.modal__close.js-close-modal.icon--hover
-				include ../../icons/close
 		.modal__row 
 			.new-image
 				.new-image__add
@@ -12,10 +12,8 @@
 						span Загрузить обложку
 		.modal__row 
 			.form-control.gray
-				button.modal-btn
-					span.text-gray Название
-				button.modal-btn.modal-btn--area
-					span.text-gray Описание
+				input(type="text" placeholder="Название").modal-btn
+				textarea(placeholder="Описание").modal-btn.modal-btn--area
 		
 		.modal__row 
 			.form-control.gray
@@ -38,7 +36,9 @@
 							span Анна Борисова
 							button.participants__close-btn.icon--hover
 								include ../../icons/close
-					button.participants__add-btn.icon-btn.icon--blue
+					button(data-modal-to="add-users-modal").js-open-modal.participants__add-btn.icon-btn.icon--blue
 						include ../../icons/add
-						span.m-l-1 Добавить гостей
+						span.m-l-1 Добавить
+
+	.p-x-25.p-t-15
 		button.btn.primary.full-width Создать сообщество

@@ -29,6 +29,7 @@ input {
 	background-color: transparent;
 	outline: none;
 	-webkit-appearance: none;
+	margin: 0;
 }
 
 textarea {
@@ -37,6 +38,7 @@ textarea {
 	background-color: transparent;
 	outline: none;
 	-webkit-appearance: none;
+	margin: 0;
 }
 
 button {
@@ -62,11 +64,4 @@ select {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-}
-
-.container {
-	max-width: 112rem;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 2rem;
 }

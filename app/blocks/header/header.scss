@@ -27,6 +27,11 @@
     &:last-child {
         margin-right: 0;
     }
+
+    a {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .user-wrap {

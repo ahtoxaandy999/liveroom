@@ -2,6 +2,7 @@ extends ../layouts/default
 
 block head
 	- var pageTitle = '';
+	- var pageClass = '';
 
 block header
 	include ../blocks/header/header
@@ -9,21 +10,12 @@ block header
 block content
 	section.content-section
 		.container
-			.content-wrap
-				.tabs.js-tabs
-					.tabs__nav.events-tab-nav
-						a(href="#tab01").tabs__nav-item.btn.js-active
-							span Онлайн
-						a(href="#tab02").tabs__nav-item.btn
-							span Записи
-
-					.tabs__content.scroll-wrap.inner-scroll.tab-scroll.p-t-2
-						.tabs__tab.js-active#tab01
-							include ../blocks/pages/rooms-list/rooms-list	
-						.tabs__tab#tab02
-							include ../blocks/pages/events/events	
+			.content-wrap.holder
+				h2 События для вас
+				include ../blocks/pages/events/events	
 
 			include ../blocks/sidebar/sidebar-events
+	include ../blocks/control-panel/control-panel--events
 			
 block footer
 	include ../blocks/footer/footer		

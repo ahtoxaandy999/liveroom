@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 function mousewheelInit() {
-    $('.scroll-holder__wrap').mousewheel(function (e, delta) {
+    $('.js-mousewheel').mousewheel(function (e, delta) {
         this.scrollLeft -= (delta * 30);
         e.preventDefault();
     });
@@ -60,7 +60,10 @@ function tabsInit() {
 
 function modalsInit() {
     $('.js-open-modal').each((i, item) => {
-        $(item).click(() => {
+        $(item).click((e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            
             const modalTo = item.dataset.modalTo;
             $('.js-modal').fadeOut();
             $('.js-mask').fadeIn();

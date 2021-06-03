@@ -18,6 +18,7 @@
         }
 
         label {
+            @include animate(background-color);
             cursor: pointer;
             background-color: rgba(22, 73, 116, 0.08);
             border-radius: 10px;
@@ -25,6 +26,10 @@
             padding: 0.4rem 1.6rem;
             overflow: hidden;
             position: relative;
+
+            &:hover {
+                background-color: rgba(22, 73, 116, 0.12);
+            }
 
             &::before {
                 @include animate(opacity);

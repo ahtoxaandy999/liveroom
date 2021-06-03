@@ -19,6 +19,11 @@
         width: 55.6rem;
     }
 
+    &.event {
+        left: calc(50% - 47rem);
+        width: 58rem;
+    }
+
     &__wrapper {
         width: 100%;
         background: $white;
@@ -41,7 +46,13 @@
         .notice {
             position: absolute;
             top: -0.8rem;
-            left: 1.8rem;
+            left: 2.5rem;
+        }
+
+        .current-reaction {
+            position: absolute;
+            top: -0.8rem;
+            left: 0;
         }
     }
 }

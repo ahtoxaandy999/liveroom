@@ -3,7 +3,6 @@ html {
 }
 
 .container {
-  max-width: 99rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -79,8 +78,8 @@ strong {
   }
 
   &--white-holder {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     background-color: $white;
     border-radius: 1rem;
     padding: 0.4rem;
@@ -110,6 +109,7 @@ strong {
   height: 4rem;
   flex-shrink: 0;
   border-radius: 50%;
+  box-sizing: content-box;
 
   &--xxs {
     width: 2.8rem;
@@ -231,7 +231,6 @@ strong {
   width: 2.4rem;
   height: 2.4rem;
   background: $red;
-  border: 2px solid $white;
   border-radius: 50%;
 
   &--sm {

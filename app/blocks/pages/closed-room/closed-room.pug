@@ -1,7 +1,7 @@
 section.content-section
 	.container
-		.content-wrap.p-r-25.p-l-1.panel-active
-			.flex.flex--aic.m-b-2
+		.content-wrap.holder
+			.flex.flex--aic.m-b-2.m-rv-r-3
 				a(href="/").link.primary.flex.flex--aic
 					img(src="images/icons/icon-arrow-blue.svg", alt="").m-r-1
 					span.text-lg К списку комнат
@@ -10,10 +10,10 @@ section.content-section
 					button(data-modal-to="open-for-modal").btn.secondary.js-open-modal Открыть для...
 				button(data-modal-to="room-more-modal").more-btn.flex.flex--aic.flex--jcc.js-open-modal.icon--hover
 					include ../../icons/more
-			.room__title 
+			.room__title.m-rv-r-3
 				h2 Воспитание заказчиков 😈 или как я еще не слетел с катух
-				.base-drop.lock-icon.js-open-close 
-					button.js-opener 
+				.base-drop.lock-icon.hover-open-close 
+					.opener 
 						img(src="images/icons/icon-lock-black.svg" alt="image description")
 					.base-drop__drop.base-drop__drop--tooltip-left
 						span Закрытая комната создана для приватных бесед с теми, кого пригласит модератор

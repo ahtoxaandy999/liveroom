@@ -1,5 +1,3 @@
-
-
 .modal.js-modal.js-edit-room-name-modal
 	.modal__wrap.modal__wrap--sm
 		.modal__header 
@@ -9,14 +7,10 @@
 				span Название комнаты
 			button.modal__close.js-close-modal.icon--hover
 				include ../../icons/close
-		.modal__row
+		.modal__row 
 			.form-control.gray
-				button.modal-btn
-					span.text-gray Название
-		.modal__row
-			.form-control.gray 
-				button.modal-btn.modal-btn--area
-					span.text-gray Описание
+				input(type="text" placeholder="Название").modal-btn
+				textarea(placeholder="Описание").modal-btn.modal-btn--area
 		
 		button.btn.primary.full-width Добавить
 	

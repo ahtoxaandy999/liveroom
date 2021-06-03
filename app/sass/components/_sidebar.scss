@@ -2,7 +2,18 @@
     flex: none;
     position: relative;
 
+    &.js-sidebar {
+        @include animate(width);
+        width: 0;
+
+        .sidebar__wrap {
+            width: 0;
+        }
+    }
+
     &.js-active {
+        width: 39.5rem;
+
         .sidebar__wrap {
             width: 39.5rem;
             opacity: 1;
@@ -147,4 +158,8 @@
     h4 {
         line-height: 1.4;
     }
+}
+
+.sidebar-head {
+    min-height: 3.6rem;
 }

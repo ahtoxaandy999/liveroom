@@ -1,0 +1,23 @@
+.control-panel.flex.flex--jcb.event
+    .control-panel__wrapper.flex.flex--aic.p-y-15.p-x-2
+        .record-holder.flex.flex--aic.flex--jcb.full-width
+            strong.record-holder__title Воспитание заказчиков 😈 или как я еще не слетел с катух
+            .base-card__body.base-card__body--row.m-l-a.m-r-15
+                .user
+                    .user__wrap
+                        .user__photo.user__photo--row.logo-holder
+                            img(src="images/user-one.png", alt="")
+                .user
+                    .user__wrap
+                        .user__photo.user__photo--row.logo-holder
+                            img(src="images/user-one.png", alt="")
+            span.text-gray.m-r-25 +31
+            .flex.flex--aic
+                button(data-modal-to="leave-room-modal").js-open-modal.control-panel__btn.p-1.m-r-2.icon--red
+                    include ../icons/close
+                button(data-modal-to="add-to-room-modal").js-open-modal.control-panel__btn.icon--blue.p-1.m-r-2
+                    include ../icons/add
+                button(data-modal-to="show-reaction-modal").js-open-modal.control-panel__btn.p-1.m-r-2.icon--blue
+                    include ../icons/reaction-list
+                button.control-panel__btn.p-1.icon--blue
+                    include ../icons/mic

@@ -11,6 +11,19 @@
 
     &__logo-holder {
         margin-right: 1.6rem;
+        position: relative;
+    }
+
+    &__online {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: $green;
+        border: 3px solid $white;
+        box-sizing: content-box;
     }
 
     &__content {

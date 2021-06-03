@@ -30,7 +30,8 @@
   }
 }
 
-textarea {
+textarea,
+input {
   font-family: $base-font-family;
   font-size: 1.5rem;
   resize: none;
@@ -99,9 +100,13 @@ textarea {
     border-top: 1px solid $gray-dark;
   }
 
-  button + button,
-  button + div:not(.participants__content),
-  div:not(.participants__content) + button {
+  .modal-btn + .modal-btn {
+    border-top: 1px solid $gray-dark;
+  }
+
+  button.modal-btn + button.modal-btn,
+  button.modal-btn + .custom-input {
+    border: 0;
     position: relative;
 
     &::before {
@@ -109,7 +114,7 @@ textarea {
       position: absolute;
       top: 0;
       right: 0;
-      width: calc(100% - 1.2rem);
+      width: 100%;
       border-top: 1px solid $gray-dark;
     }
   }

@@ -7,13 +7,14 @@
 	.sidebar__wrap
 		.sidebar__body.p-t-3
 			.sidebar__content
-				h3.m-b-2 Запланированные события
+				.sidebar-head.m-b-2
+					h3.m-b-0 Запланированные события
 				.scroll-wrap.inner-scroll.tab-scroll.p-x-25.m-rv-x-25
 					.base-card
-						a(href="event.html").base-card__wrap
+						a(href="#" data-modal-to="event-modal").js-open-modal.base-card__wrap
 							.base-card__content
 								.base-card__title.p-r-2
-									span.m-b-05 Сегодня 15:45
+									span.block.m-b-05 Сегодня 15:45
 									h4 Воспитание заказчиков
 								.base-card__body.base-card__body--row
 									.base-card__body.base-card__body--row
@@ -32,15 +33,15 @@
 										.base-card__info 
 											span 34
 								.base-card__nav.simple
-									button.base-card__lock-btn
+									button(data-modal-to="edit-event-modal").js-open-modal.base-card__lock-btn
 										img(src="images/icons/font/icon-more-vetrtical.svg", alt="")
 					.base-card
-						a(href="event.html").base-card__wrap
+						a(href="#" data-modal-to="event-modal").js-open-modal.base-card__wrap
 							.base-card__img-holder.m-b-05
 								img(src="images/base-img4.jpg" alt="image description")
 							.base-card__content
 								.base-card__title.p-r-2
-									span.m-b-05 Завтра 18:00
+									span.block.m-b-05 Завтра 18:00
 									h4 Основы безопасности жизнедеятельности или как гоним на АСАШАЙ
 								.base-card__body.base-card__body--row
 									.base-card__body.base-card__body--row
@@ -59,13 +60,13 @@
 										.base-card__info 
 											span 34
 								.base-card__nav.simple
-									button.base-card__lock-btn
+									button(data-modal-to="edit-event-modal").js-open-modal.base-card__lock-btn
 										img(src="images/icons/font/icon-more-vetrtical.svg", alt="")
 					.base-card
-						a(href="event.html").base-card__wrap
+						a(href="#" data-modal-to="event-modal").js-open-modal.base-card__wrap
 							.base-card__content
 								.base-card__title.p-r-2
-									span.m-b-05 Завтра 21:00
+									span.block.m-b-05 Завтра 21:00
 									h4 😈👅 Еще раз про любовь 👩‍🚒 Разговоры и откровения
 								.base-card__body.base-card__body--row
 									.base-card__body.base-card__body--row
@@ -84,5 +85,5 @@
 										.base-card__info 
 											span 34
 								.base-card__nav.simple
-									button.base-card__lock-btn
+									button(data-modal-to="edit-event-modal").js-open-modal.base-card__lock-btn
 										img(src="images/icons/font/icon-more-vetrtical.svg", alt="")

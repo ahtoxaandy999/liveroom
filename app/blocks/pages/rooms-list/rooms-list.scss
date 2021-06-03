@@ -7,7 +7,7 @@
     }
 
     .content-wrap {
-        width: 58rem;
+        width: 63.5rem;
         padding-top: 2.4rem;
         height: calc(100vh - 6.1rem);
         max-height: none;
@@ -15,12 +15,21 @@
         &.simple {
             padding-top: 8rem;
             padding-bottom: 4rem;
-            max-width: 52rem;
             margin: 0 auto;
 
             .base-card,
             .secondary-card {
                 margin-bottom: 8rem;
+            }
+        }
+
+        &.holder {
+            padding-right: 5.8rem;
+            padding-left: 5.8rem;
+
+            &--sm {
+                padding-right: 4.1rem;
+                padding-left: 4.1rem;
             }
         }
     }

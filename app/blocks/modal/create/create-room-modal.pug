@@ -1,9 +1,9 @@
 .modal.js-modal.js-create-room-modal
+	.modal__header.p-x-25
+		h3 Новая комната
+		button.modal__close.js-close-modal.icon--hover
+			include ../../icons/close
 	.modal__wrap
-		.modal__header 
-			h3 Новая комната
-			button.modal__close.js-close-modal.icon--hover
-				include ../../icons/close
 		.modal__row 
 			.new-image
 				.new-image__image-holder 
@@ -55,5 +55,5 @@
 					label(for="customInput5")
 						span Доступен чат
 						.custom-input__fake-toggle
-
+	.p-x-25.p-t-15
 		button(data-modal-to="add-users-modal").js-open-modal.btn.primary.full-width Начать общение
